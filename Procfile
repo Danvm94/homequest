@@ -1,1 +1,1 @@
-web: gunicorn homequest.wsgi
+web: gunicorn homequestrs.wsgi
