@@ -2,9 +2,12 @@
 {% load static %}
 
 {% block page_header %}
-    <h2>Test</h2>
 {% endblock %}
 
 {% block content %}
-    <h3>Test</h3>
+    <div class="container-fluid full-width-container">
+        <div class="row search-house-row">
+            <img class="search-house-image" src="{% static 'images/house-keys.webp' %}" alt="house keys in a hand">
+        </div>
+    </div>
 {% endblock %}
