@@ -3,6 +3,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Replace Bootstrap defaults */
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: #5cc177;
+}
+
+.form-check-input:checked {
+    background-color: #5cc177;
+    border-color: #5cc177;
+}
+
+.form-control:focus {
+    border-color: rgba(46, 96, 60, 0.4);
+    box-shadow: 0 0 10px #5cc177;
+}
+
 /* Nav bar settings */
 .form-white.input-group > .form-control:focus {
     border-color: #fff;

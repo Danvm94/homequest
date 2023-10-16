@@ -1,4 +1,5 @@
 {% load static %}
+{% load login_tag %}
 
 <!doctype html>
 <html lang="en">
@@ -73,6 +74,6 @@
 {% block postloadjs %}
 {% endblock %}
 
-{% include 'includes/login-modal.html' %}
+{% login_form_tag request.get_full_path %}
 </body>
 </html>
