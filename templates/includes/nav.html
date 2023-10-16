@@ -51,12 +51,25 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown1">
                         {% if user.is_authenticated %}
                             <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <form method="post" action="{% url 'account_logout' %}">
+                                {% csrf_token %}
+                                {% if redirect_field_value %}
+                                    <input type="hidden" name="{{ redirect_field_name }}"
+                                           value="{{ redirect_field_value }}"/>
+                                {% endif %}
+                                <li>
+                                    <button class="dropdown-item" type="submit">Sign Out</button>
+                                </li>
+                            </form>
                         {% else %}
                             <li>
-                                <a href="#loginModal" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+                                <a href="#loginModal" class="dropdown-item" data-bs-toggle="modal"
+                                   data-bs-target="#loginModal">Login</a>
                             </li>
-                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li>
+                                <a href="#signupModal" class="dropdown-item" data-bs-toggle="modal"
+                                   data-bs-target="#signupModal">Sign-up</a>
+                            </li>
                         {% endif %}
                     </ul>
                 </li>

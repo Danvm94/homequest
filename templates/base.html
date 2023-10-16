@@ -36,6 +36,8 @@
         <!-- Font Awesome JS -->
         <script src="https://kit.fontawesome.com/0202f769a6.js" crossorigin="anonymous"></script>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     {% endblock %}
 
     {% block extra_js %}
@@ -75,5 +77,7 @@
 {% endblock %}
 
 {% login_form_tag request.get_full_path %}
+{% signup_form_tag request.get_full_path %}
+
 </body>
 </html>
