@@ -1,0 +1,52 @@
+[
+  {
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+      "verified": true,
+      "primary": true,
+      "user_id": 1,
+      "email": "asmith@homequestrs.com"
+    }
+  },
+    {
+    "model": "account.emailaddress",
+    "pk": 2,
+    "fields": {
+      "verified": true,
+      "primary": true,
+      "user_id": 1,
+      "email": "bjones@homequestrs.com"
+    }
+  },
+    {
+    "model": "account.emailaddress",
+    "pk": 3,
+    "fields": {
+      "verified": true,
+      "primary": true,
+      "user_id": 1,
+      "email": "cwilliams@homequest.com"
+    }
+  },
+    {
+    "model": "account.emailaddress",
+    "pk": 4,
+    "fields": {
+      "verified": true,
+      "primary": true,
+      "user_id": 1,
+      "email": "dbrown@homequest.com"
+    }
+  },
+    {
+    "model": "account.emailaddress",
+    "pk": 5,
+    "fields": {
+      "verified": true,
+      "primary": true,
+      "user_id": 1,
+      "email": "etaylor@homequest.com"
+    }
+  }
+]

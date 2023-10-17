@@ -36,7 +36,7 @@
         <!-- Font Awesome JS -->
         <script src="https://kit.fontawesome.com/0202f769a6.js" crossorigin="anonymous"></script>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     {% endblock %}
 
@@ -54,18 +54,20 @@
         {% for message in messages %}
             {% with message.level as level %}
                 {% if level == 40 %}
-
+                    {% include 'includes/toasts/toast_error.html' %}
                 {% elif level == 30 %}
-
+                    {% include 'includes/toasts/toast_warning.html' %}
                 {% elif level == 25 %}
-
+                    {% include 'includes/toasts/toast_success.html' %}
                 {% else %}
-
+                    {% include 'includes/toasts/toast_info.html' %}
                 {% endif %}
             {% endwith %}
         {% endfor %}
     </div>
+
 {% endif %}
+
 
 {% block page_header %}
 {% endblock %}
@@ -78,6 +80,7 @@
 </main>
 
 {% block postloadjs %}
+    <script src="{% static 'js/toasts.js' %}"></script>
 {% endblock %}
 
 {% login_form_tag request.get_full_path %}

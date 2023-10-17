@@ -64,3 +64,11 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* Toast config */
+.custom-toast {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 1000;
+}
