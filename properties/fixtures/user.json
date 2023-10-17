@@ -1,0 +1,57 @@
+[
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "username": "asmith",
+      "email": "asmith@homequestrs.com",
+      "is_staff": true,
+      "first_name": "Ana",
+      "last_name": "Smith"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "username": "bjones",
+      "email": "bjones@homequestrs.com",
+      "is_staff": true,
+      "first_name": "Bob",
+      "last_name": "Jones"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "username": "cwilliams",
+      "email": "cwilliams@homequest.com",
+      "is_staff": true,
+      "first_name": "Clode",
+      "last_name": "Williams"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "username": "dbrown",
+      "email": "dbrown@homequest.com",
+      "is_staff": true,
+      "first_name": "Doug",
+      "last_name": "Brown"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "username": "etaylor",
+      "email": "etaylor@homequest.com",
+      "is_staff": true,
+      "first_name": "Ely",
+      "last_name": "Taylor"
+    }
+  }
+]

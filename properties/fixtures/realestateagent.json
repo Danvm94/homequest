@@ -1,0 +1,42 @@
+[
+  {
+    "model": "properties.realestateagent",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "license_no": "123456789"
+    }
+  },
+  {
+    "model": "properties.realestateagent",
+    "pk": 2,
+    "fields": {
+      "user": 2,
+      "license_no": "987654321"
+    }
+  },
+  {
+    "model": "properties.realestateagent",
+    "pk": 3,
+    "fields": {
+      "user": 3,
+      "license_no": "098765432"
+    }
+  },
+  {
+    "model": "properties.realestateagent",
+    "pk": 4,
+    "fields": {
+      "user": 4,
+      "license_no": "219876543"
+    }
+  },
+  {
+    "model": "properties.realestateagent",
+    "pk": 5,
+    "fields": {
+      "user": 5,
+      "license_no": "321987654"
+    }
+  }
+]

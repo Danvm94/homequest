@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'user_management',
     'homepage',
+    'properties',
     'widget_tweaks',
 ]
 

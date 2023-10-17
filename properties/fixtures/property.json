@@ -1,0 +1,2002 @@
+[
+    {
+        "model": "properties.property",
+        "pk": 1,
+        "fields": {
+            "agent": 4,
+            "address": "0248 Saint Paul Point",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2022-12-06T01:22:02Z",
+            "updated_at": "2022-12-06T01:22:02Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 25571879,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 9374
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 2,
+        "fields": {
+            "agent": 2,
+            "address": "91 Reindahl Street",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-01-08T04:04:33Z",
+            "updated_at": "2023-01-08T04:04:33Z",
+            "description": "This 4-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 92298188,
+            "title": "4 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 9584
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 3,
+        "fields": {
+            "agent": 5,
+            "address": "746 Browning Alley",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-02-15T04:53:36Z",
+            "updated_at": "2023-02-15T04:53:36Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 10152598,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 7183
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 4,
+        "fields": {
+            "agent": 5,
+            "address": "4 Nelson Terrace",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-09-26T18:46:57Z",
+            "updated_at": "2023-09-26T18:46:57Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 63351684,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 4983
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 5,
+        "fields": {
+            "agent": 4,
+            "address": "4681 Arrowood Crossing",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-07-24T11:07:41Z",
+            "updated_at": "2023-07-24T11:07:41Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 19706760,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 2,
+            "size": 9530
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 6,
+        "fields": {
+            "agent": 3,
+            "address": "66 Fallview Way",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-02-01T19:18:34Z",
+            "updated_at": "2023-02-01T19:18:34Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 8885616,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 542
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 7,
+        "fields": {
+            "agent": 3,
+            "address": "4 Nevada Trail",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-09-25T16:11:04Z",
+            "updated_at": "2023-09-25T16:11:04Z",
+            "description": "This 5-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 81080055,
+            "title": "5 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 8773
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 8,
+        "fields": {
+            "agent": 2,
+            "address": "2 Crowley Alley",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-04-04T01:02:33Z",
+            "updated_at": "2023-04-04T01:02:33Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 97169238,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 5127
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 9,
+        "fields": {
+            "agent": 4,
+            "address": "56 5th Plaza",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-06-19T11:31:06Z",
+            "updated_at": "2023-06-19T11:31:06Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 86732447,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 7507
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 10,
+        "fields": {
+            "agent": 1,
+            "address": "8373 Summerview Court",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-02-25T13:47:55Z",
+            "updated_at": "2023-02-25T13:47:55Z",
+            "description": "This 2-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 15703660,
+            "title": "2 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 5474
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 11,
+        "fields": {
+            "agent": 5,
+            "address": "1 Surrey Way",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2022-11-07T15:34:16Z",
+            "updated_at": "2022-11-07T15:34:16Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 15935820,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 3911
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 12,
+        "fields": {
+            "agent": 5,
+            "address": "1 Westend Center",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-01-22T17:44:21Z",
+            "updated_at": "2023-01-22T17:44:21Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 27590336,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 6537
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 13,
+        "fields": {
+            "agent": 2,
+            "address": "01380 Helena Hill",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-06-05T18:56:10Z",
+            "updated_at": "2023-06-05T18:56:10Z",
+            "description": "This 3-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 10310554,
+            "title": "3 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 7192
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 14,
+        "fields": {
+            "agent": 2,
+            "address": "7620 Waubesa Trail",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-05-30T19:48:34Z",
+            "updated_at": "2023-05-30T19:48:34Z",
+            "description": "This 3-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 63970564,
+            "title": "3 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 3795
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 15,
+        "fields": {
+            "agent": 2,
+            "address": "3546 Mesta Hill",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2022-11-18T02:19:44Z",
+            "updated_at": "2022-11-18T02:19:44Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 84402017,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 3,
+            "size": 799
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 16,
+        "fields": {
+            "agent": 4,
+            "address": "5 Sauthoff Lane",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-04-07T13:48:29Z",
+            "updated_at": "2023-04-07T13:48:29Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 60969225,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 3,
+            "size": 8510
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 17,
+        "fields": {
+            "agent": 5,
+            "address": "34 Kedzie Place",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-02-03T12:10:20Z",
+            "updated_at": "2023-02-03T12:10:20Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 99840320,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 2613
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 18,
+        "fields": {
+            "agent": 5,
+            "address": "6536 Springs Point",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-02-25T06:35:12Z",
+            "updated_at": "2023-02-25T06:35:12Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 66329816,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 6479
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 19,
+        "fields": {
+            "agent": 4,
+            "address": "4647 Union Place",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2022-12-25T02:27:42Z",
+            "updated_at": "2022-12-25T02:27:42Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 79875048,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 4434
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 20,
+        "fields": {
+            "agent": 4,
+            "address": "601 1st Pass",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2022-12-17T11:28:58Z",
+            "updated_at": "2022-12-17T11:28:58Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 39015753,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 171
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 21,
+        "fields": {
+            "agent": 4,
+            "address": "2 Mayer Terrace",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2022-12-19T15:52:32Z",
+            "updated_at": "2022-12-19T15:52:32Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 57154660,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 7392
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 22,
+        "fields": {
+            "agent": 2,
+            "address": "30 Birchwood Place",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-01-20T09:00:17Z",
+            "updated_at": "2023-01-20T09:00:17Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 7408880,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 7063
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 23,
+        "fields": {
+            "agent": 4,
+            "address": "4694 Bowman Parkway",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-04-05T14:08:41Z",
+            "updated_at": "2023-04-05T14:08:41Z",
+            "description": "This 5-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 91281759,
+            "title": "5 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 2680
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 24,
+        "fields": {
+            "agent": 4,
+            "address": "71 Vermont Court",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-02-02T20:59:12Z",
+            "updated_at": "2023-02-02T20:59:12Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 16461057,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 8164
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 25,
+        "fields": {
+            "agent": 5,
+            "address": "58587 Tony Trail",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2022-11-03T11:18:05Z",
+            "updated_at": "2022-11-03T11:18:05Z",
+            "description": "This 4-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 30222458,
+            "title": "4 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 3236
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 26,
+        "fields": {
+            "agent": 3,
+            "address": "17816 Straubel Street",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-01-26T11:25:22Z",
+            "updated_at": "2023-01-26T11:25:22Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 77416378,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 8581
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 27,
+        "fields": {
+            "agent": 5,
+            "address": "996 Trailsway Plaza",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-10-14T11:36:09Z",
+            "updated_at": "2023-10-14T11:36:09Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 16512280,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 8425
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 28,
+        "fields": {
+            "agent": 1,
+            "address": "864 Towne Terrace",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-01-05T04:53:43Z",
+            "updated_at": "2023-01-05T04:53:43Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 91847023,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 402
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 29,
+        "fields": {
+            "agent": 3,
+            "address": "3 Ridgeview Crossing",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-07-10T21:42:51Z",
+            "updated_at": "2023-07-10T21:42:51Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 55309529,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 581
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 30,
+        "fields": {
+            "agent": 4,
+            "address": "11 Laurel Way",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-07-28T03:14:51Z",
+            "updated_at": "2023-07-28T03:14:51Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 59523316,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 1230
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 31,
+        "fields": {
+            "agent": 4,
+            "address": "157 Sunfield Point",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-08-11T12:56:27Z",
+            "updated_at": "2023-08-11T12:56:27Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 25985645,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 8189
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 32,
+        "fields": {
+            "agent": 5,
+            "address": "14 Welch Center",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-10-15T05:25:55Z",
+            "updated_at": "2023-10-15T05:25:55Z",
+            "description": "This 5-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 99988428,
+            "title": "5 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 2388
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 33,
+        "fields": {
+            "agent": 4,
+            "address": "9 Glacier Hill Park",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2022-12-31T01:43:33Z",
+            "updated_at": "2022-12-31T01:43:33Z",
+            "description": "This 3-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 65529499,
+            "title": "3 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 4587
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 34,
+        "fields": {
+            "agent": 2,
+            "address": "56839 Mosinee Alley",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2022-11-20T05:17:17Z",
+            "updated_at": "2022-11-20T05:17:17Z",
+            "description": "This 2-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 84974300,
+            "title": "2 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 1719
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 35,
+        "fields": {
+            "agent": 5,
+            "address": "0 Village Crossing",
+            "property_type": "sale",
+            "state": 1,
+            "created_at": "2023-03-30T08:04:29Z",
+            "updated_at": "2023-03-30T08:04:29Z",
+            "description": "This 5-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 10517068,
+            "title": "5 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 7051
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 36,
+        "fields": {
+            "agent": 5,
+            "address": "4271 Almo Hill",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-10-13T20:35:57Z",
+            "updated_at": "2023-10-13T20:35:57Z",
+            "description": "This 5-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 90115469,
+            "title": "5 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 8098
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 37,
+        "fields": {
+            "agent": 2,
+            "address": "0032 Bluestem Drive",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-10-11T06:58:30Z",
+            "updated_at": "2023-10-11T06:58:30Z",
+            "description": "This 5-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 39315347,
+            "title": "5 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 2301
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 38,
+        "fields": {
+            "agent": 1,
+            "address": "92161 Jenna Parkway",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2022-12-15T18:00:28Z",
+            "updated_at": "2022-12-15T18:00:28Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 95350801,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 8729
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 39,
+        "fields": {
+            "agent": 5,
+            "address": "7 Northland Crossing",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-10-15T20:12:57Z",
+            "updated_at": "2023-10-15T20:12:57Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 54180910,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 3172
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 40,
+        "fields": {
+            "agent": 2,
+            "address": "73 Grayhawk Circle",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-05-14T15:20:58Z",
+            "updated_at": "2023-05-14T15:20:58Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 87958851,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 9626
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 41,
+        "fields": {
+            "agent": 3,
+            "address": "5878 Emmet Place",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2022-12-15T05:03:43Z",
+            "updated_at": "2022-12-15T05:03:43Z",
+            "description": "This 2-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 68768984,
+            "title": "2 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 674
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 42,
+        "fields": {
+            "agent": 5,
+            "address": "9457 Menomonie Way",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-03-11T03:19:10Z",
+            "updated_at": "2023-03-11T03:19:10Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 82800307,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 9311
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 43,
+        "fields": {
+            "agent": 3,
+            "address": "86 Crowley Park",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2023-09-30T19:49:41Z",
+            "updated_at": "2023-09-30T19:49:41Z",
+            "description": "This 2-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 54047650,
+            "title": "2 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 3,
+            "size": 3324
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 44,
+        "fields": {
+            "agent": 4,
+            "address": "4 Westport Parkway",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-08-26T15:37:04Z",
+            "updated_at": "2023-08-26T15:37:04Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 90480849,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 674
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 45,
+        "fields": {
+            "agent": 2,
+            "address": "3913 Amoth Lane",
+            "property_type": "sale",
+            "state": 3,
+            "created_at": "2023-02-20T05:06:01Z",
+            "updated_at": "2023-02-20T05:06:01Z",
+            "description": "This 4-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 69309888,
+            "title": "4 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 1073
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 46,
+        "fields": {
+            "agent": 2,
+            "address": "9 Mitchell Road",
+            "property_type": "sale",
+            "state": 5,
+            "created_at": "2023-10-05T14:36:57Z",
+            "updated_at": "2023-10-05T14:36:57Z",
+            "description": "This 4-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 8183990,
+            "title": "4 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 7911
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 47,
+        "fields": {
+            "agent": 3,
+            "address": "49 Talmadge Drive",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-10-05T03:17:31Z",
+            "updated_at": "2023-10-05T03:17:31Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 5726861,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 2714
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 48,
+        "fields": {
+            "agent": 4,
+            "address": "3 Lakewood Gardens Drive",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-07-19T07:26:23Z",
+            "updated_at": "2023-07-19T07:26:23Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4620171,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 7697
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 49,
+        "fields": {
+            "agent": 3,
+            "address": "96935 Sundown Trail",
+            "property_type": "sale",
+            "state": 4,
+            "created_at": "2023-07-24T20:42:12Z",
+            "updated_at": "2023-07-24T20:42:12Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 47997515,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 4886
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 50,
+        "fields": {
+            "agent": 2,
+            "address": "2973 Carey Center",
+            "property_type": "sale",
+            "state": 2,
+            "created_at": "2022-11-10T14:27:43Z",
+            "updated_at": "2022-11-10T14:27:43Z",
+            "description": "This 4-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 60350848,
+            "title": "4 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 4866
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 51,
+        "fields": {
+            "agent": 1,
+            "address": "282 Kensington Center",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2022-12-26T17:33:46Z",
+            "updated_at": "2022-12-26T17:33:46Z",
+            "description": "This 5-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2484,
+            "title": "5 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 6905
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 52,
+        "fields": {
+            "agent": 5,
+            "address": "508 Moland Park",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-09-11T12:43:37Z",
+            "updated_at": "2023-09-11T12:43:37Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3416,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 76
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 53,
+        "fields": {
+            "agent": 3,
+            "address": "1 Harbort Drive",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-06-12T08:06:28Z",
+            "updated_at": "2023-06-12T08:06:28Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4372,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 3481
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 54,
+        "fields": {
+            "agent": 1,
+            "address": "433 Clarendon Street",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-01-10T16:34:42Z",
+            "updated_at": "2023-01-10T16:34:42Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3083,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 9116
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 55,
+        "fields": {
+            "agent": 3,
+            "address": "76 3rd Place",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-06-23T08:45:21Z",
+            "updated_at": "2023-06-23T08:45:21Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2111,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 2297
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 56,
+        "fields": {
+            "agent": 4,
+            "address": "60688 Huxley Street",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-02-23T12:46:31Z",
+            "updated_at": "2023-02-23T12:46:31Z",
+            "description": "This 4-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2502,
+            "title": "4 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 2448
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 57,
+        "fields": {
+            "agent": 4,
+            "address": "73 Cordelia Avenue",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-06-26T17:58:14Z",
+            "updated_at": "2023-06-26T17:58:14Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3784,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 1018
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 58,
+        "fields": {
+            "agent": 3,
+            "address": "14 1st Crossing",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-08-29T20:19:29Z",
+            "updated_at": "2023-08-29T20:19:29Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2378,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 2,
+            "size": 1663
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 59,
+        "fields": {
+            "agent": 1,
+            "address": "832 Southridge Hill",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2022-11-05T17:20:12Z",
+            "updated_at": "2022-11-05T17:20:12Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2680,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 9269
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 60,
+        "fields": {
+            "agent": 5,
+            "address": "408 Hoffman Park",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-06-22T06:06:05Z",
+            "updated_at": "2023-06-22T06:06:05Z",
+            "description": "This 5-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4873,
+            "title": "5 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 1142
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 61,
+        "fields": {
+            "agent": 3,
+            "address": "4 Sunbrook Court",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-01-02T19:10:27Z",
+            "updated_at": "2023-01-02T19:10:27Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3013,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 2269
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 62,
+        "fields": {
+            "agent": 1,
+            "address": "6356 Summit Point",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-01-24T18:37:34Z",
+            "updated_at": "2023-01-24T18:37:34Z",
+            "description": "This 5-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2171,
+            "title": "5 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 8739
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 63,
+        "fields": {
+            "agent": 2,
+            "address": "808 High Crossing Crossing",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2023-08-01T00:21:20Z",
+            "updated_at": "2023-08-01T00:21:20Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3513,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 7643
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 64,
+        "fields": {
+            "agent": 4,
+            "address": "3 Algoma Hill",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-08-10T21:17:16Z",
+            "updated_at": "2023-08-10T21:17:16Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3254,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 4333
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 65,
+        "fields": {
+            "agent": 3,
+            "address": "6730 3rd Road",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2022-12-29T17:59:48Z",
+            "updated_at": "2022-12-29T17:59:48Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4970,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 2782
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 66,
+        "fields": {
+            "agent": 3,
+            "address": "49597 Graceland Place",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-05-04T02:04:24Z",
+            "updated_at": "2023-05-04T02:04:24Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2775,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 3462
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 67,
+        "fields": {
+            "agent": 5,
+            "address": "09 Mockingbird Point",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-08-21T04:46:09Z",
+            "updated_at": "2023-08-21T04:46:09Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4010,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 2647
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 68,
+        "fields": {
+            "agent": 5,
+            "address": "95255 Cordelia Parkway",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-04-13T03:06:15Z",
+            "updated_at": "2023-04-13T03:06:15Z",
+            "description": "This 5-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3486,
+            "title": "5 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 2,
+            "size": 9697
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 69,
+        "fields": {
+            "agent": 2,
+            "address": "2 Golf Lane",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-04-13T12:54:01Z",
+            "updated_at": "2023-04-13T12:54:01Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2678,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 6024
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 70,
+        "fields": {
+            "agent": 3,
+            "address": "01 Leroy Center",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-02-27T20:42:37Z",
+            "updated_at": "2023-02-27T20:42:37Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3699,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 7607
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 71,
+        "fields": {
+            "agent": 3,
+            "address": "20545 Lotheville Place",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2023-09-10T13:35:45Z",
+            "updated_at": "2023-09-10T13:35:45Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4703,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 186
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 72,
+        "fields": {
+            "agent": 3,
+            "address": "35968 Kipling Crossing",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-09-27T05:26:17Z",
+            "updated_at": "2023-09-27T05:26:17Z",
+            "description": "This 5-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2316,
+            "title": "5 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 5,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 4620
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 73,
+        "fields": {
+            "agent": 3,
+            "address": "22 Fuller Alley",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-04-25T06:11:05Z",
+            "updated_at": "2023-04-25T06:11:05Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2072,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 7043
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 74,
+        "fields": {
+            "agent": 2,
+            "address": "992 Loomis Court",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-03-19T17:18:42Z",
+            "updated_at": "2023-03-19T17:18:42Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2419,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 5336
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 75,
+        "fields": {
+            "agent": 1,
+            "address": "2 Mariners Cove Junction",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-02-20T14:25:38Z",
+            "updated_at": "2023-02-20T14:25:38Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4759,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 1393
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 76,
+        "fields": {
+            "agent": 5,
+            "address": "5 Alpine Terrace",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-02-04T00:49:22Z",
+            "updated_at": "2023-02-04T00:49:22Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4328,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 5849
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 77,
+        "fields": {
+            "agent": 5,
+            "address": "081 Jana Alley",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2022-12-20T09:56:09Z",
+            "updated_at": "2022-12-20T09:56:09Z",
+            "description": "This 4-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3624,
+            "title": "4 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 1357
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 78,
+        "fields": {
+            "agent": 4,
+            "address": "21 Maryland Parkway",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-03-24T13:22:12Z",
+            "updated_at": "2023-03-24T13:22:12Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3754,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 4,
+            "size": 4112
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 79,
+        "fields": {
+            "agent": 1,
+            "address": "4162 Beilfuss Hill",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-08-01T03:28:56Z",
+            "updated_at": "2023-08-01T03:28:56Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4491,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 3,
+            "size": 9448
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 80,
+        "fields": {
+            "agent": 2,
+            "address": "8239 Leroy Road",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2022-12-16T03:49:43Z",
+            "updated_at": "2022-12-16T03:49:43Z",
+            "description": "This 3-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4102,
+            "title": "3 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 2886
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 81,
+        "fields": {
+            "agent": 4,
+            "address": "015 John Wall Center",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-01-08T10:36:03Z",
+            "updated_at": "2023-01-08T10:36:03Z",
+            "description": "This 4-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 3 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4873,
+            "title": "4 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 3,
+            "size": 9291
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 82,
+        "fields": {
+            "agent": 5,
+            "address": "952 International Terrace",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-01-05T03:47:49Z",
+            "updated_at": "2023-01-05T03:47:49Z",
+            "description": "This 4-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2271,
+            "title": "4 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 1085
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 83,
+        "fields": {
+            "agent": 1,
+            "address": "7 Cordelia Lane",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2023-09-29T07:21:23Z",
+            "updated_at": "2023-09-29T07:21:23Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3067,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 2,
+            "size": 5228
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 84,
+        "fields": {
+            "agent": 2,
+            "address": "5 Basil Terrace",
+            "property_type": "rent",
+            "state": 2,
+            "created_at": "2023-03-01T21:44:51Z",
+            "updated_at": "2023-03-01T21:44:51Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2488,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 5,
+            "size": 9127
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 85,
+        "fields": {
+            "agent": 3,
+            "address": "46315 High Crossing Road",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-04-25T23:17:46Z",
+            "updated_at": "2023-04-25T23:17:46Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4852,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 4275
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 86,
+        "fields": {
+            "agent": 2,
+            "address": "29842 Vernon Lane",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-06-12T13:12:51Z",
+            "updated_at": "2023-06-12T13:12:51Z",
+            "description": "This 4-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3682,
+            "title": "4 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 4,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 7394
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 87,
+        "fields": {
+            "agent": 4,
+            "address": "7754 Ludington Junction",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-09-03T08:29:35Z",
+            "updated_at": "2023-09-03T08:29:35Z",
+            "description": "This 5-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2796,
+            "title": "5 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 0,
+            "size": 6570
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 88,
+        "fields": {
+            "agent": 3,
+            "address": "2 Rigney Street",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-06-23T06:18:09Z",
+            "updated_at": "2023-06-23T06:18:09Z",
+            "description": "This 5-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2903,
+            "title": "5 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 1265
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 89,
+        "fields": {
+            "agent": 5,
+            "address": "6166 Buhler Avenue",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-07-16T19:08:34Z",
+            "updated_at": "2023-07-16T19:08:34Z",
+            "description": "This 5-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2416,
+            "title": "5 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 5,
+            "fireplaces": 0,
+            "parking_spaces": 2,
+            "size": 7059
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 90,
+        "fields": {
+            "agent": 3,
+            "address": "62662 Kim Trail",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-09-13T14:07:39Z",
+            "updated_at": "2023-09-13T14:07:39Z",
+            "description": "This 4-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4692,
+            "title": "4 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 4,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 7095
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 91,
+        "fields": {
+            "agent": 4,
+            "address": "96 Clarendon Lane",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2022-11-02T22:40:51Z",
+            "updated_at": "2022-11-02T22:40:51Z",
+            "description": "This 3-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4327,
+            "title": "3 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 8687
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 92,
+        "fields": {
+            "agent": 4,
+            "address": "257 Scoville Point",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2022-12-12T13:09:01Z",
+            "updated_at": "2022-12-12T13:09:01Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4295,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 5217
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 93,
+        "fields": {
+            "agent": 3,
+            "address": "82 Heffernan Place",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-09-26T16:04:04Z",
+            "updated_at": "2023-09-26T16:04:04Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 5 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4376,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 5,
+            "size": 2068
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 94,
+        "fields": {
+            "agent": 5,
+            "address": "7 Alpine Street",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-09-03T21:00:52Z",
+            "updated_at": "2023-09-03T21:00:52Z",
+            "description": "This 2-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4598,
+            "title": "2 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 2,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 2777
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 95,
+        "fields": {
+            "agent": 1,
+            "address": "4760 Rockefeller Street",
+            "property_type": "rent",
+            "state": 5,
+            "created_at": "2023-06-16T07:08:15Z",
+            "updated_at": "2023-06-16T07:08:15Z",
+            "description": "This 1-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3876,
+            "title": "1 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 1001
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 96,
+        "fields": {
+            "agent": 5,
+            "address": "794 Comanche Parkway",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2023-01-08T07:25:05Z",
+            "updated_at": "2023-01-08T07:25:05Z",
+            "description": "This 1-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 2 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2205,
+            "title": "1 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 1,
+            "fireplaces": 0,
+            "parking_spaces": 2,
+            "size": 845
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 97,
+        "fields": {
+            "agent": 4,
+            "address": "77378 Superior Junction",
+            "property_type": "rent",
+            "state": 1,
+            "created_at": "2022-12-29T17:25:54Z",
+            "updated_at": "2022-12-29T17:25:54Z",
+            "description": "This 3-bedroom, 2-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 3902,
+            "title": "3 Bedroom, 2 Bathroom Home",
+            "bathrooms": 2,
+            "bedrooms": 3,
+            "fireplaces": 1,
+            "parking_spaces": 1,
+            "size": 3412
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 98,
+        "fields": {
+            "agent": 2,
+            "address": "4 Tennessee Street",
+            "property_type": "rent",
+            "state": 3,
+            "created_at": "2023-07-09T01:30:30Z",
+            "updated_at": "2023-07-09T01:30:30Z",
+            "description": "This 2-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 0 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4257,
+            "title": "2 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 2,
+            "fireplaces": 1,
+            "parking_spaces": 0,
+            "size": 2950
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 99,
+        "fields": {
+            "agent": 4,
+            "address": "4834 Harper Park",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-09-30T14:10:24Z",
+            "updated_at": "2023-09-30T14:10:24Z",
+            "description": "This 3-bedroom, 1-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 0 fireplace, 1 parking space, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 2638,
+            "title": "3 Bedroom, 1 Bathroom Home",
+            "bathrooms": 1,
+            "bedrooms": 3,
+            "fireplaces": 0,
+            "parking_spaces": 1,
+            "size": 7249
+        }
+    },
+    {
+        "model": "properties.property",
+        "pk": 100,
+        "fields": {
+            "agent": 5,
+            "address": "9333 Lyons Drive",
+            "property_type": "rent",
+            "state": 4,
+            "created_at": "2023-02-26T14:02:49Z",
+            "updated_at": "2023-02-26T14:02:49Z",
+            "description": "This 1-bedroom, 3-bathroom home is perfect for those seeking a comfortable and stylish living space. It features 1 fireplace, 4 parking spaces, and much more. The open layout provides ample natural light, and the spacious interior is ideal for both relaxation and entertainment.",
+            "price": 4680,
+            "title": "1 Bedroom, 3 Bathroom Home",
+            "bathrooms": 3,
+            "bedrooms": 1,
+            "fireplaces": 1,
+            "parking_spaces": 4,
+            "size": 6827
+        }
+    }
+]
