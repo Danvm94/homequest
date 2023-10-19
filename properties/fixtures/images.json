@@ -1,0 +1,82 @@
+[
+  {
+    "model": "properties.images",
+    "pk": 1,
+    "fields": {
+      "property": 1,
+      "image": "1.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 2,
+    "fields": {
+      "property": 2,
+      "image": "2.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 3,
+    "fields": {
+      "property": 3,
+      "image": "3.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 4,
+    "fields": {
+      "property": 4,
+      "image": "4.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 5,
+    "fields": {
+      "property": 5,
+      "image": "5.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 6,
+    "fields": {
+      "property": 6,
+      "image": "6.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 7,
+    "fields": {
+      "property": 7,
+      "image": "7.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 8,
+    "fields": {
+      "property": 8,
+      "image": "8.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 9,
+    "fields": {
+      "property": 9,
+      "image": "9.webp"
+    }
+  },
+  {
+    "model": "properties.images",
+    "pk": 10,
+    "fields": {
+      "property": 10,
+      "image": "10.webp"
+    }
+  }
+]

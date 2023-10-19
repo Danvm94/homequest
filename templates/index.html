@@ -29,11 +29,26 @@
         </div>
     </div>
 
-    <div class="column mt-3">
+    <div class="container mt-3">
+        {% load cloudinary %}
         <div class="row text-center">
             <h2>Latest Properties</h2>
             {% for property in latest_properties %}
-                <p>{property}</p>
+
+                <div class="col-sm-12 col-lg-4 mt-5 justify-content-around">
+                    <a href="{{ property }}">
+                        <div class="card bg-dark text-white">
+                            {% for image in property.images %}
+                                {% cloudinary image.image crop="fill" alt="Front House Picture"%}
+                            {% endfor %}
+                            <div class="card-body">
+                                <h5 class="card-title">{{ property.title }}</h5>
+                                <h6 class="card-title">{{ property.address }}</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
             {% endfor %}
         </div>
     </div>

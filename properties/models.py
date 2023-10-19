@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 
 class RealEstateAgent(models.Model):
@@ -38,4 +39,5 @@ class Property(models.Model):
 class Images(models.Model):
     id = models.AutoField(primary_key=True)
     property = models.ForeignKey(Property, on_delete=models.CASCADE)
-    image_url = models.URLField()
+    image = CloudinaryField('image', default='', blank=True,
+                            folder='homequest/media')

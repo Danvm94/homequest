@@ -8,5 +8,4 @@ def index_view(request):
     context = {
         'latest_properties': latest_properties
     }
-    print(latest_properties)
     return render(request, 'index.html', context)

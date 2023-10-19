@@ -1,4 +1,4 @@
-from .models import Property
+from .models import Property, Images
 
 
 def get_latest_properties(number):
@@ -20,5 +20,8 @@ def get_latest_properties(number):
         latest_properties = get_latest_properties(5)
     """
     properties = Property.objects.all()
-    latest_properties = properties.order_by('-created_at')[:number]
-    return latest_properties
+    latest_properties_list = properties.order_by('id')[:number]
+    for latest_property in latest_properties_list:
+        latest_property.images = Images.objects.filter(property=latest_property)
+        print(latest_property)
+    return latest_properties_list
