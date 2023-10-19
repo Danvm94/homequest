@@ -14,3 +14,4 @@ venv
 .vscode
 .idea
 *.log
+TODO.md

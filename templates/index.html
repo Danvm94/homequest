@@ -6,8 +6,36 @@
 
 {% block content %}
     <div class="container-fluid full-width-container">
-        <div class="row search-house-row">
+        <div class="card search-house-row text-center">
             <img class="search-house-image" src="{% static 'images/house-keys.webp' %}" alt="house keys in a hand">
+            <div class="card-img-overlay d-flex flex-column justify-content-center text-white">
+                <div class="col-12 col-md-8 mx-auto text-center black-transparent-background">
+                    <h2 class="card-title">Home Finder</h2>
+                    <div class="search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control" placeholder="City, Agent, Description...">
+                        <button class="btn btn-success">Search</button>
+                    </div>
+                    <div class="col-12 col-md-2 mt-1">
+                        <div class="btn-group" role="group" aria-label="Search Options">
+                            <input type="radio" class="btn-check" name="search-for" id="buy" autocomplete="off" checked>
+                            <label for="buy" class="btn btn-success btn-md">Buy</label>
+                            <input type="radio" class="btn-check" name="search-for" id="rent" autocomplete="off">
+                            <label for="rent" class="btn btn-success btn-md">Rent</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="column mt-3">
+        <div class="row text-center">
+            <h2>Latest Properties</h2>
+            {% for property in latest_properties %}
+                <p>{property}</p>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock %}
