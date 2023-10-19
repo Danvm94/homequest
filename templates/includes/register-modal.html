@@ -31,35 +31,4 @@
             </div>
         </div>
     </div>
-    <script>// Script used for ajax on loginForm, preventing its default submit behaviour
-    $(document).ready(function () {
-        $('#signupForm').submit(function (e) {
-            e.preventDefault();
-            const serializedData = $(this).serialize(); // Serialize the form data
-            $.ajax({
-                type: 'POST',
-                url: $(this).attr('action'),
-                data: serializedData, // Use the serialized data
-                dataType: 'json',
-                success: function (data) {
-                    if (data.form) {
-                        window.location.reload();
-                    }
-                },
-                error: function (data, xhr, status, error) {
-                    // Show the error message from the server
-                    const fields = data["responseJSON"].form.fields;
-                    console.log(fields);
-                    let errorMessageHTML = '<ul class="text-danger">';
-                    for (const field in fields) {
-                        if (fields[field].errors.length > 0) {
-                            errorMessageHTML += fields[field].errors.join('<br>');
-                        }
-                    }
-                    errorMessageHTML += '</ul>';
-                     $('#signupFormErrors').show().html(errorMessageHTML);
-                }
-            });
-        });
-    });</script>
 {% endif %}
