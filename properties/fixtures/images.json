@@ -1,82 +1,79 @@
 [
-  {
-    "model": "properties.images",
-    "pk": 1,
-    "fields": {
-      "property": 1,
-      "image": "1.webp"
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 8,
+            "image": "homequest/media/8"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 3,
+            "image": "homequest/media/3"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 5,
+            "image": "homequest/media/5"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 9,
+            "image": "homequest/media/9"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 10,
+            "image": "homequest/media/10"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 11,
+            "image": "homequest/media/11"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 1,
+            "image": "homequest/media/1"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 7,
+            "image": "homequest/media/7"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 2,
+            "image": "homequest/media/2"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 6,
+            "image": "homequest/media/6"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 4,
+            "image": "homequest/media/4"
+        }
     }
-  },
-  {
-    "model": "properties.images",
-    "pk": 2,
-    "fields": {
-      "property": 2,
-      "image": "2.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 3,
-    "fields": {
-      "property": 3,
-      "image": "3.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 4,
-    "fields": {
-      "property": 4,
-      "image": "4.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 5,
-    "fields": {
-      "property": 5,
-      "image": "5.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 6,
-    "fields": {
-      "property": 6,
-      "image": "6.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 7,
-    "fields": {
-      "property": 7,
-      "image": "7.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 8,
-    "fields": {
-      "property": 8,
-      "image": "8.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 9,
-    "fields": {
-      "property": 9,
-      "image": "9.webp"
-    }
-  },
-  {
-    "model": "properties.images",
-    "pk": 10,
-    "fields": {
-      "property": 10,
-      "image": "10.webp"
-    }
-  }
 ]

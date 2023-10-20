@@ -35,11 +35,11 @@
             <h2>Latest Properties</h2>
             {% for property in latest_properties %}
 
-                <div class="col-sm-12 col-lg-4 mt-5 justify-content-around">
+                <div class=" col-lg-3 mt-5 justify-content-around">
                     <a href="{{ property }}">
-                        <div class="card bg-dark text-white">
+                        <div class="card bg-dark text-white property-card">
                             {% for image in property.images %}
-                                {% cloudinary image.image crop="fill" alt="Front House Picture"%}
+                                {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
                             {% endfor %}
                             <div class="card-body">
                                 <h5 class="card-title">{{ property.title }}</h5>

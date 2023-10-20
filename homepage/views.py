@@ -4,7 +4,7 @@ from properties.utils import get_latest_properties
 
 # Create your views here.
 def index_view(request):
-    latest_properties = get_latest_properties(5)
+    latest_properties = get_latest_properties(8)
     context = {
         'latest_properties': latest_properties
     }
