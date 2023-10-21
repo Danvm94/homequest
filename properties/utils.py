@@ -1,6 +1,12 @@
 from .models import Property, Images
 
 
+def get_properties_images(properties):
+    for house in properties:
+        house.images = Images.objects.filter(property=house)
+    return properties
+
+
 def get_latest_properties(number):
     """
     Retrieve the latest properties from the database.
@@ -21,7 +27,14 @@ def get_latest_properties(number):
     """
     properties = Property.objects.all()
     latest_properties_list = properties.order_by('id')[:number]
+    latest_properties_list = get_properties_images(latest_properties_list)
     for latest_property in latest_properties_list:
-        latest_property.images = Images.objects.filter(property=latest_property)
-        print(latest_property)
+        latest_property.images = Images.objects.filter(
+            property=latest_property)
     return latest_properties_list
+
+
+def get_all_properties(property_type):
+    properties = Property.objects.filter(property_type=property_type)
+    properties = get_properties_images(properties)
+    return properties

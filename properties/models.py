@@ -34,6 +34,7 @@ class Property(models.Model):
     fireplaces = models.PositiveIntegerField()
     parking_spaces = models.PositiveIntegerField()
     size = models.PositiveIntegerField()
+    gone = models.BooleanField(default=False)
 
     def formatted_price_euro(self):
         return "€{:,.2f}".format(self.price)

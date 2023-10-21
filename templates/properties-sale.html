@@ -2,36 +2,11 @@
 {% load static %}
 
 {% block content %}
-    <div class="container-fluid full-width-container">
-        <div class="card search-house-row text-center">
-            <img class="search-house-image" src="{% static 'images/house-keys.webp' %}" alt="house keys in a hand">
-            <div class="card-img-overlay d-flex flex-column justify-content-center text-white">
-                <div class="col-12 col-md-8 mx-auto text-center black-transparent-background">
-                    <h2 class="card-title">Home Finder</h2>
-                    <div class="search">
-                        <i class="fa fa-search"></i>
-                        <input type="text" id="test-search" class="form-control"
-                               placeholder="City, Agent, Description...">
-                        <button class="btn btn-success">Search</button>
-                    </div>
-                    <div class="col-12 col-md-2 mt-1">
-                        <div class="btn-group" role="group" aria-label="Search Options">
-                            <input type="radio" class="btn-check" name="search-for" id="buy" autocomplete="off" checked>
-                            <label for="buy" class="btn btn-success btn-md">Buy</label>
-                            <input type="radio" class="btn-check" name="search-for" id="rent" autocomplete="off">
-                            <label for="rent" class="btn btn-success btn-md">Rent</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container mt-3">
         {% load cloudinary %}
         <div class="row text-center">
             <h2>Latest Properties</h2>
-            {% for property in latest_properties %}
+            {% for property in properties %}
 
                 <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
                     <div class="card bg-dark text-white property-card">
@@ -74,5 +49,31 @@
             {% endfor %}
         </div>
     </div>
-
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            {% if properties.has_previous %}
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page=1">First</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.previous_page_number }}">Previous</a>
+                </li>
+            {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link text-success" href="#">Previous</a>
+                </li>
+            {% endif %}
+            <li class="page-item disabled">
+                <a class="page-link" href="#">{{ properties.number }}</a>
+            </li>
+            {% if properties.has_next %}
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.next_page_number }}">Next</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.paginator.num_pages }}">Last</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
 {% endblock %}

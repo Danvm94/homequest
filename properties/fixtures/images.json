@@ -2,8 +2,50 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 14,
+            "image": "homequest/media/14"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 16,
+            "image": "homequest/media/16"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 20,
+            "image": "homequest/media/20"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 8,
             "image": "homequest/media/8"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 18,
+            "image": "homequest/media/18"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 15,
+            "image": "homequest/media/15"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 19,
+            "image": "homequest/media/19"
         }
     },
     {
@@ -16,8 +58,22 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 13,
+            "image": "homequest/media/13"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 5,
             "image": "homequest/media/5"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 21,
+            "image": "homequest/media/21"
         }
     },
     {
@@ -51,6 +107,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 17,
+            "image": "homequest/media/17"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 7,
             "image": "homequest/media/7"
         }
@@ -67,6 +130,13 @@
         "fields": {
             "property": 6,
             "image": "homequest/media/6"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 12,
+            "image": "homequest/media/12"
         }
     },
     {

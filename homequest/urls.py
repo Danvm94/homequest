@@ -17,12 +17,22 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from user_management.views import CustomLoginView, CustomSignupView
+import homepage.views as homepage
+import properties.views as properties
 
 urlpatterns = [
     path('accounts/login/', CustomLoginView.as_view(), name='account_login'),
+
     path('accounts/signup/', CustomSignupView.as_view(),
          name='account_signup'),
+
     path('accounts/', include('allauth.urls')),
-    path('', include('homepage.urls')),
+
     path('admin/', admin.site.urls),
+
+    path('', homepage.index_view, name='home'),
+
+    path('properties-sale/', properties.properties_sale_view,
+         name='properties-sale'),
+    
 ]
