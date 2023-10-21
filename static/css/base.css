@@ -108,10 +108,21 @@ body {
     transform-origin: center center;
 }
 
+.property-card {
+    transition: transform 0.3s;
+    transform-origin: center center;
+}
+
+.property-card a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+}
+
 .brief-display-image {
     object-fit: cover;
     width: 100%;
     height: 200px;
+    border-radius: 5px;
 }
 
 .property-card:hover {

@@ -13,7 +13,8 @@
                     <h2 class="card-title">Home Finder</h2>
                     <div class="search">
                         <i class="fa fa-search"></i>
-                        <input type="text" class="form-control" placeholder="City, Agent, Description...">
+                        <input type="text" id="test-search" class="form-control"
+                               placeholder="City, Agent, Description...">
                         <button class="btn btn-success">Search</button>
                     </div>
                     <div class="col-12 col-md-2 mt-1">
@@ -35,18 +36,42 @@
             <h2>Latest Properties</h2>
             {% for property in latest_properties %}
 
-                <div class=" col-lg-3 mt-5 justify-content-around">
-                    <a href="{{ property }}">
-                        <div class="card bg-dark text-white property-card">
+                <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
+                    <div class="card bg-dark text-white property-card">
+                        <a href="{{ property }}">
                             {% for image in property.images %}
-                                {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
+                                {% if forloop.counter0 == 0 %}
+                                    {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
+                                {% endif %}
                             {% endfor %}
-                            <div class="card-body">
-                                <h5 class="card-title">{{ property.title }}</h5>
-                                <h6 class="card-title">{{ property.address }}</h6>
+                            <div class="card-img-overlay">
+                                <p class="black-transparent-background text-center d-inline-block">{{ property.formatted_type }}</p>
                             </div>
-                        </div>
-                    </a>
+                            <div class="card-body text-start">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">{{ property.address }}</h6>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">{{ property.formatted_price_euro }}</h6>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>
+                                        <i class="fa-solid fa-bed"></i>
+                                        {{ property.bedrooms }}
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-sink"></i>
+                                        {{ property.bathrooms }}
+                                    </p>
+                                    <p>
+                                        <i class="fa-brands fa-squarespace"></i>
+                                        {{ property.formatted_size }}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
 
             {% endfor %}

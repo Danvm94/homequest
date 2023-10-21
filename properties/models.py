@@ -35,6 +35,15 @@ class Property(models.Model):
     parking_spaces = models.PositiveIntegerField()
     size = models.PositiveIntegerField()
 
+    def formatted_price_euro(self):
+        return "€{:,.2f}".format(self.price)
+
+    def formatted_type(self):
+        return f'FOR {self.property_type.upper()}'
+
+    def formatted_size(self):
+        return f'{self.size} m²'
+
 
 class Images(models.Model):
     id = models.AutoField(primary_key=True)
