@@ -1,23 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
     <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
         <div class="bg-dark text-white p-4">
             <form method="GET">
-                <div class="btn-group-toggle" data-toggle="buttons">
-                    <h6>Bedrooms</h6>
-                    {% for bedroom in filter_form.bedrooms %}
-                        <input type="checkbox" class="btn-check" id="{{ bedroom.id_for_label }}" autocomplete="off"
-                               name="{{ filter_form.bedrooms.name }}" value="{{ bedroom.data.value }}"
-                                {% if bedroom.data.value in selected_bedrooms %} checked{% endif %}>
-                        {{ selected_bedrooms }}
-                        <label class="btn btn-primary" for="{{ bedroom.id_for_label }}">
-                            {{ bedroom.choice_label }}
-                        </label>
-                    {% endfor %}
-                </div>
-                <button type="submit" class="btn btn-success mt-4">Apply Filter</button>
+                {% crispy filter_form %}
             </form>
         </div>
     </div>
