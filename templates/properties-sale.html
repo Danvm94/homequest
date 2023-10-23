@@ -28,7 +28,7 @@
 
                 <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
                     <div class="card bg-dark text-white property-card">
-                        <a href="{{ property }}">
+                        <a href="{% url 'property_detail' property.id %}">
                             {% for image in property.images %}
                                 {% if forloop.counter0 == 0 %}
                                     {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}

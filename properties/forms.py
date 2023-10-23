@@ -53,6 +53,11 @@ class PropertyFilterForm(forms.Form):
 
     state = forms.ChoiceField(choices=[], required=False, label="State")
 
+    clear_button = forms.CharField(
+        required=False,
+        widget=forms.HiddenInput(attrs={'id': 'clear-button'}),
+    )
+
     def __init__(self, *args, **kwargs):
         available_states = kwargs.pop('available_states', [])
         available_states = list(available_states)  # Convert QuerySet to a list
@@ -89,5 +94,6 @@ class PropertyFilterForm(forms.Form):
             ),
             Submit('submit',
                    value='Apply Filters',
-                   css_class='w-auto mx-auto btn-success')
+                   css_class='w-auto mx-auto btn-success'),
+
         )

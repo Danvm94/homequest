@@ -34,5 +34,8 @@ urlpatterns = [
 
     path('properties-sale/', properties.properties_sale_view,
          name='properties-sale'),
-    
+
+    path('property/<int:property_id>/', properties.property_detail,
+         name='property_detail'),
+
 ]

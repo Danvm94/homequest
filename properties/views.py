@@ -1,11 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
 from .utils import get_all_properties, get_properties_images
 from .forms import PropertyFilterForm
 from .models import Property, State
 
-
-# Create your views here.
 
 def properties_sale_view(request):
     # Get all properties
@@ -17,49 +15,43 @@ def properties_sale_view(request):
     available_states = State.objects.values_list('id', 'state_name')
     filter_form = PropertyFilterForm(request.GET,
                                      available_states=available_states)
+
+    # Mapping between form fields and model fields
+    field_mapping = {
+        'bedrooms': 'bedrooms__in', 'bathrooms': 'bathrooms__in',
+        'min_price': 'price__gte', 'max_price': 'price__lte',
+        'min_square': 'square__gte', 'max_square': 'square__lte',
+        'state': 'state',
+    }
+
+    # Initialize a dictionary to hold filter conditions
+    filter_conditions = {}
     if filter_form.is_valid():
         data = filter_form.cleaned_data
-        print(data['min_price'])
-        if data['bedrooms']:
-            # Convert the selected bedrooms to integers
-            selected_bedrooms = [int(bedroom) for bedroom in data['bedrooms']]
-            # Filter the properties based on the selected minimum bedrooms
-            properties = properties.filter(bedrooms__in=selected_bedrooms)
-            properties = get_properties_images(properties)
-        if data['bathrooms']:
-            # Convert the selected bedrooms to integers
-            selected_bathrooms = [int(bathroom) for bathroom in
-                                  data['bathrooms']]
-            # Filter the properties based on the selected minimum bedrooms
-            properties = properties.filter(bathrooms__in=selected_bathrooms)
-            properties = get_properties_images(properties)
-        if data['min_price']:
-            properties = properties.filter(price__gte=data['min_price'])
-            properties = get_properties_images(properties)
-        if data['max_price']:
-            # Assuming 'max_price' is a Decimal or float field in your model
-            properties = properties.filter(price__lte=data['max_price'])
-            properties = get_properties_images(properties)
-        if data['min_square']:
-            properties = properties.filter(price__gte=data['min_square'])
-            properties = get_properties_images(properties)
-        if data['max_square']:
-            # Assuming 'max_price' is a Decimal or float field in your model
-            properties = properties.filter(price__lte=data['max_square'])
-            properties = get_properties_images(properties)
-        if data['state']:
-            print(data['state'])
-            properties = properties.filter(state=data['state'])
-            properties = get_properties_images(properties)
+        for form_field, model_field in field_mapping.items():
+            value = data.get(form_field)
+            if value:
+                # Handle special cases for Decimal/float fields
+                if form_field in ['min_price', 'max_price', 'min_square',
+                                  'max_square']:
+                    filter_conditions[model_field] = float(value)
+                else:
+                    filter_conditions[model_field] = value
 
+    properties = properties.filter(**filter_conditions)
+    properties = get_properties_images(properties)
 
     # Paginate the properties
-    paginator = Paginator(properties, 24)  # Show 10 properties per page
+    paginator = Paginator(properties, 24)
     page = request.GET.get('page')
     properties = paginator.get_page(page)
     context = {
-        'properties': properties,
-        'filter_form': filter_form,
+        'properties': properties, 'filter_form': filter_form,
     }
 
     return render(request, 'properties-sale.html', context)
+
+
+def property_detail(request, property_id):
+    property_object = get_object_or_404(Property, id=property_id)
+    return render(request, 'property.html', {'property': property_object})

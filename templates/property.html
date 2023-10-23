@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <h1>Property Detail</h1>
+    <p>Property ID: {{ property.id }}</p>
+    <p>Property Type: {{ property.property_type }}</p>
+{% endblock %}
