@@ -17,26 +17,49 @@ def properties_sale_view(request):
     available_states = State.objects.values_list('id', 'state_name')
     filter_form = PropertyFilterForm(request.GET,
                                      available_states=available_states)
-    selected_bedrooms = request.GET.getlist('bedrooms')
     if filter_form.is_valid():
-        if selected_bedrooms:
+        data = filter_form.cleaned_data
+        print(data['min_price'])
+        if data['bedrooms']:
             # Convert the selected bedrooms to integers
-            selected_bedrooms = [int(bedroom) for bedroom in selected_bedrooms]
-            print('Selected bedrooms:', selected_bedrooms)
-
+            selected_bedrooms = [int(bedroom) for bedroom in data['bedrooms']]
             # Filter the properties based on the selected minimum bedrooms
             properties = properties.filter(bedrooms__in=selected_bedrooms)
             properties = get_properties_images(properties)
+        if data['bathrooms']:
+            # Convert the selected bedrooms to integers
+            selected_bathrooms = [int(bathroom) for bathroom in
+                                  data['bathrooms']]
+            # Filter the properties based on the selected minimum bedrooms
+            properties = properties.filter(bathrooms__in=selected_bathrooms)
+            properties = get_properties_images(properties)
+        if data['min_price']:
+            properties = properties.filter(price__gte=data['min_price'])
+            properties = get_properties_images(properties)
+        if data['max_price']:
+            # Assuming 'max_price' is a Decimal or float field in your model
+            properties = properties.filter(price__lte=data['max_price'])
+            properties = get_properties_images(properties)
+        if data['min_square']:
+            properties = properties.filter(price__gte=data['min_square'])
+            properties = get_properties_images(properties)
+        if data['max_square']:
+            # Assuming 'max_price' is a Decimal or float field in your model
+            properties = properties.filter(price__lte=data['max_square'])
+            properties = get_properties_images(properties)
+        if data['state']:
+            print(data['state'])
+            properties = properties.filter(state=data['state'])
+            properties = get_properties_images(properties)
+
 
     # Paginate the properties
     paginator = Paginator(properties, 24)  # Show 10 properties per page
     page = request.GET.get('page')
     properties = paginator.get_page(page)
-
     context = {
         'properties': properties,
         'filter_form': filter_form,
-        'selected_bedrooms': selected_bedrooms
     }
 
     return render(request, 'properties-sale.html', context)
