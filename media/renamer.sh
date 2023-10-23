@@ -1,4 +1,4 @@
-INDEX=22
+INDEX=42
 for file in *.jpg; do
     mv "$file" "$INDEX.jpg"
     ((INDEX++))

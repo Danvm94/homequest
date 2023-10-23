@@ -9,6 +9,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 34,
+            "image": "homequest/media/34"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 16,
             "image": "homequest/media/16"
         }
@@ -25,6 +32,13 @@
         "fields": {
             "property": 20,
             "image": "homequest/media/20"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 38,
+            "image": "homequest/media/38"
         }
     },
     {
@@ -72,6 +86,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 37,
+            "image": "homequest/media/37"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 15,
             "image": "homequest/media/15"
         }
@@ -102,6 +123,20 @@
         "fields": {
             "property": 22,
             "image": "homequest/media/22"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 33,
+            "image": "homequest/media/33"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 35,
+            "image": "homequest/media/35"
         }
     },
     {
@@ -149,6 +184,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 39,
+            "image": "homequest/media/39"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 30,
             "image": "homequest/media/30"
         }
@@ -184,6 +226,20 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 36,
+            "image": "homequest/media/36"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 41,
+            "image": "homequest/media/41"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 7,
             "image": "homequest/media/7"
         }
@@ -198,8 +254,22 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 32,
+            "image": "homequest/media/32"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 6,
             "image": "homequest/media/6"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 40,
+            "image": "homequest/media/40"
         }
     },
     {
