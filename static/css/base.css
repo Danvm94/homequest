@@ -131,3 +131,8 @@ body {
 }
 
 /* property-filter */
+
+.property-image {
+    object-fit: cover;;
+    border-radius: 5px;
+}

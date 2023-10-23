@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.core.paginator import Paginator
-from .utils import get_all_properties, get_properties_images
+from .utils import get_all_properties, get_properties_images, \
+    get_property_images
 from .forms import PropertyFilterForm
 from .models import Property, State
 
@@ -54,4 +55,10 @@ def properties_sale_view(request):
 
 def property_detail(request, property_id):
     property_object = get_object_or_404(Property, id=property_id)
-    return render(request, 'property.html', {'property': property_object})
+    property_object = get_property_images(property_object)
+    agent = property_object.agent
+    context = {
+        'property': property_object,
+        'agent': agent
+    }
+    return render(request, 'property.html', context)

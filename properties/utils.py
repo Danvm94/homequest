@@ -7,6 +7,10 @@ def get_properties_images(properties):
     return properties
 
 
+def get_property_images(property_object):
+    property_object.images = Images.objects.filter(property=property_object)
+    return property_object
+
 def get_latest_properties(number):
     """
     Retrieve the latest properties from the database.

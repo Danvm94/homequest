@@ -1,12 +1,37 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.core.validators import MinLengthValidator, MaxLengthValidator
 
 
 class RealEstateAgent(models.Model):
     id = models.AutoField(primary_key=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    license_no = models.CharField(max_length=255)
+    license_no = models.CharField(
+        max_length=9,
+        validators=[
+            MinLengthValidator(limit_value=9,
+                               message="License number must be 9 characters."),
+            MaxLengthValidator(limit_value=9,
+                               message="License number must be 9 characters.")
+        ]
+    )
+    telephone_no = models.CharField(
+        max_length=9,
+        validators=[
+            MinLengthValidator(limit_value=9,
+                               message="Telephone number must be 9 characters."),
+            MaxLengthValidator(limit_value=9,
+                               message="Telephone number must be 9 characters.")
+        ]
+    )
+
+    def formatted_name(self):
+        return f'{self.user.first_name} {self.user.last_name}'
+
+    def formatted_telephone(self):
+        return "({}) {}-{}".format(self.telephone_no[:2], self.telephone_no[2:6],
+                                   self.telephone_no[6:])
 
 
 class State(models.Model):
@@ -44,6 +69,9 @@ class Property(models.Model):
 
     def formatted_size(self):
         return f'{self.size} m²'
+
+    def formatted_state(self):
+        return self.state.state_name
 
 
 class Images(models.Model):

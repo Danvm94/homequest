@@ -26,7 +26,7 @@
     "pk": 3,
     "fields": {
       "username": "cwilliams",
-      "email": "cwilliams@homequest.com",
+      "email": "cwilliams@homequestrs.com",
       "is_staff": true,
       "first_name": "Clode",
       "last_name": "Williams"
@@ -37,7 +37,7 @@
     "pk": 4,
     "fields": {
       "username": "dbrown",
-      "email": "dbrown@homequest.com",
+      "email": "dbrown@homequestrs.com",
       "is_staff": true,
       "first_name": "Doug",
       "last_name": "Brown"
@@ -48,7 +48,7 @@
     "pk": 5,
     "fields": {
       "username": "etaylor",
-      "email": "etaylor@homequest.com",
+      "email": "etaylor@homequestrs.com",
       "is_staff": true,
       "first_name": "Ely",
       "last_name": "Taylor"
