@@ -3,7 +3,7 @@
 {% load cloudinary %}
 
 {% block content %}
-    <div class="container mt-3">
+    <div class="container mt-3 mb-5">
         <div class="row">
             <!--Carousel for property images-->
             <div class="col-12 col-lg-7">
@@ -40,7 +40,7 @@
                     </button>
                 </div>
             </div>
-            <div class="col-6 col-lg-5">
+            <div class="col-12 col-lg-5 mb-5">
                 <h2>{{ property.title }}</h2>
                 <table class="table">
                     <tbody>
@@ -87,11 +87,61 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-6 col-lg-12">
-                <h2>Contact</h2>
-                {{ agent.formatted_name }}
-                {{ agent.user.email }}
-                {{ agent.formatted_telephone }}
+            <div class="col-12 col-lg-6 mb-5">
+                <h2>Agent Contact</h2>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-4">
+                            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
+                                 class="card-img" alt="...">
+                        </div>
+                        <div class="col-12 col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-text">{{ agent.formatted_name }}</h4><br>
+                                <p class="card-text"><i class="fa-regular fa-envelope"></i> {{ agent.user.email }}</p>
+                                <p class="card-text"><i class="fa-solid fa-phone"></i> {{ agent.formatted_telephone }}
+                                </p>
+                                <p class="card-text"><small class="text-muted">Agent
+                                    License: {{ agent.license_no }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 mb-5">
+                <h2>Payment Form (Test)</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                               placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect2">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </form>
 
             </div>
 

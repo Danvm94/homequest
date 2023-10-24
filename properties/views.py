@@ -6,9 +6,9 @@ from .forms import PropertyFilterForm
 from .models import Property, State
 
 
-def properties_sale_view(request):
+def properties_view(request, property_type):
     # Get all properties
-    properties = Property.objects.filter(property_type='sale')
+    properties = Property.objects.filter(property_type=property_type)
     properties = properties.order_by('created_at')
     properties = get_properties_images(properties)
 
@@ -50,7 +50,8 @@ def properties_sale_view(request):
         'properties': properties, 'filter_form': filter_form,
     }
 
-    return render(request, 'properties-sale.html', context)
+    return render(
+        request, f'properties-{property_type}.html', context)
 
 
 def property_detail(request, property_id):

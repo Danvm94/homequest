@@ -32,8 +32,11 @@ urlpatterns = [
 
     path('', homepage.index_view, name='home'),
 
-    path('properties-sale/', properties.properties_sale_view,
-         name='properties-sale'),
+    path('properties/sale/', properties.properties_view,
+         {'property_type': 'sale'}, name='properties-sale'),
+
+    path('properties/rent/', properties.properties_view,
+         {'property_type': 'rent'}, name='properties-rent'),
 
     path('property/<int:property_id>/', properties.property_detail,
          name='property_detail'),

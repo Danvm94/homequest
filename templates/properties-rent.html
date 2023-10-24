@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-dark text-white p-4">
+            <form method="GET" class="row text-center">
+                {% crispy filter_form %}
+            </form>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        {% load cloudinary %}
+        <div class="row">
+            <h2>Latest Properties</h2>
+            {% for property in properties %}
+
+                <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
+                    <div class="card bg-dark text-white property-card">
+                        <a href="{% url 'property_detail' property.id %}">
+                            {% for image in property.images %}
+                                {% if forloop.counter0 == 0 %}
+                                    {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
+                                {% endif %}
+                            {% endfor %}
+                            <div class="card-body text-start">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">{{ property.address }}</h6>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title">{{ property.formatted_price_euro }}</h6>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p>
+                                        <i class="fa-solid fa-bed"></i>
+                                        {{ property.bedrooms }}
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-sink"></i>
+                                        {{ property.bathrooms }}
+                                    </p>
+                                    <p>
+                                        <i class="fa-brands fa-squarespace"></i>
+                                        {{ property.formatted_size }}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            {% if properties.has_previous %}
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page=1">First</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.previous_page_number }}">Previous</a>
+                </li>
+            {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link text-success" href="#">Previous</a>
+                </li>
+            {% endif %}
+            <li class="page-item disabled">
+                <a class="page-link" href="#">{{ properties.number }}</a>
+            </li>
+            {% if properties.has_next %}
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.next_page_number }}">Next</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link text-success" href="?page={{ properties.paginator.num_pages }}">Last</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+
+{% endblock %}
