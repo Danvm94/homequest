@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'cloudinary',
     'user_management',
+    'profiles',
     'homepage',
     'properties',
     'widget_tweaks',

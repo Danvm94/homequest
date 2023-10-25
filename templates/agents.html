@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- Agents Section -->
+    <div class="container mt-5">
+        <div class="text-center row">
+            <h1 class="text-center">Our Team of Dedicated Agents at Homequest</h1>
+            <p class="text-center">At Homequest, we're committed to helping you find your dream home or sell your
+                property.</p>
+            <h2 class="mt-5">Meet Our Agents</h2>
+        </div>
+        <div class="row">
+            {% for agent in agents %}
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="agent1.jpg" class="card-img-top" alt="Agent Name">
+                        <div class="card-body">
+                            <h5 class="card-title">Agent Name</h5>
+                            <p class="card-text">A brief introduction to the agent, including their experience and areas
+                                of
+                                expertise.</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="text-center row">
+            <h2 class="mt-5">Why Choose Homequest Agents?</h2>
+            <ul>
+                <li>Expertise: Our agents have a deep understanding of the local real estate market.</li>
+                <li>Personalized Service: Your success is our top priority.</li>
+                <li>Local Knowledge: We know the ins and outs of the area.</li>
+                <li>Transparency: We believe in open and honest communication.</li>
+                <li>Client-Centered Approach: We're dedicated to delivering exceptional service.</li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

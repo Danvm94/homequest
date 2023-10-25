@@ -37,8 +37,9 @@ urlpatterns = [
 
     path('properties/rent/', properties.properties_view,
          {'property_type': 'rent'}, name='properties-rent'),
+    path('agents', properties.agents_view, name='agents'),
 
-    path('property/<int:property_id>/', properties.property_detail,
+    path('property/<int:property_id>/', properties.property_view,
          name='property_detail'),
 
 ]

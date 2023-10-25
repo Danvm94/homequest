@@ -3,7 +3,7 @@ from django.core.paginator import Paginator
 from .utils import get_all_properties, get_properties_images, \
     get_property_images
 from .forms import PropertyFilterForm
-from .models import Property, State
+from .models import Property, State, RealEstateAgent
 
 
 def properties_view(request, property_type):
@@ -54,7 +54,7 @@ def properties_view(request, property_type):
         request, f'properties-{property_type}.html', context)
 
 
-def property_detail(request, property_id):
+def property_view(request, property_id):
     property_object = get_object_or_404(Property, id=property_id)
     property_object = get_property_images(property_object)
     agent = property_object.agent
@@ -63,3 +63,11 @@ def property_detail(request, property_id):
         'agent': agent
     }
     return render(request, 'property.html', context)
+
+
+def agents_view(request):
+    agents = RealEstateAgent.objects.order_by('pk')
+    context = {
+        'agents': agents
+    }
+    return render(request, 'agents.html', context)
