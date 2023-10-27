@@ -1,12 +1,12 @@
 from django.db import models
-from django.contrib.auth.models import User
+from profiles.models import CustomUser
 from cloudinary.models import CloudinaryField
 from django.core.validators import MinLengthValidator, MaxLengthValidator
 
 
 class RealEstateAgent(models.Model):
     id = models.AutoField(primary_key=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE)
     license_no = models.CharField(
         max_length=9,
         validators=[

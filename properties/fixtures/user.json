@@ -1,57 +1,62 @@
 [
   {
-    "model": "auth.user",
+    "model": "profiles.customuser",
     "pk": 1,
     "fields": {
       "username": "asmith",
       "email": "asmith@homequestrs.com",
       "is_staff": true,
       "first_name": "Ana",
-      "last_name": "Smith"
+      "last_name": "Smith",
+      "picture": "homequest/media/asmith"
     }
   },
   {
-    "model": "auth.user",
+    "model": "profiles.customuser",
     "pk": 2,
     "fields": {
       "username": "bjones",
       "email": "bjones@homequestrs.com",
       "is_staff": true,
       "first_name": "Bob",
-      "last_name": "Jones"
+      "last_name": "Jones",
+      "picture": "homequest/media/bjones"
     }
   },
   {
-    "model": "auth.user",
+    "model": "profiles.customuser",
     "pk": 3,
     "fields": {
       "username": "cwilliams",
       "email": "cwilliams@homequestrs.com",
       "is_staff": true,
       "first_name": "Clode",
-      "last_name": "Williams"
+      "last_name": "Williams",
+      "picture": "homequest/media/cwilliams"
     }
   },
   {
-    "model": "auth.user",
+    "model": "profiles.customuser",
     "pk": 4,
     "fields": {
       "username": "dbrown",
       "email": "dbrown@homequestrs.com",
       "is_staff": true,
       "first_name": "Doug",
-      "last_name": "Brown"
+      "last_name": "Brown",
+      "picture": "homequest/media/dbrown"
     }
   },
   {
-    "model": "auth.user",
+    "model": "profiles.customuser",
     "pk": 5,
     "fields": {
       "username": "etaylor",
       "email": "etaylor@homequestrs.com",
       "is_staff": true,
       "first_name": "Ely",
-      "last_name": "Taylor"
+      "last_name": "Taylor",
+      "picture": "homequest/media/etaylor"
     }
   }
 ]

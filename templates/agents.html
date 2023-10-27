@@ -45,12 +45,14 @@
                 </div>
             </div>
         </div>
+        <hr>
         <div class="text-center row mt-5">
             <h1 class="text-center">Our Team of Dedicated Agents at Homequest</h1>
             <p class="text-center">At Homequest, we're committed to helping you find your dream home or sell your
                 property.</p>
 
         </div>
+        <hr>
         <!-- Agent Cards -->
         <div class="row mt-5">
             <h2 class="text-center">Meet Our Agents</h2>
@@ -60,11 +62,12 @@
                     <div class="card mb-3">
                         <div class="p-3">
                             <div class="ratio ratio-1x1 p-3">
-                                {% cloudinary agent.profile_picture alt="agent picture" class="profile-image img-fluid rounded-circle" style="object-fit: cover;" %}
+                                {% cloudinary agent.user.picture alt="agent picture" class="profile-image img-fluid rounded-circle" style="object-fit: cover;" %}
                             </div>
                             <div class="col-12 col-md-8">
                                 <div class="card-body">
-                                    <h4 class="card-text">{{ agent.formatted_name }}</h4><br>
+                                    <h4 class="card-text">{{ agent.formatted_name }}</h4>
+                                    <hr class="my-4">
                                     <p class="card-text"><i class="fa-regular fa-envelope"></i> {{ agent.user.email }}
                                     </p>
                                     <p class="card-text"><i

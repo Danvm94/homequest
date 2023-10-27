@@ -4,7 +4,6 @@ from .utils import get_all_properties, get_properties_images, \
     get_property_images
 from .forms import PropertyFilterForm
 from .models import Property, State, RealEstateAgent
-from profiles.utils import get_profile_picture
 
 
 def properties_view(request, property_type):
@@ -59,7 +58,6 @@ def property_view(request, property_id):
     property_object = get_object_or_404(Property, id=property_id)
     property_object = get_property_images(property_object)
     agent = property_object.agent
-    agent.profile_picture = get_profile_picture(agent.user)
     context = {
         'property': property_object,
         'agent': agent
@@ -69,8 +67,6 @@ def property_view(request, property_id):
 
 def agents_view(request):
     agents = RealEstateAgent.objects.order_by('pk')
-    for agent in agents:
-        agent.profile_picture = get_profile_picture(agent.user)
     context = {
         'agents': agents
     }
