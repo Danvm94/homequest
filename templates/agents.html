@@ -3,15 +3,57 @@
 
 {% block content %}
     <!-- Agents Section -->
-    <div class="container mt-5">
-        <div class="text-center row">
+    <div class="container">
+        <!-- Why choose homequest agents -->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Why Choose Homequest Agents?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-lightbulb"></i> <strong>Expertise:</strong> Our agents have a deep
+                            understanding
+                            of the local real estate market.
+                        </li>
+                        <li>
+                            <i class="fas fa-handshake"></i> <strong>Personalized Service:</strong> Your success is our
+                            top
+                            priority.
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker"></i> <strong>Local Knowledge:</strong> We know the ins and outs
+                            of
+                            the area.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="fas fa-comment"></i> <strong>Transparency:</strong> We believe in open and honest
+                            communication.
+                        </li>
+                        <li>
+                            <i class="fas fa-heart"></i> <strong>Client-Centered Approach:</strong> We're dedicated to
+                            delivering exceptional service.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center row mt-5">
             <h1 class="text-center">Our Team of Dedicated Agents at Homequest</h1>
             <p class="text-center">At Homequest, we're committed to helping you find your dream home or sell your
                 property.</p>
-            <h2 class="mt-5">Meet Our Agents</h2>
+
         </div>
         <!-- Agent Cards -->
-        <div class="row">
+        <div class="row mt-5">
+            <h2 class="text-center">Meet Our Agents</h2>
             {% load cloudinary %}
             {% for agent in agents %}
                 <div class="col-12 col-lg-4 mb-5">
@@ -36,16 +78,6 @@
                     </div>
                 </div>
             {% endfor %}
-        </div>
-        <div class="row">
-            <h2 class="mt-5">Why Choose Homequest Agents?</h2>
-            <ul>
-                <li><i class="fas fa-lightbulb"></i> Expertise: Our agents have a deep understanding of the local real estate market.</li>
-                <li><i class="fas fa-handshake"></i> Personalized Service: Your success is our top priority.</li>
-                <li><i class="fas fa-map-marker"></i> Local Knowledge: We know the ins and outs of the area.</li>
-                <li><i class="fas fa-comment"></i> Transparency: We believe in open and honest communication.</li>
-                <li><i class="fas fa-heart"></i> Client-Centered Approach: We're dedicated to delivering exceptional service.</li>
-            </ul>
         </div>
     </div>
 {% endblock %}
