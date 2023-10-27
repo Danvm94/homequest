@@ -19,6 +19,7 @@ from django.urls import path, include
 from user_management.views import CustomLoginView, CustomSignupView
 import homepage.views as homepage
 import properties.views as properties
+import profiles.views as profiles
 
 urlpatterns = [
     path('accounts/login/', CustomLoginView.as_view(), name='account_login'),
@@ -37,7 +38,10 @@ urlpatterns = [
 
     path('properties/rent/', properties.properties_view,
          {'property_type': 'rent'}, name='properties-rent'),
-    path('agents', properties.agents_view, name='agents'),
+
+    path('agents/', properties.agents_view, name='agents'),
+
+    path('profile/', profiles.profile_view, name='profile'),
 
     path('property/<int:property_id>/', properties.property_view,
          name='property_detail'),

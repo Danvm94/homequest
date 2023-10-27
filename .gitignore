@@ -16,3 +16,4 @@ venv
 *.log
 TODO.md
 images.py
+preview.html
