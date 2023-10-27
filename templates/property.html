@@ -90,10 +90,11 @@
             <div class="col-12 col-lg-6 mb-5">
                 <h2>Agent Contact</h2>
                 <div class="card mb-3">
-                    <div class="row no-gutters">
+                    <div class="row">
                         <div class="col-12 col-md-4">
-                            <img src="https://img.freepik.com/premium-vector/man-avatar-profile-picture-vector-illustration_268834-538.jpg"
-                                 class="card-img" alt="...">
+                            <div class="ratio ratio-1x1">
+                                {% cloudinary agent.profile_picture crop="fill" alt="house picture" class="card-img rounded-circle mt-3" style="object-fit: cover;" %}
+                            </div>
                         </div>
                         <div class="col-12 col-md-8">
                             <div class="card-body">
