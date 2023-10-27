@@ -1,0 +1,20 @@
+{% load crispy_forms_field %}
+
+{% for widget in field.subwidgets %}
+    {% if widget.data.is_initial %}
+        <div class="row">
+            <div class="col-3 p-3">
+                <div class="ratio ratio-1x1">
+                    <img src="{{ field.value.url }}" alt="current profile picture" class="rounded-circle">
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div{% if field.errors %} class="is-invalid"{% endif %}>
+        <input type="{{ widget.data.type }}" name="{{ widget.data.name }}"
+               class="form-control{% if widget.data.attrs.class %} {{ widget.data.attrs.class }}{% endif %}{% if field.errors %} is-invalid{% endif %}"
+                {% if field.field.disabled %} disabled{% endif %}{% for name, value in widget.data.attrs.items %}{% if value is not False and name != 'class' %}
+            {{ name }}{% if value is not True %}="{{ value|stringformat:'s' }}"{% endif %}{% endif %}{% endfor %}>
+        {% include 'bootstrap5/layout/help_text_and_errors.html' %}
+    </div>
+{% endfor %}
