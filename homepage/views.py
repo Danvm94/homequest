@@ -9,3 +9,7 @@ def index_view(request):
         'latest_properties': latest_properties
     }
     return render(request, 'index.html', context)
+
+
+def about_view(request):
+    return render(request, 'about.html')

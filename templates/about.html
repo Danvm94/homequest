@@ -2,9 +2,82 @@
 {% load static %}
 
 {% block content %}
-
-    <div class="container mt-3">
-
+    <div class="card card-video" style="max-height: 300px; overflow: hidden">
+        <video src="{% static 'images/city-view.mp4' %}" class="about-video" autoplay loop width="100%"
+               height="100%"></video>
+        <div class="card-img-overlay text-center mt-5 text-white">
+            <h2>Homequest</h2>
+            <p>Discover the finest properties in Novaville</p>
+        </div>
     </div>
+    <div class="container text-center">
+        <!-- About Section -->
+        <section class="container mt-5">
+            <h1>Welcome to Homequest Real Estate</h1>
+            <p class="lead">At Homequest Real Estate, we're passionate about guiding you through the enchanting world of
+                real estate, where every property holds a unique story. We believe that finding your dream home is not
+                just about bricks and mortar; it's about discovering the essence of a place, the rhythm of a
+                neighborhood, and the endless possibilities that lie within. Our mission is to help you unlock the
+                secrets of this extraordinary country, where your new home in Novaville awaits.</p>
+        </section>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Our Story Section -->
+                <div class="col-md-6">
+                    <section class="container mt-5 p-4">
+                        <h2><i class="fas fa-book"></i> Our Story</h2>
+                        <p>Homequest Real Estate was born out of a deep love for Novaville and a commitment to
+                            connecting people with their ideal homes. Our journey started with a single question: "What
+                            makes a house a home?" We quickly realized that it's not just the structure; it's the
+                            experiences, memories, and dreams that come to life within those walls.</p>
+                        <p>With years of experience in the real estate industry, we've built a team of dedicated
+                            professionals who share our vision. We are committed to helping you find the finest
+                            properties in Novaville, ensuring that your journey to homeownership is both memorable and
+                            stress-free.</p>
+                    </section>
+                </div>
+
+                <!-- Our Approach Section -->
+                <div class="col-md-6">
+                    <section class="container mt-5">
+                        <h2><i class="fas fa-cogs"></i> Our Approach</h2>
+                        <p>At Homequest, we understand that buying or selling a home is a significant milestone in your
+                            life. That's why we've designed our approach to be both personal and professional. Our
+                            dedicated team of real estate experts will work closely with you to understand your unique
+                            needs, preferences, and aspirations.</p>
+                        <p>We pride ourselves on our in-depth knowledge of Novaville's neighborhoods, market trends, and
+                            investment opportunities. We use this knowledge to empower you with the insights you need to
+                            make informed decisions. Whether you're a first-time homebuyer, an experienced investor, or
+                            a seller looking to maximize the value of your property, we are here to assist you every
+                            step of the way.</p>
+                    </section>
+                </div>
+
+                <!-- Discover Novaville Section -->
+                <div class="col-md-6">
+                    <section class="container mt-5 p-4">
+                        <h2><i class="fas fa-globe"></i> Discover Novaville</h2>
+                        <p>Novaville is not just a location; it's an experience waiting to be explored. From its vibrant
+                            urban life to the serene countryside, Novaville offers a rich tapestry of living options. We
+                            are excited to introduce you to this one-of-a-kind world, where the possibilities are
+                            endless, and your dream home is just a click away.</p>
+                    </section>
+                </div>
+
+                <!-- Join Us on Your Journey Section -->
+                <div class="col-md-6">
+                    <section class="container mt-5">
+                        <h2><i class="fas fa-users"></i> Join Us on Your Journey</h2>
+                        <p>Embark on a journey of a lifetime with Homequest Real Estate. Let us be your trusted guide in
+                            the quest for your new home. Together, we'll explore Novaville's hidden gems and help you
+                            find the perfect property that resonates with your desires. Whether you're looking for a
+                            cozy family house, a modern apartment, or a lucrative investment opportunity, we are here to
+                            make your dreams a reality.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}

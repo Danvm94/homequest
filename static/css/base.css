@@ -136,3 +136,18 @@ body {
     object-fit: cover;;
     border-radius: 5px;
 }
+
+.about-image {
+    height: auto;
+}
+
+.card-video {
+    border-radius: 0;
+}
+
+.about-video {
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+    object-position: center center;
+}
