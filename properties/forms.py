@@ -44,12 +44,6 @@ class PropertyFilterForm(forms.Form):
         label="Maximum Square",
         widget=forms.TextInput(attrs={'placeholder': '2000'})
     )
-    text_search = forms.CharField(
-        required=False,
-        label="Custom Search",
-        widget=forms.TextInput(attrs={'placeholder': 'Street name...'}),
-
-    )
 
     state = forms.ChoiceField(choices=[], required=False, label="State")
 
@@ -85,11 +79,6 @@ class PropertyFilterForm(forms.Form):
                 Div('max_price', css_class='col-3'),
                 Div('min_square', css_class='col-3'),
                 Div('max_square', css_class='col-3'),
-                css_class='row'
-            ),
-            Div(
-                Div('text_search', css_class='col-3'),
-                Div('state', css_class='col-3'),
                 css_class='row'
             ),
             Submit('submit',

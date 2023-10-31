@@ -9,6 +9,20 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 99,
+            "image": "homequest/media/99"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 97,
+            "image": "homequest/media/97"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 29,
             "image": "homequest/media/29"
         }
@@ -282,6 +296,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 98,
+            "image": "homequest/media/98"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 1,
             "image": "homequest/media/1"
         }
@@ -340,6 +361,13 @@
         "fields": {
             "property": 45,
             "image": "homequest/media/45"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 100,
+            "image": "homequest/media/100"
         }
     },
     {
@@ -555,6 +583,13 @@
     {
         "model": "properties.images",
         "fields": {
+            "property": 96,
+            "image": "homequest/media/96"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
             "property": 6,
             "image": "homequest/media/6"
         }
@@ -648,6 +683,13 @@
         "fields": {
             "property": 32,
             "image": "homequest/media/32"
+        }
+    },
+    {
+        "model": "properties.images",
+        "fields": {
+            "property": 56,
+            "image": "homequest/media/56"
         }
     },
     {
