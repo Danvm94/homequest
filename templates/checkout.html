@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+{% load cloudinary %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card mt-5">
+                <div class="card-header text-center">
+                    House Contract
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">{{ property.address }}</h5>
+                    <div class="row">
+                        <div class="col-3">
+                            {% cloudinary property.images.0.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                        </div>
+
+                        <div class="col-6">
+                            <p>THIS IS A DEMONSTRATION CONTRACT ONLY.</p>
+                            <p>IT IS NOT REAL
+                                AND SHOULD NOT BE USED FOR ANY LEGAL
+                                PURPOSES.</p>
+
+                            <p>CONTRACT FOR THE SALE OF PROPERTY
+
+                                THIS IS A DEMONSTRATION CONTRACT ONLY. IT IS
+                                NOT
+                                REAL
+                                AND SHOULD NOT BE USED FOR ANY LEGAL
+                                PURPOSES.</p>
+
+                            <p>Follow below the property information:</p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 card mb-5">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Agent</th>
+                                        <td>{{ agent.formatted_name }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Price</th>
+                                        <td>{{ property.formatted_price_euro }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Contract Type</th>
+                                        <td>{{ property.formatted_type }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Size</th>
+                                        <td>{{ property.formatted_size }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6">
+                                <table class="table">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">Bathrooms</th>
+                                        <td>{{ property.bathrooms }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Bedrooms</th>
+                                        <td>{{ property.bedrooms }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Fireplaces</th>
+                                        <td>{{ property.fireplaces }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Parking Spaces</th>
+                                        <td>{{ property.parking_spaces }}</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <p>{{ property.address }}, {{ property.formatted_state }}</p>
+                </div>
+            </div>
+            <div class="card mt-5 mb-5">
+                <div class="card-header text-center">
+                    Terms and Conditions
+                </div>
+                <div class="card-body">
+                    <ul>
+                        <li>This website is for demonstration and testing
+                            purposes
+                            only.
+                        </li>
+                        <li>Do not enter or provide real credit card
+                            information on
+                            this website.
+                        </li>
+                        <li>This is not a real transaction, and no financial
+                            transactions will occur.
+                        </li>
+                        <li>The keys delivery address is for testing purposes
+                            and
+                            is not for actual delivery.
+                        </li>
+                        <li>The "Submit" button is for demonstration purposes
+                            and
+                            will not result in any real actions.
+                        </li>
+                        <li>This website is not responsible for any information
+                            entered or actions taken on it.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'js/stripe_elements.js' %}"></script>
+{% endblock %}

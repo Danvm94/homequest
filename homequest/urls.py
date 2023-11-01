@@ -20,6 +20,7 @@ from user_management.views import CustomLoginView, CustomSignupView
 import homepage.views as homepage
 import properties.views as properties
 import profiles.views as profiles
+import checkout.views as checkout
 
 urlpatterns = [
     path('accounts/login/', CustomLoginView.as_view(), name='account_login'),
@@ -47,5 +48,8 @@ urlpatterns = [
 
     path('property/<int:property_id>/', properties.property_view,
          name='property_detail'),
+
+    path('checkout/<int:property_id>/', checkout.checkout_view,
+         name='checkout')
 
 ]

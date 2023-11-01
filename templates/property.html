@@ -122,66 +122,21 @@
                     </div>
                 </div>
             </div>
+            {% if property.property_type == 'rent' %}
+                <div class="col-12 col-lg-6 mb-5">
+                    <h2>Rent it</h2>
+                    <p>Would you like to rent it?</p>
+                </div>
+            {% endif %}
 
-            <div class="col-12 col-lg-6 mb-5">
-                <h2>Payment Form (Test)</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email
-                            address</label>
-                        <input type="email" class="form-control"
-                               id="exampleFormControlInput1"
-                               placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example
-                            select</label>
-                        <select class="form-control"
-                                id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple
-                            select</label>
-                        <select multiple class="form-control"
-                                id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example
-                            textarea</label>
-                        <textarea class="form-control"
-                                  id="exampleFormControlTextarea1"
-                                  rows="3"></textarea>
-                    </div>
-                    <div id="card-info">
-
-                    </div>
-                </form>
-
-            </div>
 
         </div>
     </div>
 {% endblock %}
-
 
 {% block postloadjs %}
     {{ block.super }}
     <script>
         var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleDark'));
     </script>
-    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ client_secret|json_script:"id_client_secret" }}
-    <script src="{% static 'js/stripe_elements.js' %}"></script>
 {% endblock %}
