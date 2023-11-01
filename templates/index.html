@@ -1,32 +1,33 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-    <div class="container-fluid full-width-container">
-        <div class="card search-house-row text-center">
-            <img class="search-house-image" src="{% static 'images/house-keys.webp' %}" alt="house keys in a hand">
-            <div class="card-img-overlay d-flex flex-column justify-content-center text-white">
-                <div class="col-12 col-md-8 mx-auto text-center black-transparent-background">
-                    <h2 class="card-title">Home Finder</h2>
-                    <div class="search">
-                        <i class="fa fa-search"></i>
-                        <input type="text" id="test-search" class="form-control"
-                               placeholder="City, Agent, Description...">
-                        <button class="btn btn-success">Search</button>
-                    </div>
-                    <div class="col-12 col-md-2 mt-1">
-                        <div class="btn-group" role="group" aria-label="Search Options">
-                            <input type="radio" class="btn-check" name="search-for" id="buy" autocomplete="off" checked>
-                            <label for="buy" class="btn btn-success btn-md">Buy</label>
-                            <input type="radio" class="btn-check" name="search-for" id="rent" autocomplete="off">
-                            <label for="rent" class="btn btn-success btn-md">Rent</label>
-                        </div>
-                    </div>
-                </div>
+    <div class="container mb-5">
+        <div class="row">
+            <!-- Image on the right -->
+            <div class="col-md-6">
+                <img src="{% static 'images/index-house.jpg' %}"
+                     alt="Welcome Image"
+                     class="img-fluid">
+            </div>
+
+            <!-- Text on the left -->
+            <div class="col-md-6 mt-5">
+                <h1>Welcome to Homequest</h1>
+                <p>Discover your dream home today. Search, explore, and find
+                    the perfect property that suits your needs. Whether you're
+                    looking for a cozy apartment in the heart of the city, a
+                    spacious suburban house for your growing family, or a
+                    serene retreat in the countryside, Homequest is here to
+                    guide you on your journey to finding the ideal place to
+                    call home. With a wide range of listings and powerful
+                    search tools, we make the process of home hunting a breeze.
+                    Let us help you make your homeownership dreams a
+                    reality.</p>
             </div>
         </div>
     </div>
-
     <div class="container mt-3">
         {% load cloudinary %}
         <div class="row text-center">
