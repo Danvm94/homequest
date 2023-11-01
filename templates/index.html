@@ -34,7 +34,7 @@
             <h2>Latest Properties</h2>
             {% for property in latest_properties %}
 
-                <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
+                <div class=" col-lg-3 mt-3 mb-5 justify-content-around">
                     <div class="card bg-dark text-white property-card">
                         <a href="{% url 'property_detail' property.id %}">
                             {% for image in property.images %}

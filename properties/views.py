@@ -4,6 +4,7 @@ from .utils import get_all_properties, get_properties_images, \
     get_property_images
 from .forms import PropertyFilterForm
 from .models import Property, State, RealEstateAgent
+from homequest.settings import STRIPE_PUBLIC_KEY, STRIPE_CLIENT_SECRET
 
 
 def properties_view(request, property_type):
@@ -47,7 +48,8 @@ def properties_view(request, property_type):
     page = request.GET.get('page')
     properties = paginator.get_page(page)
     context = {
-        'properties': properties, 'filter_form': filter_form,
+        'properties': properties,
+        'filter_form': filter_form,
     }
 
     return render(
@@ -58,9 +60,12 @@ def property_view(request, property_id):
     property_object = get_object_or_404(Property, id=property_id)
     property_object = get_property_images(property_object)
     agent = property_object.agent
+    print(STRIPE_PUBLIC_KEY)
     context = {
         'property': property_object,
-        'agent': agent
+        'agent': agent,
+        'stripe_public_key': STRIPE_PUBLIC_KEY,
+        'client_secret': STRIPE_CLIENT_SECRET
     }
     return render(request, 'property.html', context)
 

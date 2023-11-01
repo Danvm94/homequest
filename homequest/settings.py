@@ -178,3 +178,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 
 # Custom user extra fields for model
 AUTH_USER_MODEL = 'profiles.CustomUser'
+
+# Stripe keys
+STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
+STRIPE_CLIENT_SECRET = os.environ.get('STRIPE_CLIENT_SECRET')

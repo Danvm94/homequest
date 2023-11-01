@@ -7,12 +7,16 @@
         <div class="row">
             <!--Carousel for property images-->
             <div class="col-12 col-lg-7">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div id="carouselExampleDark"
+                     class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         {% for image in property.images %}
-                            <button type="button" data-bs-target="#carouselExampleDark"
-                                    data-bs-slide-to="{{ forloop.counter0 }}" class="active"
-                                    aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="{{ forloop.counter0 }}"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
                         {% endfor %}
                     </div>
                     <div class="carousel-inner">
@@ -28,14 +32,18 @@
                             {% endif %}
                         {% endfor %}
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleDark"
                             data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleDark"
                             data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
@@ -99,9 +107,13 @@
                         </div>
                         <div class="col-12 col-md-8">
                             <div class="card-body">
-                                <h4 class="card-text">{{ agent.formatted_name }}</h4><br>
-                                <p class="card-text"><i class="fa-regular fa-envelope"></i> {{ agent.user.email }}</p>
-                                <p class="card-text"><i class="fa-solid fa-phone"></i> {{ agent.formatted_telephone }}
+                                <h4 class="card-text">{{ agent.formatted_name }}</h4>
+                                <br>
+                                <p class="card-text"><i
+                                        class="fa-regular fa-envelope"></i> {{ agent.user.email }}
+                                </p>
+                                <p class="card-text"><i
+                                        class="fa-solid fa-phone"></i> {{ agent.formatted_telephone }}
                                 </p>
                                 <p class="card-text"><small class="text-muted">Agent
                                     License: {{ agent.license_no }}</small></p>
@@ -115,13 +127,17 @@
                 <h2>Payment Form (Test)</h2>
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <label for="exampleFormControlInput1">Email
+                            address</label>
+                        <input type="email" class="form-control"
+                               id="exampleFormControlInput1"
                                placeholder="name@example.com">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label for="exampleFormControlSelect1">Example
+                            select</label>
+                        <select class="form-control"
+                                id="exampleFormControlSelect1">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -130,8 +146,10 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <label for="exampleFormControlSelect2">Example multiple
+                            select</label>
+                        <select multiple class="form-control"
+                                id="exampleFormControlSelect2">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -140,8 +158,14 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="exampleFormControlTextarea1">Example
+                            textarea</label>
+                        <textarea class="form-control"
+                                  id="exampleFormControlTextarea1"
+                                  rows="3"></textarea>
+                    </div>
+                    <div id="card-info">
+
                     </div>
                 </form>
 
@@ -151,9 +175,13 @@
     </div>
 {% endblock %}
 
+
 {% block postloadjs %}
     {{ block.super }}
     <script>
         var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleDark'));
     </script>
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'js/stripe_elements.js' %}"></script>
 {% endblock %}
