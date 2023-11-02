@@ -50,6 +50,5 @@ urlpatterns = [
          name='property_detail'),
 
     path('checkout/<int:property_id>/', checkout.checkout_view,
-         name='checkout')
-
+         name='checkouts'),
 ]

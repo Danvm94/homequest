@@ -182,3 +182,4 @@ AUTH_USER_MODEL = 'profiles.CustomUser'
 # Stripe keys
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY')
 STRIPE_CLIENT_SECRET = os.environ.get('STRIPE_CLIENT_SECRET')
+STRIPE_CURRENCY = 'eur'

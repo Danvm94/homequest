@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% load cloudinary %}
+{% load crispy_forms_tags %}
 
 {% block content %}
     <div class="container">
@@ -116,6 +117,12 @@
                         </li>
                     </ul>
                 </div>
+            </div>
+            <div class="card mt-5 mb-5">
+                <form method="POST" id="payment-form" class="row text-center">
+                    {% csrf_token %}
+                    {% crispy checkout_form %}
+                </form>
             </div>
         </div>
     </div>
