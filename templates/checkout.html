@@ -3,6 +3,12 @@
 {% load cloudinary %}
 {% load crispy_forms_tags %}
 
+{% block corejs %}
+    {{ block.super }}
+    <!-- Stripe Payments -->
+    <script src="https://js.stripe.com/v3/"></script>
+{% endblock %}
+
 {% block content %}
     <div class="container">
         <div class="row justify-content-center">
@@ -137,7 +143,8 @@
                         <input type="hidden" value="{{ client_secret }}"
                                name="client_secret">
                     </fieldset>
-                    <input id="submit-button" class="btn btn-black rounded-0" type="submit">
+                    <input id="submit-button" class="btn btn-black rounded-0"
+                           type="submit">
                 </form>
                 <div id="loading-overlay"></div>
             </div>

@@ -37,8 +37,6 @@
         <script src="https://kit.fontawesome.com/0202f769a6.js" crossorigin="anonymous"></script>
         <!-- JQuery 3.7.1 -->
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <!-- Stripe Payments -->
-        <script src="https://js.stripe.com/v3/"></script>
     {% endblock %}
 
     {% block extra_js %}
@@ -87,7 +85,10 @@
     <script src="{% static 'js/toasts.js' %}" async></script>
 {% endblock %}
 
+{% if user.is_authenticated %}
+{% else %}
 {% login_form_tag request.get_full_path %}
 {% signup_form_tag request.get_full_path %}
+{% endif %}
 </body>
 </html>

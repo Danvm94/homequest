@@ -1,7 +1,6 @@
 {% load static %}
 {% load i18n %}
 {% load account socialaccount %}
-{% if not user.is_authenticated %}
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="login modal" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -32,5 +31,3 @@
             </div>
         </div>
     </div>
-
-{% endif %}
