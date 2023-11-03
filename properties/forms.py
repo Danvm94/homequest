@@ -1,7 +1,6 @@
 from django import forms
-from django.forms import widgets
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout, Field, Submit, Div
+from crispy_forms.layout import Layout, Submit, Div, Field
 from crispy_forms.bootstrap import InlineCheckboxes
 
 
@@ -86,3 +85,36 @@ class PropertyFilterForm(forms.Form):
                    css_class='w-auto mx-auto btn-success'),
 
         )
+
+
+class ContactForm(forms.Form):
+    subject = forms.CharField(max_length=100, required=True, label="Subject",
+                              widget=forms.TextInput(
+                                  attrs={'placeholder': 'Enter a subject'}))
+    message = forms.CharField(
+        widget=forms.Textarea(attrs={'placeholder': 'Enter your message'}),
+        required=True, label="Message")
+
+    def __init__(self, *args, **kwargs):
+        super(ContactForm, self).__init__(*args, **kwargs)
+        self.helper = FormHelper()
+        self.helper.form_method = 'post'
+        self.helper.layout = Layout(
+            Field('subject', css_class='form-control'),
+            Field('message', css_class='form-control'),
+            Submit('submit', 'Send Message', css_class='btn btn-primary')
+        )
+
+    def clean_subject(self):
+        subject = self.cleaned_data.get('subject')
+        if len(subject) < 5:
+            raise forms.ValidationError(
+                "The subject must be at least 5 characters long.")
+        return subject
+
+    def clean_message(self):
+        message = self.cleaned_data.get('message')
+        if len(message) < 10:
+            raise forms.ValidationError(
+                "The message must be at least 10 characters long.")
+        return message
