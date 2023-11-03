@@ -37,15 +37,7 @@ def checkout_view(request, property_id):
     property_object = Property.objects.get(id=property_id)
     property_object = get_property_images(property_object)
 
-    # Stripe config
-    stripe_public_key = STRIPE_PUBLIC_KEY
-    stripe_total = round(property_object.price * 100)
-    # Create a PaymentIntent
-    stripe.api_key = STRIPE_CLIENT_SECRET
-    intent = stripe.PaymentIntent.create(
-        amount=stripe_total,
-        currency=STRIPE_CURRENCY,
-    )
+    # POST request
     if request.method == "POST":
         checkout_form = PropertyCheckoutRent(request.POST)
         if checkout_form.is_valid():
@@ -58,7 +50,17 @@ def checkout_view(request, property_id):
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success_view',
                                     args=[checkout.pk]))
+    # GET request
     elif request.method == 'GET':
+        # Stripe config
+        stripe_public_key = STRIPE_PUBLIC_KEY
+        stripe_total = round(property_object.price * 100)
+        # Create a PaymentIntent
+        stripe.api_key = STRIPE_CLIENT_SECRET
+        intent = stripe.PaymentIntent.create(
+            amount=stripe_total,
+            currency=STRIPE_CURRENCY,
+        )
         checkout_form = PropertyCheckoutRent()
         context = {
             'property': property_object,
