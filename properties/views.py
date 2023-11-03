@@ -67,7 +67,7 @@ def property_view(request, property_id):
         user = request.user
         form = ContactForm(request.POST)
         if form.is_valid():
-            subject = (f'{property_object.address} '
+            subject = (f'{property_object.address} - '
                        f'{form.cleaned_data["subject"]}')
             message = form.cleaned_data['message']
             recipient_list = [user.email, agent.user.email]

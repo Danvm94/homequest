@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
+
+{% block content %}
+    <div class="container">
+
+        {% if orders.count > 0 %}
+            {% for order in orders %}
+                <div class="row mt-5">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-md-4 mt-3">
+                                {% cloudinary order.images.0.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ order.property.address }}</h5>
+                                    <p class="card-text">
+                                    <table class="table">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">Type</th>
+                                            <td>{{ order.property.formatted_type }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Price</th>
+                                            <td>{{ order.property.formatted_price_euro }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">House ID</th>
+                                            <td>{{ order.property.id }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">State</th>
+                                            <td>{{ order.property.formatted_state }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Bathrooms</th>
+                                            <td>{{ order.property.bathrooms }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Bedrooms</th>
+                                            <td>{{ order.property.bedrooms }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Fireplaces</th>
+                                            <td>{{ order.property.fireplaces }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Parking Spaces</th>
+                                            <td>{{ order.property.parking_spaces }}</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Meters Square</th>
+                                            <td>{{ order.property.formatted_size }}</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Learn
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No properties available.</p>
+        {% endif %}
+
+    </div>
+
+{% endblock %}

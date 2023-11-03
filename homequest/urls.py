@@ -58,4 +58,7 @@ urlpatterns = [
     path('checkout/success/<primary_key>', checkout.checkout_success_view,
          name='checkout_success_view'),
 
+    path('contracts/', profiles.contracts_view,
+         name='contracts_view'),
+
 ]
