@@ -119,10 +119,27 @@
                 </div>
             </div>
             <div class="card mt-5 mb-5">
-                <form method="POST" id="payment-form" class="row text-center">
+                <form method="POST" id="payment-form" class="row text-center"
+                      action="{% url 'checkout' property_id=property.id %}">
                     {% csrf_token %}
-                    {% crispy checkout_form %}
+                    {{ checkout_form.phone_number | as_crispy_field }}
+                    {{ checkout_form.delivery_address | as_crispy_field }}
+                    <fieldset class="px-3">
+                        <legend class="fieldset-label small text-black px-2 w-auto">
+                            Payment
+                        </legend>
+                        <!-- A Stripe card element will go here -->
+                        <div class="mb-3" id="card-element"></div>
+                        <!-- Used to display form errors -->
+                        <div class="mb-3 text-danger" id="card-errors"
+                             role="alert"></div>
+                        <!-- Pass the client secret to the view so we can get the payment intent id -->
+                        <input type="hidden" value="{{ client_secret }}"
+                               name="client_secret">
+                    </fieldset>
+                    <input id="submit-button" class="btn btn-black rounded-0" type="submit">
                 </form>
+                <div id="loading-overlay"></div>
             </div>
         </div>
     </div>
