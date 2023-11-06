@@ -123,22 +123,23 @@
                 </div>
             </div>
         </div>
-        {% if property.property_type == 'rent' %}
-            <div class="col-12 col-lg-6 mb-5">
-            <h3>Property for Rent</h3>
-            <p>Interested in renting this property?</p>
+
+        <div class="col-12 col-lg-6 mb-5">
+            <h3>Interested in this property?</h3>
+            <h4>Send us a message</h4>
             <div class="contact-form">
                 <form method="POST">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <a href="{% url 'checkout' property.pk %}"
-                       class="btn btn-primary">Rent it Now <i
-                            class="fas fa-hand-holding-usd"></i></a>
+                    {% if property.property_type == 'rent' %}
+                        <a href="{% url 'checkout' property.pk %}"
+                           class="btn btn-primary">Rent it Now <i
+                                class="fas fa-hand-holding-usd"></i></a>
+                    {% endif %}
                     <button type="submit" class="btn btn-secondary">Send Email
                         <i class="fas fa-envelope"></i></button>
                 </form>
             </div>
-        {% endif %}
 
 
         </div>
