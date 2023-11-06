@@ -5,7 +5,11 @@
 
 {% block content %}
     <div class="container">
-
+        <h1>Your Contracts</h1>
+        <p>Welcome to your Contracts Page, where you have full control over
+            your agreements. Here, you can explore, review, and take action on
+            your contracts. Whether you're looking to find specific details or
+            make changes, it's all at your fingertips.</p>
         {% if orders.count > 0 %}
             {% for order in orders %}
                 <div class="row mt-5">
@@ -65,8 +69,8 @@
                                         </tbody>
                                     </table>
                                     </p>
-                                    <a href="{% url 'seize_contract' order.property.pk %}"
-                                       class="btn btn-success">Seize
+                                    <a href="{% url 'terminate_contract' order.property.pk %}"
+                                       class="btn btn-success">Terminate
                                         Contract</a>
 
                                 </div>
@@ -76,9 +80,15 @@
                 </div>
             {% endfor %}
         {% else %}
-            <p>No properties available.</p>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">No Active Contracts</h5>
+                    <p class="card-text">You currently don't have any active
+                        contracts. If you're looking to start a new agreement,
+                        explore our available listings.</p>
+                </div>
+            </div>
         {% endif %}
-
     </div>
 
 {% endblock %}

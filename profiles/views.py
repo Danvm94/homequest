@@ -41,7 +41,7 @@ def contracts_view(request):
 
 
 @login_required
-def seize_contract(request, property_id):
+def terminate_contract(request, property_id):
     user = request.user
 
     # Get the Order and Property objects or return a 404 if not found
@@ -55,5 +55,5 @@ def seize_contract(request, property_id):
     property_obj.property_type = 'rent'
     property_obj.save()
 
-    messages.success(request, 'You have now seized the contract.')
+    messages.success(request, 'You have now terminated the contract.')
     return redirect('home')

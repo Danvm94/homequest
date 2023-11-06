@@ -61,7 +61,7 @@ urlpatterns = [
     path('contracts/', profiles.contracts_view,
          name='contracts_view'),
 
-    path('seize_contract/<int:property_id>/', profiles.seize_contract,
-         name='seize_contract')
+    path('terminate_contract/<int:property_id>/', profiles.terminate_contract,
+         name='terminate_contract')
 
 ]
