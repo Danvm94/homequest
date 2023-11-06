@@ -36,3 +36,7 @@ def contracts_view(request):
     }
 
     return render(request, 'contracts.html', context)
+
+@login_required
+def seize_contract(request, property_id):
+    user = request.user
