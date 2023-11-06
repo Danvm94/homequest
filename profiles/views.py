@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .forms import ProfileEditForm
 from properties.utils import get_property_images
 from checkout.models import Order
+from properties.models import Property
+from django.contrib import messages
 
 
 # Create your views here.
@@ -37,6 +39,21 @@ def contracts_view(request):
 
     return render(request, 'contracts.html', context)
 
+
 @login_required
 def seize_contract(request, property_id):
     user = request.user
+
+    # Get the Order and Property objects or return a 404 if not found
+    order = get_object_or_404(Order, property=property_id, user_profile_id=user.pk)
+    property_obj = get_object_or_404(Property, pk=property_id)
+
+    # Delete the order
+    order.delete()
+
+    # Update the property object
+    property_obj.property_type = 'rent'
+    property_obj.save()
+
+    messages.success(request, 'You have now seized the contract.')
+    return redirect('home')

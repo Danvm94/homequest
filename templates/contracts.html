@@ -57,13 +57,18 @@
                                             <td>{{ order.property.formatted_size }}</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Contract Start Date</th>
+                                            <th scope="row">Contract Start
+                                                Date
+                                            </th>
                                             <td>{{ order.date }}</td>
                                         </tr>
                                         </tbody>
                                     </table>
                                     </p>
-                                    <a href="" class="btn btn-success">Seize Contract</a>
+                                    <a href="{% url 'seize_contract' order.property.pk %}"
+                                       class="btn btn-success">Seize
+                                        Contract</a>
+
                                 </div>
                             </div>
                         </div>
