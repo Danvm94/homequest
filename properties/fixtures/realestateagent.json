@@ -5,7 +5,7 @@
     "fields": {
       "user": 1,
       "license_no": "123456789",
-      "telephone_no": "0123456781"
+      "telephone_no": "123456781"
     }
   },
   {
@@ -14,7 +14,7 @@
     "fields": {
       "user": 2,
       "license_no": "987654321",
-      "telephone_no": "0123456782"
+      "telephone_no": "123456782"
     }
   },
   {
@@ -23,7 +23,7 @@
     "fields": {
       "user": 3,
       "license_no": "098765432",
-      "telephone_no": "0123456783"
+      "telephone_no": "123456783"
     }
   },
   {
@@ -32,7 +32,7 @@
     "fields": {
       "user": 4,
       "license_no": "219876543",
-      "telephone_no": "0123456784"
+      "telephone_no": "123456784"
     }
   },
   {
@@ -41,7 +41,7 @@
     "fields": {
       "user": 5,
       "license_no": "321987654",
-      "telephone_no": "0123456785"
+      "telephone_no": "123456785"
     }
   }
 ]
