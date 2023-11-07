@@ -16,36 +16,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav d-flex flex-column flex-md-row ms-auto justify-content-md-between justify-content-lg-end">
                 <li class="nav-item">
-                    <a class="nav-link"
-                       href="{% url 'properties-sale' %}">Buy</a>
+                    <a class="nav-link" href="{% url 'properties-sale' %}"><i
+                            class="fas fa-home"></i> Buy</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"
-                       href="{% url 'properties-rent' %}">Rent</a>
+                    <a class="nav-link" href="{% url 'properties-rent' %}"><i
+                            class="fas fa-key"></i> Rent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'agents' %}">Agents</a>
+                    <a class="nav-link" href="{% url 'agents' %}"><i
+                            class="fas fa-user-tie"></i> Agents</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                    <a class="nav-link" href="{% url 'about' %}"><i
+                            class="fas fa-info-circle"></i> About</a>
                 </li>
                 {% if user.is_authenticated %}
-                    <a class="nav-link"
-                       href="{% url 'contracts_view' %}">Your Contracts</a>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="{% url 'contracts_view' %}"><i
+                                class="fas fa-file-contract"></i> Your
+                            Contracts</a>
+                    </li>
                 {% endif %}
                 <li class="nav-item me-3 me-lg-0 dropdown">
                     <a class="nav-link dropdown-toggle" href="#"
                        id="navbarDropdown1" role="button"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Account
-                        <i class="fa-regular fa-user"></i>
+                       data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-user"></i> Account
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end"
                         aria-labelledby="navbarDropdown1">
                         {% if user.is_authenticated %}
                             <li><a class="dropdown-item"
-                                   href="{% url 'profile' %}">Profile</a></li>
+                                   href="{% url 'profile' %}"><i
+                                    class="fas fa-user"></i> Profile</a></li>
                             <form method="post"
                                   action="{% url 'account_logout' %}">
                                 {% csrf_token %}
@@ -56,7 +61,9 @@
                                 {% endif %}
                                 <li>
                                     <button class="dropdown-item"
-                                            type="submit">Sign Out
+                                            type="submit"><i
+                                            class="fas fa-sign-out-alt"></i>
+                                        Sign Out
                                     </button>
                                 </li>
                             </form>
@@ -64,12 +71,16 @@
                             <li>
                                 <a href="#loginModal" class="dropdown-item"
                                    data-bs-toggle="modal"
-                                   data-bs-target="#loginModal">Login</a>
+                                   data-bs-target="#loginModal"><i
+                                        class="fas fa-sign-in-alt"></i>
+                                    Login</a>
                             </li>
                             <li>
                                 <a href="#signupModal" class="dropdown-item"
                                    data-bs-toggle="modal"
-                                   data-bs-target="#signupModal">Sign-up</a>
+                                   data-bs-target="#signupModal"><i
+                                        class="fas fa-user-plus"></i>
+                                    Sign-up</a>
                             </li>
                         {% endif %}
                     </ul>

@@ -9,7 +9,7 @@
             <div class="col-md-6">
                 <img src="{% static 'images/index-house.webp' %}"
                      alt="Welcome Image"
-                     class="img-fluid">
+                     class="img-fluid" width="500px">
             </div>
 
             <!-- Text on the left -->
@@ -47,10 +47,10 @@
                             </div>
                             <div class="card-body text-start">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="card-title">{{ property.address }}</h6>
+                                    <p class="card-title">{{ property.address }}</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="card-title">{{ property.formatted_price_euro }}</h6>
+                                    <p class="card-title">{{ property.formatted_price_euro }}</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
                                     <p>

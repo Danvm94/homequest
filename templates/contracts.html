@@ -5,11 +5,14 @@
 
 {% block content %}
     <div class="container">
+    <div class="text-center mt-5">
         <h1>Your Contracts</h1>
         <p>Welcome to your Contracts Page, where you have full control over
             your agreements. Here, you can explore, review, and take action on
             your contracts. Whether you're looking to find specific details or
             make changes, it's all at your fingertips.</p>
+    </div>
+
         {% if orders.count > 0 %}
             {% for order in orders %}
                 <div class="row mt-5">
@@ -80,7 +83,7 @@
                 </div>
             {% endfor %}
         {% else %}
-            <div class="card">
+            <div class="card text-center">
                 <div class="card-body">
                     <h5 class="card-title">No Active Contracts</h5>
                     <p class="card-text">You currently don't have any active
