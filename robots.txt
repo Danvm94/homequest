@@ -1,0 +1,6 @@
+User-aget: *
+Disallow: /accounts/
+Disallow: /checkout/
+Disallow: /contracts/
+Disallow: /terminate_contract/
+Sitemap: https://https://homequestrs-494f18176619.herokuapp.com/sitemap.xml

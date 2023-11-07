@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/about/</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=2</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=3</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=2</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=3</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=1</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=1</loc>
+  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
