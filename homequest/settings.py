@@ -176,6 +176,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
 DEFAULT_FROM_EMAIL = 'homequestrs@gmail.com'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+SITE_NAME = 'Homequest'
 
 # Custom user extra fields for model
 AUTH_USER_MODEL = 'profiles.CustomUser'
