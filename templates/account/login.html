@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load i18n %}
+{% load account socialaccount %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock head_title %}
+
+{% block content %}
+    <div class="container text-center mt-5">
+        <div class="card">
+            <div>
+                <img src="{% static 'images/house-login.webp' %}" class=""
+                     alt="modern house" width="200">
+            </div>
+            <div class="card-body">
+                <h1>{% trans "Sign In" %}</h1>
+                <p>{% blocktrans %}If you have not created an account yet, then
+                    please
+                    <a href="{{ signup_url }}">sign up</a>
+                    first.{% endblocktrans %}
+                </p>
+                <form class="login" method="POST"
+                      action="{% url 'account_login' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                        <input type="hidden" name="{{ redirect_field_name }}"
+                               value="{{ redirect_field_value }}"/>
+                    {% endif %}
+                <div class="m-2">
+                    <a class="button secondaryAction"
+                       href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+                </div>
+
+                    <button class="btn btn-success"
+                            type="submit">{% trans "Sign In" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,6 +1,12 @@
 /* Body with the Google font as main font and sans-serif as a dropdown */
 body {
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
 }
 
 /* Replace Bootstrap defaults */
