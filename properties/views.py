@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator
 from django.core.mail import send_mail
+from django.contrib.auth.decorators import user_passes_test
 from .utils import get_properties_images, get_property_images
-from .forms import PropertyFilterForm, ContactForm
-from .models import Property, State, RealEstateAgent
+from .forms import PropertyFilterForm, ContactForm, PropertyForm
+from .models import Property, State, RealEstateAgent, Images
 from homequest.settings import STRIPE_PUBLIC_KEY, STRIPE_CLIENT_SECRET
 from django.contrib import messages
 from homequest.settings import DEFAULT_FROM_EMAIL
@@ -96,3 +97,24 @@ def agents_view(request):
         'agents': agents
     }
     return render(request, 'agents.html', context)
+
+
+def is_staff(user):
+    return user.is_staff
+
+
+@user_passes_test(is_staff)
+def edit_property(request, property_id):
+    # Case 1: Property ID is provided for updating
+    property_object = get_object_or_404(Property, id=property_id)
+    property_object = get_property_images(property_object)
+    form = PropertyForm(request.POST, instance=property_object)
+
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Property updated.')
+            # Redirect or render a success message
+
+    context = {'form': form}
+    return render(request, 'edit_property.html', context)

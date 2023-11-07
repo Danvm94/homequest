@@ -6,6 +6,13 @@
 {% block content %}
     <div class="container mt-3 mb-5">
     <div class="row">
+        {% if user.is_staff %}
+            <div class="col-12 mb-3">
+                <!-- Display edit and image upload options for staff users -->
+                <a href="{% url 'edit_property' property.pk %}"
+                   class="btn btn-success"><i class="fa-solid fa-pen-to-square"></i> Edit Property</a>
+            </div>
+        {% endif %}
         <!--Carousel for property images-->
         <div class="col-12 col-lg-7">
             <div id="carouselExampleDark"

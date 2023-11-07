@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+
+        {# Add a submit button to save the changes or create a new property #}
+        <button type="submit">Save Changes</button>
+    </form>
+{% endblock %}

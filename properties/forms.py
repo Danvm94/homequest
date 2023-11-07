@@ -1,4 +1,5 @@
 from django import forms
+from .models import Property
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Div, Field
 from crispy_forms.bootstrap import InlineCheckboxes
@@ -118,3 +119,11 @@ class ContactForm(forms.Form):
             raise forms.ValidationError(
                 "The message must be at least 10 characters long.")
         return message
+
+
+class PropertyForm(forms.ModelForm):
+    class Meta:
+        model = Property
+        fields = ['title', 'address', 'property_type', 'description',
+                  'price', 'bathrooms', 'bedrooms', 'fireplaces',
+                  'parking_spaces', 'size']

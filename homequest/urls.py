@@ -62,6 +62,9 @@ urlpatterns = [
          name='contracts_view'),
 
     path('terminate_contract/<int:property_id>/', profiles.terminate_contract,
-         name='terminate_contract')
+         name='terminate_contract'),
+
+    path('edit_property/<int:property_id>/', properties.edit_property,
+         name='edit_property'),
 
 ]
