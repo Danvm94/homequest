@@ -1,5 +1,5 @@
 from django import forms
-from .models import Property
+from .models import Property, State
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Div, Field
 from crispy_forms.bootstrap import InlineCheckboxes
@@ -122,8 +122,16 @@ class ContactForm(forms.Form):
 
 
 class PropertyForm(forms.ModelForm):
+    class PropertyForm(forms.ModelForm):
+        state = forms.ModelChoiceField(
+            queryset=State.objects.all(),
+            empty_label=None,  # Remove the empty choice
+            to_field_name="state_name",
+            # Set the field to use 'state_name' as the value
+        )
+
     class Meta:
         model = Property
-        fields = ['title', 'address', 'property_type', 'description',
+        fields = ['title', 'address', 'state', 'property_type', 'description',
                   'price', 'bathrooms', 'bedrooms', 'fireplaces',
                   'parking_spaces', 'size']

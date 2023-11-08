@@ -105,16 +105,27 @@ def is_staff(user):
 
 @user_passes_test(is_staff)
 def edit_property(request, property_id):
-    # Case 1: Property ID is provided for updating
     property_object = get_object_or_404(Property, id=property_id)
     property_object = get_property_images(property_object)
-    form = PropertyForm(request.POST, instance=property_object)
 
     if request.method == 'POST':
+        form = PropertyForm(request.POST, instance=property_object)
         if form.is_valid():
             form.save()
             messages.success(request, 'Property updated.')
-            # Redirect or render a success message
+            return redirect('property_detail', property_id)
+        else:
+            # Display form errors to the user
+            for field, errors in form.errors.items():
+                for error in errors:
+                    messages.error(
+                        request,
+                        f"Error in {form.fields[field].label}: {error}")
 
-    context = {'form': form}
+    else:  # Handle GET request
+        form = PropertyForm(
+            instance=property_object)  # Initialize the form with property data
+
+    context = {'form': form,
+               'property': property_object}
     return render(request, 'edit_property.html', context)

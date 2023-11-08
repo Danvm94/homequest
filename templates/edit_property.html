@@ -1,11 +1,108 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
+{% load cloudinary %}
 {% block content %}
-    <form method="post">
-        {% csrf_token %}
-        {{ form }}
-
-        {# Add a submit button to save the changes or create a new property #}
-        <button type="submit">Save Changes</button>
-    </form>
+    <div class="container mt-5 mb-5">
+        <form class="row" method="POST">
+            {% csrf_token %}
+            <div class="col-12 mb-3">
+                <!-- Display edit and image upload options for staff users -->
+                <button type="submit"
+                        class="btn btn-success"><i
+                        class="fa-solid fa-pen-to-square"></i> Save
+                    Property Edit
+                </button>
+            </div>
+            <!-- Images Carousel -->
+            <div class="col-12 col-lg-7">
+                <div id="carouselExampleDark"
+                     class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                        {% for image in property.images %}
+                            <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="{{ forloop.counter0 }}"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                        {% endfor %}
+                    </div>
+                    <div class="carousel-inner">
+                        {% for image in property.images %}
+                            {% if forloop.counter0 == 0 %}
+                                <div class="carousel-item active">
+                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                </div>
+                            {% else %}
+                                <div class="carousel-item">
+                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Property Edit Form -->
+            <div class="col-12 col-lg-5 mb-5">
+                <h2>{{ form.title }}</h2>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Type</th>
+                        <td>{{ form.property_type }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td>{{ form.price }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Address</th>
+                        <td>{{ form.address }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">State</th>
+                        <td>{{ form.state }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bathrooms</th>
+                        <td>{{ form.bathrooms }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bedrooms</th>
+                        <td>{{ form.bedrooms }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fireplaces</th>
+                        <td>{{ form.fireplaces }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Parking Spaces</th>
+                        <td>{{ form.parking_spaces }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Meters Square</th>
+                        <td>{{ form.size }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="form-floating">
+                    {{ form.description }}
+                </div>
+            </div>
+        </form>
+    </div>
 {% endblock %}
