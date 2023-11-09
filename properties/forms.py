@@ -1,5 +1,5 @@
 from django import forms
-from .models import Property, State, Images
+from .models import Property, State, Images, RealEstateAgent
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Div, Field
 from crispy_forms.bootstrap import InlineCheckboxes
@@ -129,12 +129,17 @@ class PropertyForm(forms.ModelForm):
             to_field_name="state_name",
             # Set the field to use 'state_name' as the value
         )
+        agent = forms.ModelChoiceField(
+            queryset=RealEstateAgent.objects.all(),
+            empty_label=None,  # Remove the empty choice
+            to_field_name="formatted_name",
+        )
 
     class Meta:
         model = Property
         fields = ['title', 'address', 'state', 'property_type', 'description',
                   'price', 'bathrooms', 'bedrooms', 'fireplaces',
-                  'parking_spaces', 'size']
+                  'parking_spaces', 'size', 'agent']
 
 
 class ImagesForm(forms.ModelForm):

@@ -74,4 +74,7 @@ urlpatterns = [
     path('delete_image/<int:image_id>/', properties.delete_image_view,
          name='delete_image_view'),
 
+    path('delete_property/<int:property_id>/', properties.delete_property_view,
+         name='delete_property_view'),
+
 ]

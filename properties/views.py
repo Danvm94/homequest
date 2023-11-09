@@ -165,3 +165,11 @@ def delete_image_view(request, image_id):
     image.delete()
     messages.success(request, 'Image deleted.')
     return redirect('edit_property_with_id', property_id)
+
+
+@user_passes_test(is_staff)
+def delete_property_view(request, property_id):
+    property_obj = get_object_or_404(Property, id=property_id)
+    property_obj.delete()
+    messages.success(request, 'Property deleted.')
+    return redirect('home')

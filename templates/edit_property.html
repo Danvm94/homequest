@@ -13,6 +13,11 @@
                         class="fa-solid fa-pen-to-square"></i> Save
                     Property Edit
                 </button>
+                <a href="{% url 'delete_property_view' property.id %}"
+                                       class="btn btn-danger">
+                                        <i class="fas fa-trash"></i> Delete
+                                        Property
+                                    </a>
             </div>
             <!-- Images Carousel -->
             <div class="col-12 col-lg-7">
@@ -32,7 +37,8 @@
                         {% for image in property.images.all %}
                             <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
                                 {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
-                                <div class="position-absolute bottom-0 mb-5" style="margin-left: 40%;">
+                                <div class="position-absolute bottom-0 mb-5"
+                                     style="margin-left: 40%;">
                                     <a href="{% url 'delete_image_view' image.id %}"
                                        class="btn btn-danger">
                                         <i class="fas fa-trash"></i> Delete
@@ -57,7 +63,11 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                {{ image_form.as_p }}
+                <div>
+                    <h2>Add Image</h2>
+                    {{ image_form.as_p }}
+                </div>
+
             </div>
             <!-- Property Edit Form -->
             <div class="col-12 col-lg-5 mb-5">
@@ -100,11 +110,16 @@
                         <th scope="row">Meters Square</th>
                         <td>{{ property_form.size }}</td>
                     </tr>
+                    <tr>
+                        <th scope="row">Agent</th>
+                        <td>{{ property_form.agent }}</td>
+                    </tr>
                     </tbody>
                 </table>
-                <div class="form-floating">
-                    {{ property_form.description }}
-                </div>
+            </div>
+            <div class="col-12 mb-5">
+                <h2>Description</h2>
+                {{ property_form.description }}
             </div>
         </form>
     </div>
