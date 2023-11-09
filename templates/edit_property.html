@@ -30,15 +30,16 @@
                     </div>
                     <div class="carousel-inner">
                         {% for image in property.images.all %}
-                            {% if forloop.counter0 == 0 %}
-                                <div class="carousel-item active">
-                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                            <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                                {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                <div class="position-absolute bottom-0 mb-5" style="margin-left: 40%;">
+                                    <a href="{% url 'delete_image_view' image.id %}"
+                                       class="btn btn-danger">
+                                        <i class="fas fa-trash"></i> Delete
+                                        Image
+                                    </a>
                                 </div>
-                            {% else %}
-                                <div class="carousel-item">
-                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
-                                </div>
-                            {% endif %}
+                            </div>
                         {% endfor %}
                     </div>
                     <button class="carousel-control-prev" type="button"
@@ -56,7 +57,7 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-            {{ image_form.as_p }}
+                {{ image_form.as_p }}
             </div>
             <!-- Property Edit Form -->
             <div class="col-12 col-lg-5 mb-5">

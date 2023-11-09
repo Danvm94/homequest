@@ -8,7 +8,7 @@ from .models import Property, State, RealEstateAgent, Images
 from homequest.settings import STRIPE_PUBLIC_KEY, STRIPE_CLIENT_SECRET
 from django.contrib import messages
 from homequest.settings import DEFAULT_FROM_EMAIL
-from cloudinary.forms import cl_init_js_callbacks
+from cloudinary.uploader import upload
 
 
 def properties_view(request, property_type):
@@ -126,7 +126,20 @@ def edit_property(request, property_id=None):
 
         if image_form.is_valid():
             if image_form.cleaned_data['image']:
+                # Apply Cloudinary transformations before saving
+                image_file = image_form.cleaned_data['image']
+                result = upload(
+                    image_file,
+                    folder='homequest/media',
+                    transformation=[
+                        {'width': 600, 'height': 400, 'crop': 'fill'},
+                        # Adjust width and height as needed
+                        {'format': 'webp', 'quality': 'auto:best',
+                         'flags': 'lossy'}
+                    ]
+                )
                 image_form.instance.property_id = property_object.id
+                image_form.instance.image = result['secure_url']
                 image_form.save()
 
         for field, errors in property_form.errors.items():
@@ -143,3 +156,12 @@ def edit_property(request, property_id=None):
     context = {'property_form': property_form, 'property': property_object,
                'image_form': image_form}
     return render(request, 'edit_property.html', context)
+
+
+@user_passes_test(is_staff)
+def delete_image_view(request, image_id):
+    image = get_object_or_404(Images, id=image_id)
+    property_id = image.property_id  # Save the property ID before deleting
+    image.delete()
+    messages.success(request, 'Image deleted.')
+    return redirect('edit_property_with_id', property_id)
