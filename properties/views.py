@@ -15,7 +15,6 @@ def properties_view(request, property_type):
     # Get all properties
     properties = Property.objects.filter(property_type=property_type)
     properties = properties.order_by('created_at')
-    properties = get_properties_images(properties)
 
     # Initialize the filter form
     available_states = State.objects.values_list('id', 'state_name')
@@ -45,8 +44,6 @@ def properties_view(request, property_type):
                     filter_conditions[model_field] = value
 
     properties = properties.filter(**filter_conditions)
-    properties = get_properties_images(properties)
-
     # Paginate the properties
     paginator = Paginator(properties, 24)
     page = request.GET.get('page')
