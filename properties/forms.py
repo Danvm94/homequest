@@ -1,5 +1,5 @@
 from django import forms
-from .models import Property, State
+from .models import Property, State, Images
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Submit, Div, Field
 from crispy_forms.bootstrap import InlineCheckboxes
@@ -135,3 +135,9 @@ class PropertyForm(forms.ModelForm):
         fields = ['title', 'address', 'state', 'property_type', 'description',
                   'price', 'bathrooms', 'bedrooms', 'fireplaces',
                   'parking_spaces', 'size']
+
+
+class ImagesForm(forms.ModelForm):
+    class Meta:
+        model = Images
+        fields = ['image']

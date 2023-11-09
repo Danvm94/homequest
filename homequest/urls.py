@@ -64,7 +64,11 @@ urlpatterns = [
     path('terminate_contract/<int:property_id>/', profiles.terminate_contract,
          name='terminate_contract'),
 
+    # Edit an existing property
+    path('edit_property/', properties.edit_property, name='edit_property'),
+
+    # Edit an existing property with a provided property_id
     path('edit_property/<int:property_id>/', properties.edit_property,
-         name='edit_property'),
+         name='edit_property_with_id'),
 
 ]

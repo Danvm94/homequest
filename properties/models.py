@@ -2,6 +2,7 @@ from django.db import models
 from profiles.models import CustomUser
 from cloudinary.models import CloudinaryField
 from django.core.validators import MinLengthValidator, MaxLengthValidator
+from django.core.exceptions import ValidationError
 
 
 class RealEstateAgent(models.Model):
@@ -30,7 +31,8 @@ class RealEstateAgent(models.Model):
         return f'{self.user.first_name} {self.user.last_name}'
 
     def formatted_telephone(self):
-        return "({}) {}-{}".format(self.telephone_no[:2], self.telephone_no[2:6],
+        return "({}) {}-{}".format(self.telephone_no[:2],
+                                   self.telephone_no[2:6],
                                    self.telephone_no[6:])
 
 
@@ -79,6 +81,10 @@ class Property(models.Model):
 
 class Images(models.Model):
     id = models.AutoField(primary_key=True)
-    property = models.ForeignKey(Property, on_delete=models.CASCADE)
+    property = models.ForeignKey(
+        Property, on_delete=models.CASCADE, related_name='images')
     image = CloudinaryField('image', default='', blank=True,
                             folder='homequest/media')
+
+    def __str__(self):
+        return f"Image for Property: {self.property.pk}"

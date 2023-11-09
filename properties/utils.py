@@ -31,10 +31,6 @@ def get_latest_properties(number):
     """
     properties = Property.objects.all()
     latest_properties_list = properties.order_by('created_at')[:number]
-    latest_properties_list = get_properties_images(latest_properties_list)
-    for latest_property in latest_properties_list:
-        latest_property.images = Images.objects.filter(
-            property=latest_property)
     return latest_properties_list
 
 

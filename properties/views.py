@@ -3,11 +3,12 @@ from django.core.paginator import Paginator
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import user_passes_test
 from .utils import get_properties_images, get_property_images
-from .forms import PropertyFilterForm, ContactForm, PropertyForm
+from .forms import PropertyFilterForm, ContactForm, PropertyForm, ImagesForm
 from .models import Property, State, RealEstateAgent, Images
 from homequest.settings import STRIPE_PUBLIC_KEY, STRIPE_CLIENT_SECRET
 from django.contrib import messages
 from homequest.settings import DEFAULT_FROM_EMAIL
+from cloudinary.forms import cl_init_js_callbacks
 
 
 def properties_view(request, property_type):
@@ -61,7 +62,6 @@ def properties_view(request, property_type):
 
 def property_view(request, property_id):
     property_object = get_object_or_404(Property, id=property_id)
-    property_object = get_property_images(property_object)
     agent = property_object.agent
 
     if request.method == 'POST':
@@ -104,28 +104,42 @@ def is_staff(user):
 
 
 @user_passes_test(is_staff)
-def edit_property(request, property_id):
-    property_object = get_object_or_404(Property, id=property_id)
-    property_object = get_property_images(property_object)
-
+def edit_property(request, property_id=None):
+    if property_id:
+        # Edit an existing property
+        property_object = get_object_or_404(Property, id=property_id)
+    else:
+        # Create a new property
+        property_object = None
+    context = dict(backend_form=ImagesForm())
     if request.method == 'POST':
-        form = PropertyForm(request.POST, instance=property_object)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Property updated.')
-            return redirect('property_detail', property_id)
-        else:
-            # Display form errors to the user
-            for field, errors in form.errors.items():
-                for error in errors:
-                    messages.error(
-                        request,
-                        f"Error in {form.fields[field].label}: {error}")
+        property_form = PropertyForm(request.POST, request.FILES,
+                                     instance=property_object)
+        image_form = ImagesForm(request.POST, request.FILES)
+        context['posted'] = image_form.instance
+
+        if property_form.is_valid():
+            property_object = property_form.save()
+            messages.success(
+                request,
+                'Property updated.' if property_id else 'Property created.')
+
+        if image_form.is_valid():
+            if image_form.cleaned_data['image']:
+                image_form.instance.property_id = property_object.id
+                image_form.save()
+
+        for field, errors in property_form.errors.items():
+            for error in errors:
+                messages.error(
+                    request,
+                    f"Error in {property_form.fields[field].label}: {error}")
+        return redirect('property_detail', property_object.id)
 
     else:  # Handle GET request
-        form = PropertyForm(
-            instance=property_object)  # Initialize the form with property data
+        property_form = PropertyForm(instance=property_object)
+        image_form = ImagesForm()
 
-    context = {'form': form,
-               'property': property_object}
+    context = {'property_form': property_form, 'property': property_object,
+               'image_form': image_form}
     return render(request, 'edit_property.html', context)
