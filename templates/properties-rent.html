@@ -3,7 +3,8 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+    <div class="collapse" id="navbarToggleExternalContent"
+         data-bs-theme="dark">
         <div class="bg-dark text-white p-4">
             <form method="GET" class="row text-center">
                 {% crispy filter_form %}
@@ -12,8 +13,10 @@
     </div>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -29,11 +32,17 @@
                 <div class=" col-lg-3 mt-3 mb-3 justify-content-around">
                     <div class="card bg-dark text-white property-card">
                         <a href="{% url 'property_detail' property.id %}">
-                            {% for image in property.images.all %}
-                                {% if forloop.counter0 == 0 %}
-                                    {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
-                                {% endif %}
-                            {% endfor %}
+                            {% if property.images.all.count %}
+                                {% for image in property.images.all %}
+                                    {% if forloop.counter0 == 0 %}
+                                        {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <img src="{% static 'images/no-picture.webp' %}"
+                                     alt="no image"
+                                     class="brief-display-image">
+                            {% endif %}
                             <div class="card-body text-start">
                                 <div class="d-flex justify-content-between">
                                     <h6 class="card-title">{{ property.address }}</h6>
@@ -71,7 +80,8 @@
                     <a class="page-link text-success" href="?page=1">First</a>
                 </li>
                 <li class="page-item">
-                    <a class="page-link text-success" href="?page={{ properties.previous_page_number }}">Previous</a>
+                    <a class="page-link text-success"
+                       href="?page={{ properties.previous_page_number }}">Previous</a>
                 </li>
             {% else %}
                 <li class="page-item disabled">
@@ -83,10 +93,12 @@
             </li>
             {% if properties.has_next %}
                 <li class="page-item">
-                    <a class="page-link text-success" href="?page={{ properties.next_page_number }}">Next</a>
+                    <a class="page-link text-success"
+                       href="?page={{ properties.next_page_number }}">Next</a>
                 </li>
                 <li class="page-item">
-                    <a class="page-link text-success" href="?page={{ properties.paginator.num_pages }}">Last</a>
+                    <a class="page-link text-success"
+                       href="?page={{ properties.paginator.num_pages }}">Last</a>
                 </li>
             {% endif %}
         </ul>

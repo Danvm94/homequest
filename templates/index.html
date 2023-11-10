@@ -37,11 +37,15 @@
                 <div class=" col-lg-3 mt-3 mb-5 justify-content-around">
                     <div class="card bg-dark text-white property-card">
                         <a href="{% url 'property_detail' property.id %}">
-                            {% for image in property.images.all %}
-                                {% if forloop.counter0 == 0 %}
-                                    {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
-                                {% endif %}
-                            {% endfor %}
+                            {% if property.images.all.count %}
+                                {% for image in property.images.all %}
+                                    {% if forloop.counter0 == 0 %}
+                                        {% cloudinary image.image crop="fill" alt="Front House Picture" class="brief-display-image" %}
+                                    {% endif %}
+                                {% endfor %}
+                            {% else %}
+                                <img src="{% static 'images/no-picture.webp' %}" alt="no image">
+                            {% endif %}
                             <div class="card-img-overlay">
                                 <p class="black-transparent-background text-center d-inline-block">{{ property.formatted_type }}</p>
                             </div>
