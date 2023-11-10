@@ -6,108 +6,127 @@
 {% block content %}
     <div class="container mt-3 mb-5">
     <div class="row">
-    {% if user.is_staff %}
-        <div class="col-12 mb-3">
-            <!-- Display edit and image upload options for staff users -->
-            <a href="{% url 'edit_property_with_id' property.pk %}"
-               class="btn btn-success"><i
-                    class="fa-solid fa-pen-to-square"></i> Edit Property</a>
-        </div>
-    {% endif %}
-    <!--Carousel for property images-->
-    <div class="col-12 col-lg-7">
-        <div id="carouselExampleDark"
-             class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-                {% for image in property.images.all %}
-                    <button type="button"
-                            data-bs-target="#carouselExampleDark"
-                            data-bs-slide-to="{{ forloop.counter0 }}"
-                            class="active"
-                            aria-current="true"
-                            aria-label="Slide 1"></button>
-                {% endfor %}
+        {% if user.is_staff %}
+            <div class="col-12 mb-3">
+                <!-- Display edit and image upload options for staff users -->
+                <a href="{% url 'edit_property_with_id' property.pk %}"
+                   class="btn btn-success"><i
+                        class="fa-solid fa-pen-to-square"></i> Edit
+                    Property</a>
             </div>
-            <div class="carousel-inner">
-                {% for image in property.images.all %}
-                    {% if forloop.counter0 == 0 %}
-                        <div class="carousel-item active">
-                            {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
-                        </div>
+        {% endif %}
+        <!--Carousel for property images-->
+        <div class="col-12 col-lg-7">
+            <div id="carouselExampleDark"
+                 class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    {% if property.images.all.count %}
+                        {% for image in property.images.all %}
+                            <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="{{ forloop.counter0 }}"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                        {% endfor %}
                     {% else %}
-                        <div class="carousel-item">
-                            {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                        <button type="button"
+                                data-bs-target="#carouselExampleDark"
+                                data-bs-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"></button>
+                    {% endif %}
+                </div>
+                <div class="carousel-inner">
+                    {% if property.images.all.count %}
+                        {% for image in property.images.all %}
+                            <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                                {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                <div class="position-absolute bottom-0 mb-5"
+                                     style="margin-left: 40%;">
+                                    <a href="{% url 'delete_image_view' image.id %}"
+                                       class="btn btn-danger">
+                                        <i class="fas fa-trash"></i> Delete
+                                        Image
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="carousel-item active">
+                            <img src="{% static 'images/no-picture.webp' %}"
+                                 alt="no image">
                         </div>
                     {% endif %}
-                {% endfor %}
-            </div>
-            <button class="carousel-control-prev" type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
+                </div>
+                <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"
                               aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon"
                               aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-    </div>
-    <div class="col-12 col-lg-5 mb-5">
-        <h2>{{ property.title }}</h2>
-        <table class="table">
-            <tbody>
-            <tr>
-                <th scope="row">Type</th>
-                <td>{{ property.formatted_type }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Price</th>
-                <td>{{ property.formatted_price_euro }}</td>
-            </tr>
-            <tr>
-                <th scope="row">House ID</th>
-                <td>{{ property.id }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Address</th>
-                <td>{{ property.address }}</td>
-            </tr>
-            <tr>
-                <th scope="row">State</th>
-                <td>{{ property.formatted_state }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Bathrooms</th>
-                <td>{{ property.bathrooms }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Bedrooms</th>
-                <td>{{ property.bedrooms }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Fireplaces</th>
-                <td>{{ property.fireplaces }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Parking Spaces</th>
-                <td>{{ property.parking_spaces }}</td>
-            </tr>
-            <tr>
-                <th scope="row">Meters Square</th>
-                <td>{{ property.formatted_size }}</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="col-12 mb-5">
-        <h2>Description</h2>
-        <p>{{ property.description }}</p>
-    </div>
+        <div class="col-12 col-lg-5 mb-5">
+            <h2>{{ property.title }}</h2>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <th scope="row">Type</th>
+                    <td>{{ property.formatted_type }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Price</th>
+                    <td>{{ property.formatted_price_euro }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">House ID</th>
+                    <td>{{ property.id }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Address</th>
+                    <td>{{ property.address }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">State</th>
+                    <td>{{ property.formatted_state }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bathrooms</th>
+                    <td>{{ property.bathrooms }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Bedrooms</th>
+                    <td>{{ property.bedrooms }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Fireplaces</th>
+                    <td>{{ property.fireplaces }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Parking Spaces</th>
+                    <td>{{ property.parking_spaces }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Meters Square</th>
+                    <td>{{ property.formatted_size }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12 mb-5">
+            <h2>Description</h2>
+            <p>{{ property.description }}</p>
+        </div>
         <!-- Agent Contact -->
         <div class="col-12 col-lg-6 mb-5">
             <h2>Agent Contact</h2>

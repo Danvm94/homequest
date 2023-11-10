@@ -30,8 +30,6 @@ def profile_view(request):
 def contracts_view(request):
     user = request.user
     orders = Order.objects.filter(user_profile=user)
-    for order in orders:
-        order.images = get_property_images(order.property).images
 
     context = {
         'orders': orders,

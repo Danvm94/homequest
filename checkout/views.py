@@ -35,7 +35,6 @@ def cache_checkout_data(request):
 def checkout_view(request, property_id):
     # Get the property object and current user
     property_object = Property.objects.get(id=property_id)
-    property_object = get_property_images(property_object)
 
     # POST request
     if request.method == "POST":

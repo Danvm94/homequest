@@ -105,9 +105,11 @@ def edit_property(request, property_id=None):
     if property_id:
         # Edit an existing property
         property_object = get_object_or_404(Property, id=property_id)
+        page = 'edit_property.html'
     else:
         # Create a new property
         property_object = None
+        page = 'create_property.html'
     context = dict(backend_form=ImagesForm())
     if request.method == 'POST':
         property_form = PropertyForm(request.POST, request.FILES,
@@ -152,7 +154,7 @@ def edit_property(request, property_id=None):
 
     context = {'property_form': property_form, 'property': property_object,
                'image_form': image_form}
-    return render(request, 'edit_property.html', context)
+    return render(request, page, context)
 
 
 @user_passes_test(is_staff)

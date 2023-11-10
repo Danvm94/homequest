@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% load cloudinary %}
+{% load static %}
+{% block content %}
+    <div class="container mt-5 mb-5">
+        <form class="row" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="col-12 mb-3">
+                <!-- Display edit and image upload options for staff users -->
+                <button type="submit"
+                        class="btn btn-success"><i
+                        class="fa-solid fa-pen-to-square"></i> Save
+                    Property
+                </button>
+            </div>
+            <!-- Property Edit Form -->
+            <div class="col-12 col-lg-5 mb-5">
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="row">Title</th>
+                        <td>{{ property_form.title }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Type</th>
+                        <td>{{ property_form.property_type }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Price</th>
+                        <td>{{ property_form.price }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Address</th>
+                        <td>{{ property_form.address }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">State</th>
+                        <td>{{ property_form.state }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bathrooms</th>
+                        <td>{{ property_form.bathrooms }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bedrooms</th>
+                        <td>{{ property_form.bedrooms }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fireplaces</th>
+                        <td>{{ property_form.fireplaces }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Parking Spaces</th>
+                        <td>{{ property_form.parking_spaces }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Meters Square:</th>
+                        <td>{{ property_form.size }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Agent</th>
+                        <td>{{ property_form.agent }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Image</th>
+                        <td>{{ image_form.image }}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-12 mb-5">
+                <h2>Description</h2>
+                {{ property_form.description }}
+            </div>
+        </form>
+    </div>
+{% endblock %}

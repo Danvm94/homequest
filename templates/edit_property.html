@@ -14,16 +14,17 @@
                     Property Edit
                 </button>
                 <a href="{% url 'delete_property_view' property.id %}"
-                                       class="btn btn-danger">
-                                        <i class="fas fa-trash"></i> Delete
-                                        Property
-                                    </a>
+                   class="btn btn-danger">
+                    <i class="fas fa-trash"></i> Delete
+                    Property
+                </a>
             </div>
             <!-- Images Carousel -->
             <div class="col-12 col-lg-7">
                 <div id="carouselExampleDark"
                      class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
+                    {% if property.images.all.count %}
                         {% for image in property.images.all %}
                             <button type="button"
                                     data-bs-target="#carouselExampleDark"
@@ -32,21 +33,35 @@
                                     aria-current="true"
                                     aria-label="Slide 1"></button>
                         {% endfor %}
+                    {% else %}
+                        <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                    {% endif %}
                     </div>
                     <div class="carousel-inner">
-                        {% for image in property.images.all %}
-                            <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
-                                {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
-                                <div class="position-absolute bottom-0 mb-5"
-                                     style="margin-left: 40%;">
-                                    <a href="{% url 'delete_image_view' image.id %}"
-                                       class="btn btn-danger">
-                                        <i class="fas fa-trash"></i> Delete
-                                        Image
-                                    </a>
+                        {% if property.images.all.count %}
+                            {% for image in property.images.all %}
+                                <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                    <div class="position-absolute bottom-0 mb-5"
+                                         style="margin-left: 40%;">
+                                        <a href="{% url 'delete_image_view' image.id %}"
+                                           class="btn btn-danger">
+                                            <i class="fas fa-trash"></i> Delete
+                                            Image
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        {% endfor %}
+                            {% endfor %}
+                        {% else %}
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/no-picture.webp' %}" alt="no image">
+                                </div>
+                        {% endif %}
                     </div>
                     <button class="carousel-control-prev" type="button"
                             data-bs-target="#carouselExampleDark"
@@ -71,6 +86,7 @@
             </div>
             <!-- Property Edit Form -->
             <div class="col-12 col-lg-5 mb-5">
+                <h2>Title</h2>
                 <h2>{{ property_form.title }}</h2>
                 <table class="table">
                     <tbody>
