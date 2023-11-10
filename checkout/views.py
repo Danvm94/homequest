@@ -35,6 +35,10 @@ def cache_checkout_data(request):
 def checkout_view(request, property_id):
     # Get the property object and current user
     property_object = Property.objects.get(id=property_id)
+    if property_object.gone:
+        messages.error(request,
+                       'Sorry, this property is not available anymore')
+        return redirect('home')
 
     # POST request
     if request.method == "POST":
@@ -49,7 +53,7 @@ def checkout_view(request, property_id):
             request.session['save_info'] = 'save-info' in request.POST
             # Change the property type to rented
             property_object = Property.objects.get(id=property_id)
-            property_object.property_type = 'rented'
+            property_object.gone = True
             property_object.save()
             return redirect(reverse('checkout_success_view',
                                     args=[checkout.pk]))

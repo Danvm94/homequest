@@ -13,7 +13,8 @@ from cloudinary.uploader import upload
 
 def properties_view(request, property_type):
     # Get all properties
-    properties = Property.objects.filter(property_type=property_type)
+    properties = Property.objects.filter(property_type=property_type,
+                                         gone=False)
     properties = properties.order_by('created_at')
 
     # Initialize the filter form
