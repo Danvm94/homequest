@@ -47,6 +47,12 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end"
                         aria-labelledby="navbarDropdown1">
+                        {% if user.is_staff %}
+                            <li><a class="dropdown-item"
+                                   href="{% url 'edit_property' %}"><i
+                                    class="fa-solid fa-circle-plus"></i> Add
+                                Property</a></li>
+                        {% endif %}
                         {% if user.is_authenticated %}
                             <li><a class="dropdown-item"
                                    href="{% url 'profile' %}"><i
