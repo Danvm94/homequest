@@ -34,12 +34,12 @@ class PropertyFilterForm(forms.Form):
         label="Maximum Price",
         widget=forms.TextInput(attrs={'placeholder': '100000000'})
     )
-    min_square = forms.IntegerField(
+    min_size = forms.IntegerField(
         required=False,
         label="Minimum Square",
         widget=forms.TextInput(attrs={'placeholder': '0'})
     )
-    max_square = forms.IntegerField(
+    max_size = forms.IntegerField(
         required=False,
         label="Maximum Square",
         widget=forms.TextInput(attrs={'placeholder': '2000'})
@@ -77,8 +77,8 @@ class PropertyFilterForm(forms.Form):
             Div(
                 Div('min_price', css_class='col-3'),
                 Div('max_price', css_class='col-3'),
-                Div('min_square', css_class='col-3'),
-                Div('max_square', css_class='col-3'),
+                Div('min_size', css_class='col-3'),
+                Div('max_size', css_class='col-3'),
                 css_class='row'
             ),
             Submit('submit',

@@ -25,7 +25,7 @@ def properties_view(request, property_type):
     field_mapping = {
         'bedrooms': 'bedrooms__in', 'bathrooms': 'bathrooms__in',
         'min_price': 'price__gte', 'max_price': 'price__lte',
-        'min_square': 'square__gte', 'max_square': 'square__lte',
+        'min_size': 'size__gte', 'max_size': 'size__lte',
         'state': 'state',
     }
 
@@ -37,8 +37,8 @@ def properties_view(request, property_type):
             value = data.get(form_field)
             if value:
                 # Handle special cases for Decimal/float fields
-                if form_field in ['min_price', 'max_price', 'min_square',
-                                  'max_square']:
+                if form_field in ['min_price', 'max_price', 'min_size',
+                                  'max_size']:
                     filter_conditions[model_field] = float(value)
                 else:
                     filter_conditions[model_field] = value
