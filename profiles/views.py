@@ -11,16 +11,16 @@ from django.contrib import messages
 
 @login_required
 def profile_view(request):
-    user = request.user
     if request.method == 'POST':
-        form = ProfileEditForm(request.POST, request.FILES, instance=user)
+        form = ProfileEditForm(request.POST, request.FILES,
+                               instance=request.user)
         if form.is_valid():
             form.save()
             return redirect('profile')
-    elif request.method == 'GET':
+    else:
         form = ProfileEditForm(instance=request.user)
     context = {
-        'user': user,
+        'user': request.user,
         'form': form,
     }
     return render(request, 'profile.html', context)
@@ -43,14 +43,15 @@ def terminate_contract(request, property_id):
     user = request.user
 
     # Get the Order and Property objects or return a 404 if not found
-    order = get_object_or_404(Order, property=property_id, user_profile_id=user.pk)
+    order = get_object_or_404(Order, property=property_id,
+                              user_profile_id=user.pk)
     property_obj = get_object_or_404(Property, pk=property_id)
 
     # Delete the order
     order.delete()
 
     # Update the property object
-    property_obj.property_type = 'rent'
+    property_obj.gone = False
     property_obj.save()
 
     messages.success(request, 'You have now terminated the contract.')

@@ -7,7 +7,7 @@
         <div class="row mt-5">
             <h1 class="text-center">Profile</h1>
             <hr class="my-5">
-            <form action="{% url 'profile' %}" method="post" enctype="multipart/form-data" class="mb-5">
+            <form method="post" enctype="multipart/form-data" class="mb-5">
                 {% csrf_token %}
                 {% crispy form %}
             </form>

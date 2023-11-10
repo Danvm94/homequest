@@ -10,7 +10,7 @@ import cloudinary.api
 class CustomUser(AbstractUser):
     picture = CloudinaryField(
         'image',
-        default='homequest/media/profile',
+        default=None,
         transformation=[
             {
                 "width": 600,
