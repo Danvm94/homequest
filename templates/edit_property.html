@@ -14,7 +14,7 @@
                     Property Edit
                 </button>
                 <a href="{% url 'delete_property_view' property.id %}"
-                   class="btn btn-danger">
+                   id="deletePropertyBtn" class="btn btn-danger">
                     <i class="fas fa-trash"></i> Delete
                     Property
                 </a>
@@ -24,23 +24,23 @@
                 <div id="carouselExampleDark"
                      class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
-                    {% if property.images.all.count %}
-                        {% for image in property.images.all %}
+                        {% if property.images.all.count %}
+                            {% for image in property.images.all %}
+                                <button type="button"
+                                        data-bs-target="#carouselExampleDark"
+                                        data-bs-slide-to="{{ forloop.counter0 }}"
+                                        class="active"
+                                        aria-current="true"
+                                        aria-label="Slide 1"></button>
+                            {% endfor %}
+                        {% else %}
                             <button type="button"
-                                    data-bs-target="#carouselExampleDark"
-                                    data-bs-slide-to="{{ forloop.counter0 }}"
-                                    class="active"
-                                    aria-current="true"
-                                    aria-label="Slide 1"></button>
-                        {% endfor %}
-                    {% else %}
-                        <button type="button"
                                     data-bs-target="#carouselExampleDark"
                                     data-bs-slide-to="0"
                                     class="active"
                                     aria-current="true"
                                     aria-label="Slide 1"></button>
-                    {% endif %}
+                        {% endif %}
                     </div>
                     <div class="carousel-inner">
                         {% if property.images.all.count %}
@@ -59,8 +59,9 @@
                             {% endfor %}
                         {% else %}
                             <div class="carousel-item active">
-                                <img src="{% static 'images/no-picture.webp' %}" alt="no image">
-                                </div>
+                                <img src="{% static 'images/no-picture.webp' %}"
+                                     alt="no image">
+                            </div>
                         {% endif %}
                     </div>
                     <button class="carousel-control-prev" type="button"
@@ -139,4 +140,30 @@
             </div>
         </form>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <!-- Confirmation Buttons -->
+    <script>
+        $(document).ready(function () {
+            // Target the delete button by its class or any other identifier
+            $("#deletePropertyBtn").on("click", function (e) {
+                // Prevent the default action of the link
+                e.preventDefault();
+
+                // Show a confirmation dialog
+                let confirmation = confirm("Are you sure you want to delete this property?");
+
+                // If the user confirms, proceed with the deletion
+                if (confirmation) {
+                    // Redirect to the delete URL
+                    window.location.href = $(this).attr("href");
+                } else {
+                    // If the user cancels, do nothing or provide feedback
+                    console.log("Deletion canceled");
+                }
+            });
+        });
+    </script>
 {% endblock %}

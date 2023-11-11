@@ -14,6 +14,70 @@
                     Property
                 </button>
             </div>
+            <div class="col-12 col-lg-7">
+                <div id="carouselExampleDark"
+                     class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                    {% if property.images.all.count %}
+                        {% for image in property.images.all %}
+                            <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="{{ forloop.counter0 }}"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                        {% endfor %}
+                    {% else %}
+                        <button type="button"
+                                    data-bs-target="#carouselExampleDark"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="Slide 1"></button>
+                    {% endif %}
+                    </div>
+                    <div class="carousel-inner">
+                        {% if property.images.all.count %}
+                            {% for image in property.images.all %}
+                                <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
+                                    {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
+                                    <div class="position-absolute bottom-0 mb-5"
+                                         style="margin-left: 40%;">
+                                        <a href="{% url 'delete_image_view' image.id %}"
+                                           class="btn btn-danger">
+                                            <i class="fas fa-trash"></i> Delete
+                                            Image
+                                        </a>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/no-picture.webp' %}" alt="no image">
+                                </div>
+                        {% endif %}
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                            data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                              aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <div>
+                    <h2>Add Image</h2>
+                    {{ image_form.as_p }}
+                </div>
+
+            </div>
             <!-- Property Edit Form -->
             <div class="col-12 col-lg-5 mb-5">
                 <table class="table">

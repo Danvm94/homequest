@@ -123,7 +123,6 @@ def edit_property(request, property_id=None):
             messages.success(
                 request,
                 'Property updated.' if property_id else 'Property created.')
-
         if image_form.is_valid():
             if image_form.cleaned_data['image']:
                 # Apply Cloudinary transformations before saving
@@ -141,13 +140,7 @@ def edit_property(request, property_id=None):
                 image_form.instance.property_id = property_object.id
                 image_form.instance.image = result['secure_url']
                 image_form.save()
-
-        for field, errors in property_form.errors.items():
-            for error in errors:
-                messages.error(
-                    request,
-                    f"Error in {property_form.fields[field].label}: {error}")
-        return redirect('property_detail', property_object.id)
+        return redirect('property_detail', property_id)
 
     else:  # Handle GET request
         property_form = PropertyForm(instance=property_object)
