@@ -5,13 +5,15 @@
 
 {% block content %}
     <div class="container">
-    <div class="text-center mt-5">
-        <h1>Your Contracts</h1>
-        <p>Welcome to your Contracts Page, where you have full control over
-            your agreements. Here, you can explore, review, and take action on
-            your contracts. Whether you're looking to find specific details or
-            make changes, it's all at your fingertips.</p>
-    </div>
+        <div class="text-center mt-5">
+            <h1>Your Contracts</h1>
+            <p>Welcome to your Contracts Page, where you have full control over
+                your agreements. Here, you can explore, review, and take action
+                on
+                your contracts. Whether you're looking to find specific details
+                or
+                make changes, it's all at your fingertips.</p>
+        </div>
 
         {% if orders.count > 0 %}
             {% for order in orders %}
@@ -73,7 +75,8 @@
                                     </table>
                                     </p>
                                     <a href="{% url 'terminate_contract' order.property.pk %}"
-                                       class="btn btn-success">Terminate
+                                       class="btn btn-success"
+                                       id="terminateContractBtn">Terminate
                                         Contract</a>
 
                                 </div>
@@ -94,4 +97,34 @@
         {% endif %}
     </div>
 
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <!-- Confirmation Buttons -->
+    <script>
+        $(document).ready(function () {
+            // Function to handle delete button click events
+            function handleDeleteButtonClick(e, confirmationMessage) {
+                // Prevent the default action of the link
+                e.preventDefault();
+
+                // Show a confirmation dialog
+                let confirmation = confirm(confirmationMessage);
+
+                // If the user confirms, proceed with the deletion
+                if (confirmation) {
+                    // Redirect to the delete URL
+                    window.location.href = $(this).attr("href");
+                } else {
+                    // If the user cancels, do nothing or provide feedback
+                    console.log("Deletion canceled");
+                }
+            }
+
+            $("#terminateContractBtn").on("click", function (e) {
+                handleDeleteButtonClick.call(this, e, "Are you sure you want to terminate this contract?");
+            });
+        });
+    </script>
 {% endblock %}
