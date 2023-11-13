@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from properties.utils import get_latest_properties
+from properties.models import Property
 
 
 # Create your views here.
 def index_view(request):
-    latest_properties = get_latest_properties(8)
+    properties = Property.objects.all()
+    latest_properties = properties.order_by('created_at')[:8]
 
     context = {
         'latest_properties': latest_properties,

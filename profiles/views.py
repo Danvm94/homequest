@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
 from .forms import ProfileEditForm
-from properties.utils import get_property_images
 from checkout.models import Order
 from properties.models import Property
 from django.contrib import messages

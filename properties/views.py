@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator
 from django.core.mail import send_mail
 from django.contrib.auth.decorators import user_passes_test
-from .utils import get_properties_images, get_property_images
 from .forms import PropertyFilterForm, ContactForm, PropertyForm, ImagesForm
 from .models import Property, State, RealEstateAgent, Images
 from homequest.settings import STRIPE_PUBLIC_KEY, STRIPE_CLIENT_SECRET
