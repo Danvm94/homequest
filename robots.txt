@@ -3,4 +3,8 @@ Disallow: /accounts/
 Disallow: /checkout/
 Disallow: /contracts/
 Disallow: /terminate_contract/
+Disallow: /terminate_contract/
+Disallow: /edit_property/
+Disallow: /delete_image/
+Disallow: /delete_property/
 Sitemap: https://https://homequestrs-494f18176619.herokuapp.com/sitemap.xml

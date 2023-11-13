@@ -9,58 +9,1313 @@
 
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/agents/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/about/</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/91/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/25/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/59/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/11/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/50/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/15/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/34/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/1/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/41/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/38/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/20/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/21/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/19/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/33/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/28/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/2/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/22/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/12/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/26/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/6/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/24/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/17/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/3/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/45/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/18/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/10/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=2</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=3</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/92/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/80/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/77/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/51/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/97/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/65/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/61/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/82/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/96/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/81/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/54/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/62/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/76/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/75/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/56/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/100/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/70/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/84/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/74/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/78/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/68/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/69/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=2</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=3</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/91/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/59/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/42/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/35/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/8/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/23/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/16/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/40/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/14/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/13/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/9/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/29/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/48/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/5/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/49/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/30/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/31/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/44/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/7/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/4/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/43/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/47/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/46/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/37/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/36/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/27/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/sale/?page=1</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/32/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/39/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/92/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/80/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/77/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/51/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/97/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/65/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/61/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/82/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/96/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/81/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/54/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/62/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/76/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/75/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/56/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/100/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/70/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/84/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/74/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/78/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/68/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/69/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/73/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/85/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/66/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/53/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/86/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/95/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/60/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/88/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/55/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/57/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/98/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/89/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/63/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/79/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/64/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/67/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/58/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/87/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/94/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/71/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/52/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/90/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/93/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/72/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://homequestrs-494f18176619.herokuapp.com/properties/rent/?page=1</loc>
-  <lastmod>2023-11-07T12:01:04+00:00</lastmod>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
   <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/83/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/property/99/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F91%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F59%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F92%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F80%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F77%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F51%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F97%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F65%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F61%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F82%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F96%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F81%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F54%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F62%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F76%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F75%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F56%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F100%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F70%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F84%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F74%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F78%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F68%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F69%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/73/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/85/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/66/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/53/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/86/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/95/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/60/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/88/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/55/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/57/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/98/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/89/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/63/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/79/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/64/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/67/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/58/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/87/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/94/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/71/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/52/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/90/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/93/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/72/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/83/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=/checkout/99/</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F91%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F59%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F92%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F80%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F77%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F51%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F97%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F65%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F61%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F82%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F96%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F81%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F54%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F62%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F76%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F75%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F56%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F100%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F70%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F84%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F74%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F78%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F68%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F69%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F73%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F85%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F66%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F53%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F86%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F95%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F60%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F88%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F55%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F57%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F98%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F89%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F63%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F79%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F64%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F67%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F58%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F87%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F94%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F71%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F52%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F90%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F93%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F72%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F83%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/signup/?next=%2Fcheckout%2F99%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F73%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F85%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F66%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F53%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F86%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F95%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F60%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F88%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F55%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F57%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F98%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F89%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F63%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F79%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F64%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F67%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F58%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F87%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F94%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F71%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F52%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F90%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F93%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F72%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F83%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://homequestrs-494f18176619.herokuapp.com/accounts/login/?next=%2Fcheckout%2F99%2F</loc>
+  <lastmod>2023-11-13T14:39:12+00:00</lastmod>
+  <priority>0.26</priority>
 </url>
 
 

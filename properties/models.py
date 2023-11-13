@@ -20,10 +20,12 @@ class RealEstateAgent(models.Model):
     telephone_no = models.CharField(
         max_length=9,
         validators=[
-            MinLengthValidator(limit_value=9,
-                               message="Telephone number must be 9 characters."),
-            MaxLengthValidator(limit_value=9,
-                               message="Telephone number must be 9 characters.")
+            MinLengthValidator(
+                limit_value=9,
+                message="Telephone number must be 9 characters."),
+            MaxLengthValidator(
+                limit_value=9,
+                message="Telephone number must be 9 characters.")
         ]
     )
 

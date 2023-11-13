@@ -53,6 +53,7 @@ main {
 }
 
 /* House search container config */
+/*noinspection CssUnusedSymbol*/
 .full-width-container {
     width: 100%;
     padding: 0;
@@ -60,11 +61,13 @@ main {
     height: 500px;
 }
 
+/*noinspection CssUnusedSymbol*/
 .search-house-row {
     height: 100%;
     border-width: 0;
 }
 
+/*noinspection CssUnusedSymbol*/
 .search-house-image {
     position: relative;
     width: 100%;
@@ -79,6 +82,7 @@ main {
     padding: 2px;
 }
 
+/*noinspection CssUnusedSymbol*/
 .search {
     position: relative;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1);
@@ -95,6 +99,7 @@ main {
     box-shadow: none;
 }
 
+/*noinspection CssUnusedSymbol*/
 .search .fa-search {
     position: absolute;
     top: 20px;
@@ -143,6 +148,7 @@ main {
     border-radius: 5px;
 }
 
+/*noinspection CssUnusedSymbol*/
 .about-image {
     height: auto;
 }
