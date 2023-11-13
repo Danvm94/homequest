@@ -14,3 +14,7 @@ def index_view(request):
 
 def about_view(request):
     return render(request, 'about.html')
+
+
+def handler404(request, exception):
+    return render(request, '404.html', status=404)

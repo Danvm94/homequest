@@ -78,3 +78,5 @@ urlpatterns = [
          name='delete_property_view'),
 
 ]
+
+handler404 = 'homepage.views.handler404'
