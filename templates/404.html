@@ -2,5 +2,16 @@
 {% load static %}
 
 {% block content %}
-    <img src="{% static 'images/404.webp' %}" width="600px" alt="404 Error">
+    <div class="container">
+        <div class="row text-center">
+            <h1>Oops! Page Not Found</h1>
+            <img src="{% static 'images/404.webp' %}" width="600px"
+                 alt="404 Error">
+            <p>We're sorry, but it seems like you've taken a wrong turn. The
+                page you are looking for might be under construction, moved, or
+                simply doesn't exist.</p>
+        </div>
+
+    </div>
+
 {% endblock %}
