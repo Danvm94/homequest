@@ -5,12 +5,10 @@ from properties.models import Property
 from django.views.decorators.http import require_POST
 from homequest.settings import STRIPE_CLIENT_SECRET, STRIPE_PUBLIC_KEY, \
     STRIPE_CURRENCY
-from properties.utils import get_property_images
 from .forms import PropertyCheckoutRent
 from django.contrib.auth.decorators import login_required
 import stripe
 from .models import Order
-from profiles.models import CustomUser
 
 
 # Create your views here.
@@ -96,8 +94,7 @@ def checkout_success_view(request, primary_key):
             'default_delivery_address': checkout.delivery_address,
         }
     messages.success(request, f'Order successfully processed! \
-            Your order number is {primary_key}. A confirmation \
-            email will be sent to {checkout.user_profile.email}.')
+            Your order number is {primary_key}.')
     context = {
         'checkout': checkout,
     }
