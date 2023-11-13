@@ -43,14 +43,6 @@
                         {% for image in property.images.all %}
                             <div class="carousel-item {% if forloop.counter0 == 0 %}active{% endif %}">
                                 {% cloudinary image.image crop="fill" alt="house picture" class="d-block w-100 property-image mb-4" %}
-                                <div class="position-absolute bottom-0 mb-5"
-                                     style="margin-left: 40%;">
-                                    <a href="{% url 'delete_image_view' image.id %}"
-                                       class="btn btn-danger">
-                                        <i class="fas fa-trash"></i> Delete
-                                        Image
-                                    </a>
-                                </div>
                             </div>
                         {% endfor %}
                     {% else %}
