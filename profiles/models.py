@@ -10,7 +10,8 @@ import cloudinary.api
 class CustomUser(AbstractUser):
     picture = CloudinaryField(
         'image',
-        default=None,
+        null=True,
+        blank=True,
         transformation=[
             {
                 "width": 600,

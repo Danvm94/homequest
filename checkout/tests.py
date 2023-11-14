@@ -1,6 +1,8 @@
 from django.test import TestCase
+from profiles.models import CustomUser
 from .forms import PropertyCheckoutRent
-from .models import Order
+from .models import Order, Property
+from properties.models import State, RealEstateAgent
 
 
 # forms.py
@@ -58,8 +60,67 @@ class PropertyCheckoutRentFormTests(TestCase):
         form = PropertyCheckoutRent(data=data)
         self.assertTrue(form.is_valid())
         order = form.save(commit=False)
-        # Assuming you have a ForeignKey 'property' in Order model,
-        # you can set it here before saving the order.
-        # order.property = your_property_instance
         order.save()
         self.assertEqual(Order.objects.count(), 1)
+
+
+# models.py
+class OrderModelTest(TestCase):
+
+    @classmethod
+    def setUpTestData(cls):
+        # Set up non-modified objects used by all test methods
+        user = CustomUser.objects.create(username='testuser')
+        agent = RealEstateAgent.objects.create(user_id=user.id)
+        state = State.objects.create(state_name='Test')
+        property_obj = Property.objects.create(
+            title='Test Property',
+            description='Test Description',
+            address='Test Address',
+            agent_id=agent.id,
+            state=state,
+            property_type='sale',
+            price=1000,
+            bathrooms=1,
+            bedrooms=1,
+            fireplaces=1,
+            parking_spaces=1,
+            size=100,
+        )
+        Order.objects.create(
+            user_profile=user,
+            property=property_obj,
+            phone_number='1234567890',
+            delivery_address='Test Address'
+        )
+
+    def test_user_profile(self):
+        order = Order.objects.get(id=1)
+        user_profile = order.user_profile
+        self.assertEqual(user_profile.username, 'testuser')
+
+    def test_property(self):
+        order = Order.objects.get(id=1)
+        property_obj = order.property
+        self.assertEqual(property_obj.title, 'Test Property')
+
+    def test_phone_number(self):
+        order = Order.objects.get(id=1)
+        phone_number = order.phone_number
+        self.assertEqual(phone_number, '1234567890')
+
+    def test_delivery_address(self):
+        order = Order.objects.get(id=1)
+        delivery_address = order.delivery_address
+        self.assertEqual(delivery_address, 'Test Address')
+
+    def test_date(self):
+        order = Order.objects.get(id=1)
+        # Ensure the date is not null
+        self.assertIsNotNone(order.date)
+
+    def test_stripe_pid(self):
+        order = Order.objects.get(id=1)
+        stripe_pid = order.stripe_pid
+        # Ensure the default value is an empty string
+        self.assertEqual(stripe_pid, '')
