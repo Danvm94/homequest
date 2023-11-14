@@ -5,6 +5,15 @@ from crispy_forms.layout import Layout, Field, Submit
 
 
 class ProfileEditForm(forms.ModelForm):
+    first_name = forms.CharField(
+        label='First Name',
+        required=True
+    )
+    last_name = forms.CharField(
+        label='Last Name',
+        required=True
+    )
+
     def __init__(self, *args, **kwargs):
         super(ProfileEditForm, self).__init__(*args, **kwargs)
         self.helper = FormHelper()
