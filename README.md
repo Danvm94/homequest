@@ -178,3 +178,26 @@ These security measures are in place to provide a safe and reliable user
 experience while protecting sensitive information from unauthorized access.
 
 [Back to top &uarr;](#contents)
+
+### **The Scope Plane**
+
+- **Responsive Design:**
+    - The site should be fully functional on all devices,
+      ranging from 320px width and up.
+
+- **Hamburger Menu:**
+    - Implement a mobile-friendly hamburger menu for improved
+      navigation on mobile devices.
+
+- **CRUD Functionality:**
+    - For real estate agents, CRUD operations should be available for
+      Properties.
+
+- **Role-Based Access:**
+    - Specifically, only real estate agents should have the ability to perform
+      CRUD operations on Properties.
+
+- **Home Page:**
+    - Design a home page that provides an overview of the site's
+      purpose, with convenient links to essential features for registered
+      users.
