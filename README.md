@@ -98,4 +98,4 @@ provided detailed information about project cards. All User Stories included a
 set of acceptance criteria to define the functionality required for story
 completion.
 
-![homequest-agile-board]()
+![homequest-agile-board](./README/homequest-agile-board.png)
