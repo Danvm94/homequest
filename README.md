@@ -151,3 +151,30 @@ management of user orders, profiles, real estate agents, states, properties,
 and property images.
 
 ![db-homequest](./README/db-homequest.png)
+
+#### **Security Measures**
+
+Security is a top priority in the development of this project. Several security
+measures have been implemented to protect user data and sensitive information.
+
+- **User Authentication**
+
+In addition to the `@login_required` decorator, the `@user_passes_test`
+decorator with a custom `is_staff` function is also employed to restrict access
+to specific views. The `is_staff` function checks whether a user is a staff
+member, and the `@user_passes_test(is_staff)` decorator ensures that only staff
+members can access the associated views. This helps in further controlling
+access to certain functionalities based on user roles.
+
+- **Protection of Sensitive Data**
+
+To safeguard secret keys, API keys, and other sensitive information,
+environment variables have been utilized. During local development, these
+variables are stored in an `env.py` file, ensuring that no confidential data is
+exposed in the project repository. In the production environment (e.g., on
+Heroku), these variables are securely managed through Heroku's config vars.
+
+These security measures are in place to provide a safe and reliable user
+experience while protecting sensitive information from unauthorized access.
+
+[Back to top &uarr;](#contents)
