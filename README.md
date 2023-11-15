@@ -99,3 +99,55 @@ set of acceptance criteria to define the functionality required for story
 completion.
 
 ![homequest-agile-board](./README/homequest-agile-board.png)
+
+#### **Database Schema**
+
+The database schema for this project includes the following models:
+
+- The **Order** model stores information about orders made by users.
+    - Fields:
+        - `user_profile`: ForeignKey relationship with the CustomUser model.
+        - `property`: ForeignKey relationship with the Property model.
+        - `phone_number`: CharField for storing the user's phone number (not
+          null).
+        - `delivery_address`: CharField for storing the delivery address (not
+          null).
+        - `date`: DateTimeField for the order date (auto_now_add=True).
+        - `stripe_pid`: CharField for storing the Stripe payment ID (not null).
+
+- The **CustomUser** model represents user profiles with extended fields.
+    - Fields:
+        - `picture`: VarcharField for storing the user's profile picture.
+        - Additional fields inherited from the AbstractUser model.
+
+- The **RealEstateAgent** model represents real estate agents linked to users.
+    - Fields:
+        - `user`: ForeignKey relationship with the CustomUser model.
+        - `license_no`: CharField for storing the agent's license number.
+        - `telephone_no`: CharField for storing the agent's telephone number.
+
+- The **State** model stores information about states.
+    - Fields:
+        - `state_name`: CharField for storing the name of the state (unique).
+
+- The **Property** model represents properties available for sale or rent.
+    - Fields:
+        - `agent`: ForeignKey relationship with the RealEstateAgent model.
+        - `address`: CharField for storing the property address.
+        - `property_type`: CharField for storing the property type (sale/rent).
+        - `state`: ForeignKey relationship with the State model.
+        - `created_at`: DateTimeField for creation timestamp (
+          auto_now_add=True).
+        - `updated_at`: DateTimeField for update timestamp (auto_now=True).
+        - Additional property details, such as description, price, title, etc.
+
+- The **Images** model represents images associated with properties.
+    - Fields:
+        - `property`: ForeignKey relationship with the Property model.
+        - `image`: VarcharField for storing the image file path (default '').
+
+This schema defines the structure of your project's database, facilitating the
+management of user orders, profiles, real estate agents, states, properties,
+and property images.
+
+![db-homequest](./README/db-homequest.png)
