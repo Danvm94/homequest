@@ -650,3 +650,48 @@ following artists whose work has been utilized on this website:
 </details>
 
 [Back to top &uarr;](#contents)
+
+## **Technologies Used**
+
+### **Languages Used**
+
+[![HTML5](https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5)](https://en.wikipedia.org/wiki/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS-3-white?style=for-the-badge&logo=css3)](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)](https://en.wikipedia.org/wiki/JavaScript)
+[![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+### **Frameworks and Tools Used**
+
+- [![Django](https://img.shields.io/badge/Django-4.2.7-green?style=for-the-badge&logo=django)](https://www.djangoproject.com/)
+    - Django was used as the main python framework in the development of this
+      project
+- [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple?style=for-the-badge&logo=bootstrap)](https://blog.getbootstrap.com/)
+    - Bootstrap played a crucial role in shaping the overall layout and
+      ensuring consistent spacing across the website.
+- [![JQuery](https://img.shields.io/badge/JQuery-3.7.1-blue?style=for-the-badge&logo=jquery)](https://jquery.com/)
+    - Jquery version 3.7.1 for enhanced JavaScript functionality.
+- [![ElephantSQL](https://img.shields.io/badge/Database-ElephantSQL-339989?style=for-the-badge&logo=postgresql)](https://www.elephantsql.com/)
+    - ElephantSQL served as the Production database for this project.
+- [![Cloudinary](https://img.shields.io/badge/Storage-Cloudinary-4285F4?style=for-the-badge&logo=cloudinary)](https://cloudinary.com/)
+    - Cloudinary was employed to host and manage all static files and images
+      for the project.
+- [![Git](https://img.shields.io/badge/Version%20Control-Git-F05032?style=for-the-badge&logo=git)](https://git-scm.com/)
+    - Git was utilized for version control, allowing easy tracking of project
+      changes for committing and pushing to GitHub.
+- [![GitHub](https://img.shields.io/badge/Code%20Repository-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/)
+    - GitHub is the platform used to store the project's code after it's pushed
+      from Git, facilitating version control and collaboration.
+- [![Heroku](https://img.shields.io/badge/Heroku-Deployed-purple?style=for-the-badge&logo=heroku)](https://www.heroku.com/)
+    - Heroku was utilized for deploying the application.
+- [![Balsamiq](https://img.shields.io/badge/Balsamiq-Wireframing-blue?style=for-the-badge&logo=balsamiq)](https://balsamiq.com/) -
+    - Balsamiq was utilized for creating wireframes for the website.
+- [![CI Python Linter](https://img.shields.io/badge/CI%20Python%20Linter-Validation-success?style=for-the-badge&logo=python)](https://pep8ci.herokuapp.com/)
+    - CI Python Linter was employed to validate the website's Python code.
+- [![DBDiagram](https://img.shields.io/badge/dbdiagram.io-Database%20Schema-blue?style=for-the-badge&logo=database)](https://dbdiagram.io/home)
+    - DBDiagram was utilized to design and visualize the database schema.
+- [![Font Awesome](https://img.shields.io/badge/Font%20Awesome-Icons-lightgrey?style=for-the-badge&logo=font-awesome)](https://fontawesome.com/)
+    - Font Awesome, a comprehensive library of scalable vector icons, adds
+      visual elements to the website. These icons enhance user experience and
+      improve the overall design aesthetics.
+- [![Stripe](https://img.shields.io/badge/Stripe-Payment-orange?style=for-the-badge&logo=stripe)](https://stripe.com/)
+    - Stripe was used for payment integration processing.
