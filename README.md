@@ -281,6 +281,29 @@ In cases where registration fails or additional information is required, the
 dedicated registration page serves as a showcase to guide users through the
 necessary steps and provide the relevant information needed to complete the
 registration process successfully.
+
 ![register-modal](./README/register-modal.png)
+
+[Back to top &uarr;](#contents)
+
+#### **Login Page**
+
+The 'Login' page on Homequest is where users can securely access their accounts
+and explore the platform's features. This dedicated page provides a streamlined
+login process, ensuring a secure and user-friendly experience.
+![login](./README/login.png)
+
+While the dedicated login page offers a traditional login experience, the
+primary and preferred method for logging in on Homequest is through a modal.
+This modal is conveniently accessible throughout the entire website, providing
+users with a quick and seamless way to log in without navigating away from
+their current context.
+
+In situations where login attempts fail or additional verification is
+necessary, the dedicated login page is designed to guide users through the
+necessary steps and communicate any pertinent information needed to
+successfully log in.
+
+![register-modal](./README/login-modal.png)
 
 [Back to top &uarr;](#contents)
