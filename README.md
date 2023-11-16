@@ -241,7 +241,46 @@ providing a cohesive and user-friendly experience.
   providing users with essential information about the company's mission and
   values.
 
-
 ![footer](./README/footer.png)
+
+[Back to top &uarr;](#contents)
+
+#### **Homepage**
+
+The homepage of Homequest welcomes users with a well-structured layout
+designed to provide a comprehensive experience. It's divided into two sections:
+
+- **'Welcome Section':** The "Welcome" section serves as the initial
+  introduction
+  to the website. It offers a brief and inviting overview of Homequest's
+  mission and purpose.
+  ![welcome-section](./README/welcome-section.png)
+
+- **'Latest Properties':** The Latest Properties section displays the most
+  recent 8 properties added to the website. This serves as a quick showcase,
+  providing users with an immediate glimpse of what's happening in the
+  Homequest market. Users can click on each property to access more detailed
+  information, allowing them to explore features, images, and additional
+  details for a comprehensive view of each listing.
+  ![latest-properties-section](./README/latest-properties-section.png)
+
+#### **Register Page**
+
+The 'Register' page on Homequest is where new users can create their accounts
+to access the platform's features. This user-friendly page simplifies the
+registration process and gathers essential information from users to get
+started.
+![register](./README/register.png)
+
+However, the primary method for registration on Homequest is through a modal.
+This modal is conveniently available throughout the entire website when the
+user is not logged in, serving as the main and efficient way for users to sign
+up without navigating away from their current context.
+
+In cases where registration fails or additional information is required, the
+dedicated registration page serves as a showcase to guide users through the
+necessary steps and provide the relevant information needed to complete the
+registration process successfully.
+![register-modal](./README/register-modal.png)
 
 [Back to top &uarr;](#contents)
