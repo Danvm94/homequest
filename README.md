@@ -365,3 +365,60 @@ real estate journey.
 This page introduces you to the agents who can help you find your ideal home.
 
 [Back to top &uarr;](#contents)
+
+#### **About Page**
+
+The 'About' page on Homequest provides a window into company's journey and
+values.
+
+![about-page](./README/about-page.png)
+
+**Key Features:**
+
+- **Welcome Section:** The 'Welcome' section sets the tone for your
+  exploration,
+  offering a warm introduction to Homequest. It serves as an inviting entry
+  point, providing a glimpse into the essence of our community and the
+  importance
+  we place on creating meaningful homes.
+
+- **Our Core Section:** In the 'Our Core' section, we delve into the
+  fundamental
+  aspects that define Homequest. This segment articulates our mission, values,
+  and commitment to building a community centered around trust, transparency,
+  and
+  client satisfaction. It provides a deeper understanding of what drives us in
+  the realm of real estate.
+
+Explore the 'About' page to discover more about Homequest, our journey, and the
+principles that shape our approach to real estate.
+
+[Back to top &uarr;](#contents)
+
+#### **Contracts Page**
+
+The 'Contracts' page on Homequest serves as a central hub for users to oversee
+and manage their rented properties. It consists of two main sections:
+
+![contracts-page](./README/contracts-page.png)
+
+**Key Features:**
+
+- **View Contracts Section:** In the 'View Contracts' section, users can access
+  and review details of their active contracts. This area provides a
+  comprehensive display of the terms,conditions, and essential information
+  pertaining to rented properties.
+
+- **Terminate Contracts Section:** Within the 'Terminate Contracts' section,
+  users have the capability to initiate the termination process for active
+  contracts that are no longer required. This functionality offers flexibility
+  and convenience, empowering users to efficiently manage their rental
+  agreements.
+
+**Important Note:**
+
+It is imperative to note that, as of the current operational state, Homequest
+exclusively facilitates payments for rental agreements. The platform is
+dedicated to managing financial transactions associated with rental properties.
+
+[Back to top &uarr;](#contents)
