@@ -609,3 +609,44 @@ ensuring that users can effortlessly engage with content and navigate through
 the platform.
 
 [Back to top &uarr;](#contents)
+
+### **Imagery**
+
+All the images used on this website have been sourced
+from [Freepik](www.freepik.com) and are available for free personal usage.
+These images have been carefully selected to enhance the visual appeal and user
+experience of the website. They are used in accordance with Freepik's licensing
+terms, ensuring compliance with copyright and usage rights.
+
+The images contribute to the overall aesthetics and functionality of the
+website, providing users with a visually engaging and informative experience.
+
+**Image Credits:**
+
+- All images were downloaded from [Freepik](www.freepik.com).
+- Licensing details and attribution information for each image can be found on
+  Freepik's platform.
+
+It is appreciated that the creative contributions of the
+following artists whose work has been utilized on this website:
+<details>
+@benzoix
+@freepik
+@pikisuperstar
+@vilmosvarga
+@storyset
+@rawpixel.com
+@vectorjuice
+@mrsiraphol
+@wirestock
+@lifeforstock
+@fanjianhua
+@evening_tao
+@ASphotofamily
+@pvproductions
+@suksao
+@jcomp
+@macrovector_official
+</details>
+
+[Back to top &uarr;](#contents)
