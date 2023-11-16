@@ -500,12 +500,14 @@ orientations, providing users with a consistent and user-friendly interface.
 Bootstrap integration, media queries, and touch-friendly interactions enhance
 mobile responsiveness.
 
-![home-mobile](./README/home-page-mobile.gif)
-![login-mobile](./README/login-mobile.png)
-![wallet-mobile](./README/wallet-mobile.png)
-![crypto-mobile](./README/crypto-mobile.gif)
-![chart-mobile](./README/chart-mobile.gif)
-![manage-mobile](./README/manage-mobile.png)
+![home-mobile](./README/home-mobile.gif)
+![login-mobile](./README/login-mobile.gif)
+![register-mobile](./README/register-mobile.gif)
+![properties-mobile](./README/properties-mobile.gif)
+![property-mobile](./README/property-mobile.gif)
+![agents-mobile](./README/agents-mobile.gif)
+![about-mobile](./README/about-mobile.gif)
+![contracts-mobile](./README/contracts-mobile.gif)
 
 Homequest's commitment to mobile-first design and responsiveness guarantees
 that users can comfortably access and navigate the platform on their preferred
