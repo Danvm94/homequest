@@ -511,8 +511,101 @@ mobile responsiveness.
 ![create-mobile](./README/create-mobile.gif)
 ![edit-mobile](./README/edit-mobile.gif)
 
-
-
 Homequest's commitment to mobile-first design and responsiveness guarantees
 that users can comfortably access and navigate the platform on their preferred
 devices, regardless of screen size.
+
+### **Future Features**
+
+- **Virtual Property Tours:**
+  Integrate virtual reality or 360-degree images to provide users with
+  immersive virtual property tours.
+
+- **User Ratings and Reviews:**
+  Allow users to rate and leave reviews for properties they have rented or
+  purchased, providing valuable feedback for future users.
+
+- **Property Analytics:**
+  Provide analytics and insights on property trends, market values, and
+  neighborhood statistics to assist users in making well-informed decisions.
+
+- **Tenant Portal:**
+  Develop a dedicated portal for tenants to manage rent payments, maintenance
+  requests, and communicate with property managers.
+
+- **Schedule Viewings:**
+  Add the possibility of scheduling property viewings directly through the
+  website.
+
+- **Biddings for Purchase Properties:**
+  Implement a bidding system for users interested in purchasing properties.
+
+- **Inside App Chat with Agents:**
+  Introduce an in-app chat feature, allowing users to communicate directly with
+  agents for property-related inquiries or assistance.
+
+[Back to top &uarr;](#contents)
+
+## **The Surface Plane**
+
+### **Design**
+
+#### **Colour Scheme**
+
+In Homequest, the design incorporates a balanced blend of dark and light
+themes, creating a visually harmonious experience. The color scheme is
+carefully chosen to ensure a modern and user-friendly interface. Here are key
+elements of our color choices:
+
+- **Dark and Light Mix:** We have curated a mix of dark and light themes to
+  provide users with a balanced and visually appealing design.
+
+- **Button Styles:**
+    - **Danger Button:** Employed for critical actions or alerts, ensuring
+      users pay attention to important messages or decisions.
+    - **Success Button:** Applied to signify successful operations or positive
+      interactions, promoting a sense of accomplishment.
+
+- **Background Color for Navigation Links (`#222`):**
+  ![Color](https://dummyimage.com/15x15/222/000000.png&text=+)
+    - This deep shade of gray (#222) serves as the background color for
+      navigation links, creating a clear visual separation for navigation
+      elements.
+
+- **Dropdown Menu Active Background Color (`#5cc177`):**
+  ![Color](https://dummyimage.com/15x15/5cc177/000000.png&text=+)
+    - The vibrant green (#5cc177) is used as the background color when a
+      dropdown link is active, providing a visual cue for the active state.
+
+- **Checked Form Check Input Background Color (`#5cc177`):**
+  ![Color](https://dummyimage.com/15x15/5cc177/000000.png&text=+)
+    - This color (#5cc177) is applied to the background of a checked form check
+      input, ensuring a consistent visual representation of checked items.
+
+- **Form Control Focus Border Color (`rgba(46, 96, 60, 0.4)`):**
+  ![Color](https://dummyimage.com/15x15/46803c/000000.png&text=+)
+    - The semi-transparent green border color is applied when a form control is
+      in focus, contributing to a responsive and visually appealing form
+      interaction.
+
+This combination of dark and light themes aims to offer a versatile and
+pleasant environment for users, promoting ease of use and consistency in design
+elements.
+
+[Back to top &uarr;](#contents)
+
+### **Typography**
+
+The typography of Homequest is carefully crafted to provide a clean and legible
+interface, contributing to a pleasant user experience. The primary font used is
+**Roboto**, a sans-serif typeface known for its readability and modern
+appearance. This choice aligns with our commitment to creating a professional
+and user-friendly platform.
+
+- **Font Family**: "Roboto", sans-serif
+
+The use of the Roboto font enhances the overall aesthetics of the website,
+ensuring that users can effortlessly engage with content and navigate through
+the platform.
+
+[Back to top &uarr;](#contents)
