@@ -344,6 +344,36 @@ Rent' pages of Homequest.
 
 [Back to top &uarr;](#contents)
 
+#### **Property View Page**
+
+The 'Property View' page on Homequest is meticulously designed to provide
+users with a comprehensive overview of individual properties and access to
+key functionalities.
+
+![property-view-page](./README/property-view-page.png)
+
+**Key Features:**
+
+- **Detailed Property Information:** Access detailed information about the
+  property, including its location, features, specifications, and high-quality
+  images.
+
+- **Agent Contact:** Directly connect with the responsible agent for the
+  property. The 'Contact Agent' feature allows users to inquire about
+  specific property details, gather additional information, or address any
+  inquiries they may have.
+
+- **Rental Process (if applicable):** For properties available for rent,
+  auditors can review and understand the streamlined rental process. This
+  feature provides insight into the steps involved, ensuring transparency in
+  the rental agreements.
+
+The 'Property View' page serves as a central hub for auditors to gather
+essential information, make inquiries, and navigate the rental process if
+needed.
+
+[Back to top &uarr;](#contents)
+
 #### **Agents Page**
 
 The 'Agents' page on Homequest serves as your gateway to connect with our
@@ -476,7 +506,6 @@ mobile responsiveness.
 ![crypto-mobile](./README/crypto-mobile.gif)
 ![chart-mobile](./README/chart-mobile.gif)
 ![manage-mobile](./README/manage-mobile.png)
-
 
 Homequest's commitment to mobile-first design and responsiveness guarantees
 that users can comfortably access and navigate the platform on their preferred
