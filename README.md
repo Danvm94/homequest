@@ -452,3 +452,11 @@ Homequest's property database, ensuring a diverse and up-to-date selection for
 our users.
 
 [Back to top &uarr;](#contents)
+
+#### **Error Page**
+
+The '404 Page' on Investosphere is designed to handle situations where users
+attempt to access a page or resource that doesn't exist or can't be found. It
+provides a user-friendly and informative experience in case of unexpected
+errors.
+![404](./README/404.png)
