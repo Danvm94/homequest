@@ -508,6 +508,10 @@ mobile responsiveness.
 ![agents-mobile](./README/agents-mobile.gif)
 ![about-mobile](./README/about-mobile.gif)
 ![contracts-mobile](./README/contracts-mobile.gif)
+![create-mobile](./README/create-mobile.gif)
+![edit-mobile](./README/edit-mobile.gif)
+
+
 
 Homequest's commitment to mobile-first design and responsiveness guarantees
 that users can comfortably access and navigate the platform on their preferred
