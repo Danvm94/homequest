@@ -422,3 +422,33 @@ exclusively facilitates payments for rental agreements. The platform is
 dedicated to managing financial transactions associated with rental properties.
 
 [Back to top &uarr;](#contents)
+
+#### **Add and Edit Property Page**
+
+The 'Add Property and Edit Property' page on Homequest is an exclusive space
+for staff users to contribute and expand our property listings.
+
+![add-property](./README/add-edit-property.png)
+
+**Key Features:**
+
+- **Staff-Only Access:** This functionality is restricted to
+  staff users, ensuring that only authorized personnel can contribute new
+  properties to the Homequest platform.
+
+- **Streamlined Submission Process:** Staff users can easily navigate through a
+  streamlined submission process, entering essential details about new
+  properties to enrich the Homequest database.
+
+- **Image Upload:** Enhance property listings with vibrant visuals. Staff users
+  can upload images to showcase the unique features of each property.
+
+- **Property Details:** Capture comprehensive property details, including
+  location, features, and specifications, to provide potential tenants and
+  buyers with accurate and valuable information.
+
+This dedicated space empowers staff members to actively contribute to
+Homequest's property database, ensuring a diverse and up-to-date selection for
+our users.
+
+[Back to top &uarr;](#contents)
