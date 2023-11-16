@@ -307,3 +307,39 @@ successfully log in.
 ![register-modal](./README/login-modal.png)
 
 [Back to top &uarr;](#contents)
+
+#### **Buy and Rent Pages**
+
+The 'Buy and Rent' pages on Homequest are your gateways to explore curated
+selections of properties available for both sale and rent. These pages are
+dedicated to showcasing properties, providing users with a convenient and
+focused space for their home-searching journey.
+
+![buy-rent](./README/buy-rent-page.gif)
+
+**Key Features:**
+
+- **Property Listings:** The 'Buy and Rent' pages exclusively feature
+  properties available for each sale and rent. Users can browse through curated
+  selections to find the perfect home or rental that meets their preferences
+  and requirements.
+
+- **Individual Property Details:** Clicking on each property opens a dedicated
+  page with comprehensive details. Users can explore images, descriptions, and
+  additional information to make informed decisions about their potential
+  future home or rental.
+
+- **Filter Functionality:** The pages include a robust filtering system,
+  allowing users to narrow down their search based on specific criteria such as
+  location, price range, and property type. This feature enhances the user
+  experience by providing targeted results tailored to individual preferences.
+
+- **Paginator Function:** To enhance navigation and avoid overwhelming users,
+  the 'Buy and Rent' pages incorporate a paginator function. This allows the
+  display of a manageable number of properties on each page, making it easy for
+  users to navigate through the available listings.
+
+Explore, filter, and find your dream home or rental seamlessly on the 'Buy and
+Rent' pages of Homequest.
+
+[Back to top &uarr;](#contents)
