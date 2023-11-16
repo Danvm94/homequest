@@ -201,3 +201,47 @@ experience while protecting sensitive information from unauthorized access.
     - Design a home page that provides an overview of the site's
       purpose, with convenient links to essential features for registered
       users.
+
+## **The Structure Plane**
+
+### **Features**
+
+#### **Navbar**
+
+The Navbar contains links for various sections of the website, each with
+specific visibility conditions:
+
+- **Home** (index.html): Visible to all users.
+- **Buy** (properties-sale): Visible to all users.
+- **Rent** (properties-rent): Visible to all users.
+- **Agents** (agents): Visible to all users.
+- **About** (about): Visible to all users.
+- **Your Contracts** (contracts_view): Visible only to logged-in users.
+- **Add Property** (edit_property): Visible only to logged-in users with staff
+  privileges.
+- **Profile** (profile): Visible only to logged-in users.
+- **Sign Out** (account_logout): Visible only to logged-in users.
+
+These navigation items ensure that users have access to the relevant sections
+based on their authentication status and roles.
+
+[Back to top &uarr;](#contents)
+
+#### **Footer**
+
+The footer section is thoughtfully positioned at the bottom of each page,
+providing a cohesive and user-friendly experience.
+
+- **Social Media Links:** Social media links are elegantly displayed using
+  icons from Font Awesome. These icons offer a seamless way for users to
+  connect with the company, stay updated with news, and engage with the
+  community.
+
+- **Company Description:** A brief description of the company is included,
+  providing users with essential information about the company's mission and
+  values.
+
+
+![footer](./README/footer.png)
+
+[Back to top &uarr;](#contents)
