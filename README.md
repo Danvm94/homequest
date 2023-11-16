@@ -343,3 +343,25 @@ Explore, filter, and find your dream home or rental seamlessly on the 'Buy and
 Rent' pages of Homequest.
 
 [Back to top &uarr;](#contents)
+
+#### **Agents Page**
+
+The 'Agents' page on Homequest serves as your gateway to connect with our
+experienced real estate professionals. Discover the faces behind Homequest,
+each contributing a wealth of knowledge and dedication to assist you in your
+real estate journey.
+
+![agents-page](./README/agents-page.png)
+
+**Key Features:**
+
+- **Why Choose Homequest Agents:** Get to know the core workers at Homequest.
+  Our dedicated team brings expertise, reliability, and a commitment to making
+  your real estate experience exceptional.
+
+- **Meet Our Agents:** Explore the profiles of our team in the 'Meet Our
+  Agents' section. Each agent is ready to guide you in finding your dream home.
+
+This page introduces you to the agents who can help you find your ideal home.
+
+[Back to top &uarr;](#contents)
