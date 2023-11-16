@@ -460,3 +460,24 @@ attempt to access a page or resource that doesn't exist or can't be found. It
 provides a user-friendly and informative experience in case of unexpected
 errors.
 ![404](./README/404.png)
+
+#### **Mobile View**
+
+Homequest embraces a mobile-first approach to design, ensuring an
+exceptional user experience on a wide range of devices, including smartphones
+and tablets. The site seamlessly adapts to different screen sizes and
+orientations, providing users with a consistent and user-friendly interface.
+Bootstrap integration, media queries, and touch-friendly interactions enhance
+mobile responsiveness.
+
+![home-mobile](./README/home-page-mobile.gif)
+![login-mobile](./README/login-mobile.png)
+![wallet-mobile](./README/wallet-mobile.png)
+![crypto-mobile](./README/crypto-mobile.gif)
+![chart-mobile](./README/chart-mobile.gif)
+![manage-mobile](./README/manage-mobile.png)
+
+
+Homequest's commitment to mobile-first design and responsiveness guarantees
+that users can comfortably access and navigate the platform on their preferred
+devices, regardless of screen size.
