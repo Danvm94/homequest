@@ -455,3 +455,38 @@ Homequest's mission, values, and history.
 
 ![about-page](./README/about-page.png)
 ![about-page](./README/about-mobile.gif)
+
+#### **Payment**
+
+'As a User, I want the ability to seamlessly process a payment via Stripe to
+rent a property on the Homequest website. This will provide a convenient and
+secure way for me to complete the rental transaction.'
+
+The following tests have been conducted to ensure the
+payment function operates smoothly:
+
+- **Rent a Property Form:**
+  Testing has been implemented for the rent a property form, ensuring that it
+  correctly requests the necessary credit card information from users.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Credit Card Validation:**
+  If the form is filled correctly with a test card provided by the Stripe
+  documentation, the website registers the order.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+
+- **Order Registration:**
+  After successful validation, testing confirms that the website registers the
+  order, marking the completion of the rental transaction.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+
+- **Success Message Display:**
+  Once the order is registered, a success message is displayed along with
+  details of the rental contract on the page.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+
+![about-page](./README/rent-property.gif)

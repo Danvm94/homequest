@@ -4,7 +4,8 @@ from properties.models import Property
 
 # Create your views here.
 def index_view(request):
-    properties = Property.objects.all()
+    properties = Property.objects.filter(gone=False)
+    properties = properties.order_by('created_at')
     latest_properties = properties.order_by('created_at')[:8]
 
     context = {
