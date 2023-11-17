@@ -526,3 +526,39 @@ These tests aim to guarantee a straightforward and user-friendly experience for
 terminating rental contracts on the Homequest website.
 
 ![terminate-contract](./README/terminate-contract.gif)
+
+#### **Agent Contact**
+
+'As a User, I want to be able to contact agents easily for inquiries or
+assistance related to a specific property. This will provide me with a direct
+communication channel to seek more information.'
+
+The following tests have been conducted to ensure the
+agent contact operates smoothly:
+
+- **Form Validation:**
+  Thorough testing has been implemented to validate the contact form, ensuring
+  that all required fields are correctly validated before submission.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Email Send:**
+  The functionality to send emails through the contact form has been rigorously
+  tested, guaranteeing that user inquiries are successfully transmitted to the
+  respective agents.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Success Message:**
+  Upon successful submission of the contact form, users receive a clear success
+  message. Testing ensures that this message is displayed accurately, providing
+  users with confirmation that their inquiry has been sent.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+These tests aim to enhance the user experience by ensuring a reliable and
+straightforward communication channel for users to contact agents on the
+Homequest website.
+
+![email-send](./README/email-send.gif)
+![email-sent](./README/email-sent.png)
