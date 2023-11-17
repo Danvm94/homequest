@@ -248,3 +248,36 @@ covering the following aspects:
 
 The testing process involved a meticulous examination of these elements to
 guarantee a robust and user-friendly navbar experience.
+
+#### **Footer**
+
+'As a User, I want to find a footer on the Homequest website containing a brief
+description of the company and a link to its Facebook social media page. This
+will provide me with additional information about the company and the
+opportunity to connect on social media.'
+
+Similar to the navbar, the footer has undergone thorough testing to ensure:
+
+- **Responsive Design:**
+  The footer was tested across various devices and screen sizes to ensure a
+  seamless and responsive user experience. This involved checking for proper
+  layout adjustments and optimal display on different devices.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Link Functionality:**
+  Each link in the footer was thoroughly tested to ensure correct navigation.
+  This involved clicking on each link and verifying that it directs users to
+  the intended pages without errors.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Icon Visibility:**
+  Icons within the footer were checked to ensure proper visibility. This
+  included verifying that icons associated with menu items or actions are
+  displayed appropriately, contributing to a visually cohesive design.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+![nav-desktop](./README/footer-desktop.png)
+![nav-mobile](./README/footer-mobile.png)
