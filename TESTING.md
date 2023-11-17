@@ -326,11 +326,15 @@ that match their preferences.
 
 ![property-view-page](./README/buy-rent-page.gif)
 
-#### **Edit Property**
+#### **Edit and Create Property**
 
 'As an Agent, I want the capability to edit the details of an existing property
 on the Homequest website. This will empower me to keep property information
 up-to-date, including images, title, description, and other relevant details.'
+
+'As an Agent, I want the ability to create new property listings on the
+Homequest website. This will empower me to add fresh listings with accurate
+details, including images, title, description, price, and location.'
 
 The following aspects of the edit property
 functionality have undergone thorough testing:
@@ -368,3 +372,53 @@ on the Homequest website.
 ![edit-property](./README/edit-property.gif)
 ![edit-property-image](./README/edit-property-image.gif)
 ![edit-property-image-delete](./README/edit-property-image-delete.gif)
+
+#### **Agents Page**
+
+'As a User, I want to be able to access information about the agents working
+for the Homequest company. This will enable me to learn more about the
+individuals representing the company and potentially contact them for
+assistance.'
+
+The following tests have been conducted to ensure the functionality and user
+experience of this page:
+
+The tests below have been done in order to guarantee the page:
+
+- **Agents Page Display:**
+  Verification has been done to ensure that the Agents page is correctly
+  displayed, providing users with easy access to information about the
+  professionals representing Homequest.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Agent Information Display:**
+  Testing guarantees that relevant information about each agent is accurately
+  displayed, allowing users to learn more about the individuals representing
+  the company.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Responsive Design:**
+  The page has been rigorously tested to ensure that it is responsively
+  designed, providing a consistent and visually appealing layout across various
+  devices and screen sizes.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Contact Options Display:**
+  Users are provided with contact options for each agent. Testing has been
+  conducted to confirm that these contact options are correctly displayed,
+  enabling users to easily reach out for assistance.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+This testing process aims to enhance the user's ability to learn more about
+Homequest's agents, promoting a user-friendly and informative experience on the
+Agents page.
+
+![agents-page](./README/agents-page.png)
+![agents-page](./README/agents-mobile.gif)
+
+
+
