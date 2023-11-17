@@ -475,18 +475,54 @@ payment function operates smoothly:
   If the form is filled correctly with a test card provided by the Stripe
   documentation, the website registers the order.
 
-![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 
 - **Order Registration:**
   After successful validation, testing confirms that the website registers the
   order, marking the completion of the rental transaction.
 
-![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 
 - **Success Message Display:**
   Once the order is registered, a success message is displayed along with
   details of the rental contract on the page.
 
-![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen) 
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 
 ![about-page](./README/rent-property.gif)
+
+#### **Terminate Contract**
+
+'As a User, I want the ability to terminate a rental contract on the Homequest
+website. This will provide me with a straightforward process to end my rental
+agreement when needed.'
+
+The following tests have been conducted to ensure the
+contract termination operates smoothly:
+
+- **Contract Termination Confirmation:**
+  When a user clicks to terminate the contract, testing has been conducted to
+  ensure a confirmation step is correctly implemented, providing users with a
+  clear and deliberate action.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Return to Property Listing:**
+  After the contract termination is confirmed, testing verifies that the
+  property is successfully returned to the listing, making it available for
+  others to rent.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Feedback Message:**
+  Upon completion of the termination process, users are redirected to home page
+  with a feedback message confirming their action. Testing
+  ensures that this message is displayed accurately, providing users with
+  confirmation of their terminated rental agreement.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+These tests aim to guarantee a straightforward and user-friendly experience for
+terminating rental contracts on the Homequest website.
+
+![terminate-contract](./README/terminate-contract.gif)
