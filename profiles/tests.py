@@ -31,7 +31,7 @@ class CustomUserTests(TestCase):
         updated_user = get_user_model().objects.get(username='testuser')
 
         # Check if the URL of the picture field is as expected
-        expected_url = ('https://res.cloudinary.com/djangoci/'
+        expected_url = ('http://res.cloudinary.com/djangoci/'
                         'image/upload/v1/path/to/test/image.jpg')
         self.assertEqual(updated_user.picture.url, expected_url)
 
