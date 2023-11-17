@@ -695,3 +695,105 @@ following artists whose work has been utilized on this website:
       improve the overall design aesthetics.
 - [![Stripe](https://img.shields.io/badge/Stripe-Payment-orange?style=for-the-badge&logo=stripe)](https://stripe.com/)
     - Stripe was used for payment integration processing.
+
+### **Libraries Used**
+
+Libraries used for this project can be checked in
+the [requirements](requirements.txt) file.
+
+[Back to top &uarr;](#contents)
+
+## **Testing**
+
+For detailed information on testing post-development, please refer to
+the [TESTING.md](TESTING.md) document.
+
+## **Deployment**
+
+### **Run locally**
+
+- **Making a Local Clone**
+
+1. Login or Sign Up to GitHub.
+2. Open the project [repository](https://github.com/Danvm94/homequest).
+3. Click on the code button, select whether you would like to clone with HTTPS,
+   SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in the code editor of your choice and change the current
+   working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in
+   step
+6. Press enter.
+
+- **Forking the GitHub Repository**
+
+    - To fork this website to either propose changes or to use as an idea for
+      another website, follow these steps:
+
+1. Login or Sign Up to GitHub.
+2. Open the project [repository](https://github.com/Danvm94/homequest).
+3. Click the Fork button in the top right corner.
+4. Copy of the repository will be in your own GitHub account.
+
+- To deploy from GitHub, follow these steps:
+
+1. Log into your GitHub repository, create a GitHub account if necessary.
+2. Click 'Settings' in the main Repository menu.
+3. Click 'Pages' from the left-hand side navigation menu.
+4. Within the Source section, click the "Branch" button and change from 'None'
+   to 'Main'.
+5. The page should automatically refresh with an url displayed.
+6. Test the link by clicking on the url.
+
+### *Heroku Deployment*
+
+Deployments steps are as follows, after account setup:
+
+* Select New in the top-right corner of your Heroku Dashboard, and select
+  Create new app from the dropdown menu.
+* Add a unique app name and then choose a region closest to you (EU or USA).
+* Click on Create App.
+
+In order for the project to run on Heroku, Heroku is needed to install the
+dependencies.
+
+* In the terminal write the following commando `pip3 freeze > requirements.txt`
+  to create a list of requirements. The list of dependencies will go
+  into `requirements.txt` file.
+* Further down, to support dependencies, select Add Buildpath.
+* The order of the build-packs is important, select Python first, then click "
+  Save changes". Then add Node.js second and click "Save changes" again. If
+  they are not in this order, you can drag them to rearrange them.
+* Go to "Deploy" and select "GitHub" in "Deployment method".
+* To connect Heroku app to your GitHub repository code enter your repository
+  name, click 'Search' and then 'Connect' when it shows below
+* Choose the branch you want to build your app from.
+* If preferred, click on "Enable Automatic Deploys", which keeps the app up to
+  date with your GitHub repository.
+* Wait for the app to build. Once ready you will see the “App was successfully
+  deployed” message and a 'View' button to take you to your deployed link.
+
+# **Credits**
+
+1. [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
+    - This repository was created using the template provided by Code
+      Institute. Without the knowledge gained through the coursework, I would
+      not be able to create this site, so thank you Code Institute.
+
+2. [Django Documentation](https://docs.djangoproject.com/en/4.0/)
+    - The Django documentation was an essential resource, providing
+      step-by-step guidance during the project's development to ensure
+      everything was set up correctly.
+
+3. [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+    - Bootstrap 5 documentation was instrumental in implementing layout and
+      styling elements in the project.
+
+4. [Stripe Documentation](https://stripe.com/docs)
+    - The Stripe documentation provided valuable information and guidance for
+      integrating Stripe payment processing into the project.
+
+## **Acknowledgements**
+
+- Special thanks to Dario Carrasquel, my mentor for this project.
+
+[Back to top &uarr;](#contents)
