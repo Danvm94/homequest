@@ -23,6 +23,49 @@ web platform for real estate exploration. Leveraging Django and Bootstrap,
 HomeQuest is designed to provide a seamless experience for users navigating the
 diverse real estate market.
 
+## **Contents**
+
+- [**UX**](#ux)
+- [**The Strategy Plane**](#the-strategy-plane)
+- [**The Ideal User**](#the-ideal-user)
+- [**Site Goals**](#site-goals)
+- [**Agile Planning**](#agile-planning)
+- [**The Skeleton Plane**](#the-skeleton-plane)
+  - [**Database Schema**](#database-schema)
+  - [**Security Measures**](#security-measures)
+- [**The Scope Plane**](#the-scope-plane)
+- [**The Structure Plane**](#the-structure-plane)
+  - [**Features**](#features)
+    - [**Navbar**](#navbar)
+    - [**Footer**](#footer)
+    - [**Homepage**](#homepage)
+    - [**Register Page**](#register-page)
+    - [**Login Page**](#login-page)
+    - [**Buy and Rent Page**](#buy-and-rent-pages)
+    - [**Property View Page**](#property-view-page)
+    - [**Agents Page**](#agents-page)
+    - [**About Page**](#about-page)
+    - [**Contracts Page**](#contracts-page)
+    - [**Add and Edit Property Page**](#add-and-edit-property-page)
+    - [**Error Page**](#error-page)
+    - [**Mobile View**](#mobile-view)
+- [**Future Features**](#future-features)
+- [**The Surface Plane**](#the-surface-plane)
+  - [**Design**](#design)
+    - [**Colour Scheme**](#colour-scheme)
+    - [**Typography**](#typography)
+  - [**Imagery**](#imagery)
+- [**Technologies Used**](#technologies-used)
+  - [**Languages Used**](#languages-used)
+  - [**Frameworks and Tools Used**](#frameworks-and-tools-used))
+  - [**Libraries Used**](#libraries-used)
+- [**Testing**](#testing)
+- [**Deployment**](#deployment)
+  - [**Run locally**](#run-locally)
+  - [**Heroku Deployment**](#heroku-deployment)
+- [**Credits**](#credits)
+- [**Acknowledgements**](#acknowledgements)
+
 ## **UX**
 
 ## **The Strategy Plane**
@@ -79,7 +122,7 @@ exploring the real estate market. The ideal users for Homequest include:
 
 - [Back to top &uarr;](#contents)
 
-## **Agile Planning for Homequest**
+## **Agile Planning**
 
 This project was developed using agile methodologies, focusing on delivering
 small features across the project's duration. User Stories were prioritized
@@ -99,6 +142,8 @@ set of acceptance criteria to define the functionality required for story
 completion.
 
 ![homequest-agile-board](./README/homequest-agile-board.png)
+
+## **The Skeleton Plane**
 
 #### **Database Schema**
 
@@ -485,7 +530,7 @@ our users.
 
 #### **Error Page**
 
-The '404 Page' on Investosphere is designed to handle situations where users
+The '404 Page' on Homequest is designed to handle situations where users
 attempt to access a page or resource that doesn't exist or can't be found. It
 provides a user-friendly and informative experience in case of unexpected
 errors.
