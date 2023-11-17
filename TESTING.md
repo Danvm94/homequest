@@ -313,8 +313,58 @@ seamless user experience:
 
 ![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 
+- **Pagination:**
+  Pagination functionality has been tested to ensure smooth navigation between
+  multiple pages of property listings. This allows users to easily move through
+  the available properties and find the ones of interest.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
 This testing process aims to enhance the usability of the properties section,
 ensuring that users can effortlessly find, filter, and explore the listings
 that match their preferences.
 
 ![property-view-page](./README/buy-rent-page.gif)
+
+#### **Edit Property**
+
+'As an Agent, I want the capability to edit the details of an existing property
+on the Homequest website. This will empower me to keep property information
+up-to-date, including images, title, description, and other relevant details.'
+
+The following aspects of the edit property
+functionality have undergone thorough testing:
+
+- **Edit Property Details:**
+  Testing has been conducted to verify the seamless editing of various property
+  details, including but not limited to images, title, description, and other
+  relevant information.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Delete Image:**
+  The ability to delete property images has been tested to ensure that agents
+  can easily manage and update the visual representation of the property.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Add Image:**
+  Testing has been carried out to confirm that agents can effortlessly add new
+  images to a property, enhancing its visual presentation.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Restricted Access:**
+  Access to the edit property functionality is restricted to staff members
+  only. Testing ensures that unauthorized users do not have access to this
+  critical feature, maintaining the security and integrity of property data.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+This comprehensive testing approach aims to provide agents with a user-friendly
+and secure environment for efficiently managing and updating property details
+on the Homequest website.
+
+![edit-property](./README/edit-property.gif)
+![edit-property-image](./README/edit-property-image.gif)
+![edit-property-image-delete](./README/edit-property-image-delete.gif)
