@@ -562,3 +562,54 @@ Homequest website.
 
 ![email-send](./README/email-send.gif)
 ![email-sent](./README/email-sent.png)
+
+### **Javascript Testing**
+
+#### **Confirmation Buttons**
+
+The confirmation buttons for Property Delete, Image Delete, and Terminate
+Contract have undergone testing and have been successfully validated.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+#### **Bootstrap Carousel**
+
+The Bootstrap Carousel JS implementation has been thoroughly tested and is
+functioning as intended. It correctly displays images and maintains the correct
+order.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+#### **Bootstrap Toasts**
+
+The Bootstrap Toasts script has been tested and is operational, ensuring that
+toast messages are displayed as expected.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+#### **Stripe**
+
+The Stripe payment script has undergone testing and has been verified to be
+functioning correctly, ensuring a seamless and secure payment process for
+users.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+These tests collectively contribute to the overall reliability and
+functionality of the JavaScript components on the Homequest website.
+
+## **Validators**
+
+### **CI Python Linter**
+
+The [CI Python Linter](https://pep8ci.herokuapp.com/) was employed to validate
+the Python code throughout this project.
+
+### **W3C CSS Validator**
+
+[W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate
+the site's CSS code.
+
+![css-validator](./README/css-validator.png)
+
+[Back to top &uarr;](#contents)

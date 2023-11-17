@@ -6,6 +6,9 @@ from profiles.models import CustomUser
 from .models import RealEstateAgent, State, Property, Images
 from .views import (properties_view, property_view, agents_view,
                     edit_property, delete_image_view, delete_property_view)
+from django.test import TestCase
+from .forms import PropertyFilterForm, ContactForm, PropertyForm, ImagesForm
+from .models import State, RealEstateAgent
 
 
 class RealEstateAgentModelTest(TestCase):
@@ -122,11 +125,6 @@ class ImagesModelTest(TestCase):
     def test_str_method(self):
         self.assertEqual(
             str(self.image), f"Image for Property: {self.image.property.pk}")
-
-
-from django.test import TestCase
-from .forms import PropertyFilterForm, ContactForm, PropertyForm, ImagesForm
-from .models import State, RealEstateAgent
 
 
 class PropertyFilterFormTest(TestCase):
