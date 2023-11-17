@@ -281,3 +281,40 @@ Similar to the navbar, the footer has undergone thorough testing to ensure:
 
 ![nav-desktop](./README/footer-desktop.png)
 ![nav-mobile](./README/footer-mobile.png)
+
+#### **Properties**
+
+'As a User, I want the ability to view properties that are for sale and for
+rent on separate pages of the Homequest website. This will enable me to easily
+find and explore the relevant property listings based on my specific
+interests.'
+
+Testing has been conducted on key aspects of the properties section to ensure a
+seamless user experience:
+
+- **Properties Filter:**
+  The filtering functionality has been thoroughly tested, allowing users to
+  refine property listings based on specific criteria such as type, location,
+  and price range.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Properties View:**
+  The overall view of properties has been tested to ensure a visually appealing
+  and user-friendly display. This includes the presentation of property
+  details, images, and relevant information.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Property Details:**
+  Users can open specific properties to access more details. Testing has been
+  conducted to guarantee that users can seamlessly navigate and explore
+  in-depth information about each property.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+This testing process aims to enhance the usability of the properties section,
+ensuring that users can effortlessly find, filter, and explore the listings
+that match their preferences.
+
+![property-view-page](./README/buy-rent-page.gif)
