@@ -420,5 +420,38 @@ Agents page.
 ![agents-page](./README/agents-page.png)
 ![agents-page](./README/agents-mobile.gif)
 
+#### **About Page**
 
+'As a User, I want to learn more about the Homequest company and its
+background. This will provide me with insights into the company's mission,
+values, and history.'
 
+The tests below have been done in order to guarantee the page:
+
+- **About Page Display:**
+  Verification has been done to ensure that the Agents page is correctly
+  displayed, providing users with easy access to information about the
+  professionals representing Homequest.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Correct Top Video Positioning:**
+  Testing confirms that the top video on the About Page is correctly positioned
+  at the top of the page, contributing to an engaging and visually appealing
+  introduction to Homequest.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Responsive Design:**
+  Rigorous testing has been carried out to ensure that the About Page is
+  responsively designed, offering a consistent and visually appealing layout
+  across various devices and screen sizes.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+This thorough testing process aims to guarantee a positive and informative user
+experience on the About Page, providing users with valuable insights into
+Homequest's mission, values, and history.
+
+![about-page](./README/about-page.png)
+![about-page](./README/about-mobile.gif)
