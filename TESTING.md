@@ -201,6 +201,7 @@ testing has been conducted to ensure their effectiveness:
    ![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 9. **Property Creation:**
    Upon the creation of a new property, a success message will notify the user.
+
    ![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
 10. **Property Image Deletion:**
     When a property image is deleted, a confirmation message will be shown.
@@ -210,3 +211,40 @@ testing has been conducted to ensure their effectiveness:
     Upon deleting a property, a confirmation message will be displayed.
 
     ![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+#### **NavBar**
+
+'As a User, I want to have easy access to the most important topics on the
+Homequest website through a navigation bar. This will allow me to quickly
+navigate to key sections such as Buy, Rent, Agents, About, Your Contracts, and
+Account, enhancing the overall user experience.'
+
+Tests were conducted on the website's navbar to ensure its functionality,
+covering the following aspects:
+
+- **Responsive Design:**
+  The navbar was tested across various devices and screen sizes to ensure a
+  seamless and responsive user experience. This involved checking for proper
+  layout adjustments and optimal display on different devices.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Link Functionality:**
+  Each link in the navbar was thoroughly tested to ensure correct navigation.
+  This involved clicking on each link and verifying that it directs users to
+  the intended pages without errors.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+- **Icon Visibility:**
+  Icons within the navbar were checked to ensure proper visibility. This
+  included verifying that icons associated with menu items or actions are
+  displayed appropriately, contributing to a visually cohesive design.
+
+![Test Badge](https://img.shields.io/badge/Test-Pass-brightgreen)
+
+![nav-desktop](./README/nav-desktop.png)
+![nav-mobile](./README/nav-mobile.png)
+
+The testing process involved a meticulous examination of these elements to
+guarantee a robust and user-friendly navbar experience.
