@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="/">
             <img src="{% static 'images/favicon.ico' %}" width="35" height="35"
                  alt="Homequest logo">
-            <h1>Homequest</h1>
+            <p class="h1 logo">Homequest</p>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent"
@@ -57,22 +57,13 @@
                             <li><a class="dropdown-item"
                                    href="{% url 'profile' %}"><i
                                     class="fas fa-user"></i> Profile</a></li>
-                            <form method="post"
-                                  action="{% url 'account_logout' %}">
-                                {% csrf_token %}
-                                {% if redirect_field_value %}
-                                    <input type="hidden"
-                                           name="{{ redirect_field_name }}"
-                                           value="{{ redirect_field_value }}"/>
-                                {% endif %}
                                 <li>
-                                    <button class="dropdown-item"
-                                            type="submit"><i
+                                    <a class="dropdown-item"
+                                            href="{% url 'account_logout' %}"><i
                                             class="fas fa-sign-out-alt"></i>
                                         Sign Out
-                                    </button>
+                                    </a>
                                 </li>
-                            </form>
                         {% else %}
                             <li>
                                 <a href="#loginModal" class="dropdown-item"
