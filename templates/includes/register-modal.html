@@ -1,32 +1,107 @@
 {% load static %}
 {% load i18n %}
+{% load crispy_forms_tags %}
 {% load account socialaccount %}
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="sign-up modal" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Sign-up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <form id="signupForm" class="login" method="POST" action="{% url 'account_signup' %}">
-                    <div class="modal-body">
-                        <div id="signupFormErrors" class="center-contents"></div>
-                        <div class="d-flex justify-content-center">
-                            <img src="{% static 'images/house-login.webp' %}" width="240" alt="modern house">
-                        </div>
-
-                        {% csrf_token %}
-                        {{ signupform }}
-                        {% if redirect_field_value %}
-                            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
-                        {% endif %}
-
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">{% trans "Sign-up" %}</button>
-                    </div>
-                </form>
+<div class="modal fade" id="signupModal" tabindex="-1"
+     aria-labelledby="signupForm" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign-up</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
             </div>
+            <form id="signupForm" class="login" method="POST"
+                  action="{% url 'account_signup' %}">
+                <div class="modal-body">
+                    <div id="signupFormErrors" class="center-contents"></div>
+                    <div class="d-flex justify-content-center">
+                        <img src="/homequest/static/images/house-login.webp"
+                             width="240" alt="modern house">
+                    </div>
+
+                    <input type="hidden" name="csrfmiddlewaretoken"
+                           value="ZQZ8lQG55jYChL4GVJTdXgg93u7JbA7ofikYA3tOnHHGSBHMNvsA93DU1LPAvIlN">
+
+                    <div id="div_id_email" class="mb-3 row">
+                        <label for="id_email"
+                               class="col-form-label col-lg-12 mx-auto requiredField">
+                            Email<span class="asteriskField">*</span>
+                        </label>
+                        <div class="col-lg-12 mx-auto">
+                            <input type="email" name="email"
+                                   placeholder="Email address"
+                                   autocomplete="email" maxlength="320"
+                                   class="form-control mb-1 textinput"
+                                   required="" id="id_email">
+                        </div>
+                    </div>
+
+                    <div id="div_id_username" class="mb-3 row">
+                        <label for="id_username"
+                               class="col-form-label col-lg-12 mx-auto requiredField">
+                            Username<span class="asteriskField">*</span>
+                        </label>
+                        <div class="col-lg-12 mx-auto">
+                            <input type="text" name="username"
+                                   placeholder="Username"
+                                   autocomplete="username" minlength="1"
+                                   maxlength="150"
+                                   class="form-control mb-1 textinput"
+                                   required="" id="id_username">
+                        </div>
+                    </div>
+
+                    <div id="div_id_password1" class="mb-3 row">
+                        <label for="id_password1"
+                               class="col-form-label col-lg-12 mx-auto requiredField">
+                            Password<span class="asteriskField">*</span>
+                        </label>
+                        <div class="col-lg-12 mx-auto">
+                            <input type="password" name="password1"
+                                   placeholder="Password"
+                                   autocomplete="new-password"
+                                   class="form-control mb-1 passwordinput"
+                                   required="" id="id_password1">
+                            <div id="hint_id_password1" class="form-text">
+                                <ul>
+                                    <li>Your password can’t be too similar to
+                                        your other personal information.
+                                    </li>
+                                    <li>Your password must contain at least 8
+                                        characters.
+                                    </li>
+                                    <li>Your password can’t be a commonly used
+                                        password.
+                                    </li>
+                                    <li>Your password can’t be entirely
+                                        numeric.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_id_password2" class="mb-3 row">
+                        <label for="id_password2"
+                               class="col-form-label col-lg-12 mx-auto requiredField">
+                            Password (again)<span
+                                class="asteriskField">*</span>
+                        </label>
+                        <div class="col-lg-12 mx-auto">
+                            <input type="password" name="password2"
+                                   placeholder="Password (again)"
+                                   autocomplete="new-password"
+                                   class="form-control mb-1 passwordinput"
+                                   required="" id="id_password2">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit"
+                            class="btn btn-success">{% trans "Sign-up" %}</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
