@@ -636,4 +636,12 @@ images.
 
 [Back to top &uarr;](#contents)
 
-test
+### **JSHint**
+
+[JSHint](https://jshint.com/) was used to validate the Javascript code used in
+the project.
+
+### **Lighthouse**
+
+#### Home
+
