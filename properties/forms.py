@@ -62,8 +62,7 @@ class PropertyFilterForm(forms.Form):
 
         # Create a Crispy Forms helper and define the layout
         self.helper = FormHelper()
-        self.helper.form_method = 'post'
-        self.helper.form_class = 'form-inline'
+        self.helper.form_class = 'd-flex row text-center'
         self.helper.layout = Layout(
             InlineCheckboxes('bedrooms',
                              template='forms/checkbox_toggle_btn.html',

@@ -5,7 +5,7 @@
          class="mb-3 col-4{% if 'form-horizontal' in form_class %} row{% endif %}{% if wrapper_class %} {{ wrapper_class }}{% endif %}{% if field.css_classes %} {{ field.css_classes }}{% endif %}">
 
         {% if field.label %}
-            <label for="{{ field.id_for_label }}" class="{{ label_class }}{% if not inline_class %} col-form-label{% else %} form-label{% endif %}{% if field.field.required %} requiredField{% endif %}">
+            <label class="{{ label_class }}{% if not inline_class %} col-form-label{% else %} form-label{% endif %}{% if field.field.required %} requiredField{% endif %}">
                 {{ field.label }}{% if field.field.required %}<span class="asteriskField">*</span>{% endif %}
             </label>
         {% endif %}
@@ -19,7 +19,6 @@
                 {% if group %}<strong>{{ group }}</strong>{% endif %}
                 {% for option in options %}
                     <input type="{{ option.type }}"
-                           class="btn-check"
                            name="{{ field.html_name }}"
                            value="{{ option.value|unlocalize }}" {% include "bootstrap5/layout/attrs.html" with widget=option %}>
                     <label for="{{ option.attrs.id }}" class="btn btn-success">
