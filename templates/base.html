@@ -92,6 +92,7 @@
 {% include 'includes/footer.html' %}
 {% block postloadjs %}
     <script src="{% static 'js/toasts.js' %}" async></script>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/f0b688af4d811bbb91e48181d/303fd7a15bb2a51ca994333cb.js");</script>
 {% endblock %}
 
 {% if user.is_authenticated %}

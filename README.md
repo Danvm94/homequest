@@ -31,38 +31,38 @@ diverse real estate market.
 - [**Site Goals**](#site-goals)
 - [**Agile Planning**](#agile-planning)
 - [**The Skeleton Plane**](#the-skeleton-plane)
-  - [**Database Schema**](#database-schema)
-  - [**Security Measures**](#security-measures)
+    - [**Database Schema**](#database-schema)
+    - [**Security Measures**](#security-measures)
 - [**The Scope Plane**](#the-scope-plane)
 - [**The Structure Plane**](#the-structure-plane)
-  - [**Features**](#features)
-    - [**Navbar**](#navbar)
-    - [**Footer**](#footer)
-    - [**Homepage**](#homepage)
-    - [**Register Page**](#register-page)
-    - [**Login Page**](#login-page)
-    - [**Buy and Rent Page**](#buy-and-rent-pages)
-    - [**Property View Page**](#property-view-page)
-    - [**Agents Page**](#agents-page)
-    - [**About Page**](#about-page)
-    - [**Contracts Page**](#contracts-page)
-    - [**Add and Edit Property Page**](#add-and-edit-property-page)
-    - [**Error Page**](#error-page)
-    - [**Mobile View**](#mobile-view)
+    - [**Features**](#features)
+        - [**Navbar**](#navbar)
+        - [**Footer**](#footer)
+        - [**Homepage**](#homepage)
+        - [**Register Page**](#register-page)
+        - [**Login Page**](#login-page)
+        - [**Buy and Rent Page**](#buy-and-rent-pages)
+        - [**Property View Page**](#property-view-page)
+        - [**Agents Page**](#agents-page)
+        - [**About Page**](#about-page)
+        - [**Contracts Page**](#contracts-page)
+        - [**Add and Edit Property Page**](#add-and-edit-property-page)
+        - [**Error Page**](#error-page)
+        - [**Mobile View**](#mobile-view)
 - [**Future Features**](#future-features)
 - [**The Surface Plane**](#the-surface-plane)
-  - [**Design**](#design)
-    - [**Colour Scheme**](#colour-scheme)
-    - [**Typography**](#typography)
-  - [**Imagery**](#imagery)
+    - [**Design**](#design)
+        - [**Colour Scheme**](#colour-scheme)
+        - [**Typography**](#typography)
+    - [**Imagery**](#imagery)
 - [**Technologies Used**](#technologies-used)
-  - [**Languages Used**](#languages-used)
-  - [**Frameworks and Tools Used**](#frameworks-and-tools-used))
-  - [**Libraries Used**](#libraries-used)
+    - [**Languages Used**](#languages-used)
+    - [**Frameworks and Tools Used**](#frameworks-and-tools-used))
+    - [**Libraries Used**](#libraries-used)
 - [**Testing**](#testing)
 - [**Deployment**](#deployment)
-  - [**Run locally**](#run-locally)
-  - [**Heroku Deployment**](#heroku-deployment)
+    - [**Run locally**](#run-locally)
+    - [**Heroku Deployment**](#heroku-deployment)
 - [**Credits**](#credits)
 - [**Acknowledgements**](#acknowledgements)
 
@@ -121,6 +121,34 @@ exploring the real estate market. The ideal users for Homequest include:
   potentially purchasing properties.
 
 - [Back to top &uarr;](#contents)
+
+## Social Media Marketing for Homequest Website
+
+In crafting the marketing strategy for Homequest, extensive market research was
+conducted to determine the most effective channels for promoting the real
+estate brand. When it comes to social media marketing, Facebook emerged as the
+optimal platform for reaching potential customers. With a user base that spans
+various age groups, Facebook's wide reach aligns well with Homequest's goals.
+
+### Statista - Facebook Users
+
+![Statista - Facebook Users](./README/statista.png)
+
+- Distribution of Facebook users worldwide as of 2023 according
+  to [Statista](https://www.statista.com/)<br>
+
+### Homequest - Facebook Page
+
+![Homequest](./README/facebook-page.png)
+
+### Enhancing Website Services with Meta Pixel Configuration
+
+- To elevate the services provided by Homequest and gain valuable insights into
+  user interactions, consider configuring a Meta Pixel. The Meta Pixel,
+  specifically from Facebook, allows for comprehensive tracking of user
+  behavior,
+  enabling a more informed and targeted approach to website optimization.
+
 
 ## **Agile Planning**
 
