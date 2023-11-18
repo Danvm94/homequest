@@ -614,4 +614,26 @@ the site's CSS code.
 
 [Back to top &uarr;](#contents)
 
+### **W3C Markup Validator**
 
+All pages were run through
+the [W3C Markup Validator](https://validator.w3.org/nu/). Initially, there were
+some errors due to missing closing tags, image height values, and others. All
+of these issues were corrected and all pages passed validation.
+
+Due to the Django templating language code used in the HTML files, these could
+not be copied and pasted into the validator and due to the secured views, pages
+with login required or a secured view cannot be validated by direct URI. To
+test the validation on the files, open the page to validate, right click and
+view page source. Paste the raw HTML code into the validator as this will be
+only the HTML-rendered code.
+
+Please note that the information message regarding the trailing slash on void
+elements is shown as an "Info" due to the Cloudinary media's way of rendering
+images.
+
+![W3C Markup Validator](./README/w3-validator.png)
+
+[Back to top &uarr;](#contents)
+
+test
