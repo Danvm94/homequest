@@ -643,5 +643,33 @@ the project.
 
 ### **Lighthouse**
 
-#### Home
+### About
+#### Desktop
+![about-desktop](./README/lighthouse/about-desktop.png)
+#### Mobile
+![about-mobile](./README/lighthouse/about-mobile.png)
+
+### Agents
+#### Desktop
+![agents-desktop](./README/lighthouse/agents-desktop.png)
+#### Mobile
+![agents-mobile](./README/lighthouse/agents-mobile.png)
+
+### Buy
+#### Desktop
+![buy-desktop](./README/lighthouse/buy-desktop.png)
+#### Mobile
+![buy-mobile](./README/lighthouse/buy-mobile.png)
+
+### Index
+#### Desktop
+![index-desktop](./README/lighthouse/index-desktop.png)
+#### Mobile
+![index-mobile](./README/lighthouse/index-mobile.png)
+
+### Property
+#### Desktop
+![property-desktop](./README/lighthouse/property-desktop.png)
+#### Mobile
+![property-mobile](./README/lighthouse/property-mobile.png)
 
