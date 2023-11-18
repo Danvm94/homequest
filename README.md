@@ -29,6 +29,15 @@ diverse real estate market.
 - [**The Strategy Plane**](#the-strategy-plane)
 - [**The Ideal User**](#the-ideal-user)
 - [**Site Goals**](#site-goals)
+- [Social Media Marketing for Homequest Website](#social-media-marketing-for-homequest-website)
+    - [Statista](#statista)
+    - [Facebook](#facebook)
+    - [Enhancing Website Services with Meta Pixel Configuration](#enhancing-website-services-with-meta-pixel-configuration)
+- [Mailchimp Subscription Service](#mailchimp-subscription-service)
+- [Privacy Policy](#privacy-policy)
+- [Search Engine Optimization](#search-engine-optimization)
+  - [sitemap.xml](#sitemapxml)
+  - [robots.txt](#robotstxt)
 - [**Agile Planning**](#agile-planning)
 - [**The Skeleton Plane**](#the-skeleton-plane)
     - [**Database Schema**](#database-schema)
@@ -130,14 +139,14 @@ estate brand. When it comes to social media marketing, Facebook emerged as the
 optimal platform for reaching potential customers. With a user base that spans
 various age groups, Facebook's wide reach aligns well with Homequest's goals.
 
-### Statista - Facebook Users
+### Statista
 
 ![Statista - Facebook Users](./README/statista.png)
 
 - Distribution of Facebook users worldwide as of 2023 according
   to [Statista](https://www.statista.com/)<br>
 
-### Homequest - Facebook Page
+### Facebook
 
 ![Homequest](./README/facebook-page.png)
 
@@ -149,7 +158,7 @@ various age groups, Facebook's wide reach aligns well with Homequest's goals.
   behavior,
   enabling a more informed and targeted approach to website optimization.
 
-### Mailchimp Subscription Service
+## Mailchimp Subscription Service
 
 - Users visiting Homequest are encouraged to sign up for newsletters, and
   essential information related to available properties. The
@@ -172,6 +181,60 @@ emails. This integration enhances user engagement and communication.
 ![Privacy Policy](./README/privacy-policy.png)
 
 - [Homequest Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=vpTIWBR7QmRopIplSXt0qszNixIqUFoy)
+
+## Search Engine Optimization
+
+- The Homequest website underwent optimization through a meticulous selection
+  of keywords related to the realm of real estate properties and listings. The
+  comprehensive table encompasses crucial topics relevant to the world of real
+  estate. The chosen keywords are derived from an initial understanding of the
+  real estate business, focusing on common themes within the industry.
+  This strategic approach ensures that Homequest is optimized for search
+  engines,
+  enhancing its visibility and relevance within the competitive real estate
+  market.
+
+| Keywords                     |
+|------------------------------|
+| Real Estate Novaville        |
+| Novaville Properties         |
+| Buy Homes Novaville          |
+| Rent Apartments Novaville    |
+| Real Estate Agents Novaville |
+| Property Listings Novaville  |
+| Homequest Real Estate        |
+| Real Estate Services         |
+| Residential Properties       |
+| Commercial Properties        |
+| Luxury Homes                 |
+| Affordable Housing           |
+| Real Estate Investment       |
+| Property Search Novaville    |
+| Home Buying Tips             |
+| Rental Listings              |
+| Real Estate Market Novaville |
+| Expert Real Estate Agents    |
+| Homequest Properties         |
+| Real Estate Consultation     |
+
+### sitemap.xml
+
+- A sitemap file with a list of important URLs was added to ensure that search
+  engines are able to easily navigate through the site
+  and understand its structure. This was made using XML-sitemaps.com by
+  following the steps:
+
+1. Paste the URL of the deployed site into XML-sitemaps
+2. Download the XML sitemap file
+3. Add the file into the projects root folder, named as sitemap.xml<br>
+
+### robots.txt
+
+- A robots.txt file was created to tell search engines where not to go on the
+  website and increase the quality of the site, ultimately improving the SEO
+  rating.
+
+[robots.txt](/robots.txt)
 
 ## **Agile Planning**
 
