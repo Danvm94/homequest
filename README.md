@@ -149,6 +149,29 @@ various age groups, Facebook's wide reach aligns well with Homequest's goals.
   behavior,
   enabling a more informed and targeted approach to website optimization.
 
+### Mailchimp Subscription Service
+
+- Users visiting Homequest are encouraged to sign up for newsletters, and
+  essential information related to available properties. The
+  prominently placed signup form becomes visible on the homepage after a few
+  seconds, ensuring easy access for users.
+
+The email subscription service is effectively managed through Mailchimp,
+providing the website admin with a robust platform for sending marketing
+emails. This integration enhances user engagement and communication.
+
+![Mailchimp Subscription Service](./README/mailchimp.png)<br>
+
+## Privacy Policy
+
+- In order to add a page with the Homequest Privacy Policy the
+  service [Privacy Policy Generator](https://www.privacypolicygenerator.info/)
+  was used to ensure that the website is compliant with the European Privacy
+  Policy Rules.<br>
+
+![Privacy Policy](./README/privacy-policy.png)
+
+- [Homequest Privacy Policy](https://www.privacypolicygenerator.info/live.php?token=vpTIWBR7QmRopIplSXt0qszNixIqUFoy)
 
 ## **Agile Planning**
 
