@@ -644,32 +644,122 @@ the project.
 ### **Lighthouse**
 
 ### About
+
 #### Desktop
+
 ![about-desktop](./README/lighthouse/about-desktop.png)
+
 #### Mobile
+
 ![about-mobile](./README/lighthouse/about-mobile.png)
 
 ### Agents
+
 #### Desktop
+
 ![agents-desktop](./README/lighthouse/agents-desktop.png)
+
 #### Mobile
+
 ![agents-mobile](./README/lighthouse/agents-mobile.png)
 
 ### Buy
+
 #### Desktop
+
 ![buy-desktop](./README/lighthouse/buy-desktop.png)
+
 #### Mobile
+
 ![buy-mobile](./README/lighthouse/buy-mobile.png)
 
 ### Index
+
 #### Desktop
+
 ![index-desktop](./README/lighthouse/index-desktop.png)
+
 #### Mobile
+
 ![index-mobile](./README/lighthouse/index-mobile.png)
 
 ### Property
+
 #### Desktop
+
 ![property-desktop](./README/lighthouse/property-desktop.png)
+
 #### Mobile
+
 ![property-mobile](./README/lighthouse/property-mobile.png)
 
+## **Responsiveness**
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and
+upwards. The site was tested on multiple
+browsers and devices as outlined below.
+
+| **Browser Tested** | **Actual Result** | **Pass/Fail** |
+|--------------------|-------------------|---------------|
+| Chrome             | As Expected       | Pass          |
+| Firefox            | As Expected       | Pass          |
+| Edge               | As Expected       | Pass          |
+| Mac OS Safari      | As Expected       | Pass          |
+
+| **Device Tested**    | **Actual Result** | **Pass/Fail** |
+|----------------------|-------------------|---------------|
+| Mac Air M2           | As Expected       | Pass          |
+| HP Elite Laptop      | As Expected       | Pass          |
+| HP 23 Monitor        | As Expected       | Pass          |
+| Samsung Note 10+     | As Expected       | Pass          |
+| Samsung Note 20      | As Expected       | Pass          |
+| Samsung S21+         | As Expected       | Pass          |
+| Samsung Tab S7+      | As Expected       | Pass          |
+| iPhone 13 Pro Max    | As Expected       | Pass          |
+| iPhone 11            | As Expected       | Pass          |
+| iPad Pro 12 inch     | As Expected       | Pass          |
+| One Plus 8T          | As Expected       | Pass          |
+| Xiaomi Redmi Note 11 | As Expected       | Pass          |
+
+## **Bugs & Fixes**
+
+### W3C Markup Validator
+
+During the W3C Markup Validator, several issues were identified. These problems
+have been addressed and resolved with the following git commits:
+
+#### Refactor: Resolve HTML validation issues in login and register forms
+
+- Resolved HTML validation issues in login and register forms and templates.
+- Corrected the following issues:
+    - Bad value 500px for attribute width on element img
+    - Section lacks heading. Use h2-h6 elements or div for identifying headings
+    - Stray start tag tr
+    - Stray start tag the
+    - Element ul not allowed as a child of element span
+    - The aria-labelledby attribute must point to an element in the same
+      document
+
+[View Commit](https://github.com/Danvm94/homequest/commit/07af1de70552bb21bc44a34955fa9122fceb2282)
+
+#### Refactor: Resolve HTML validation issues in the Buy page
+
+- Resolved HTML validation issues in the Buy page.
+- Corrected the following issues:
+    - Nested forms are not allowed. Removed nested form elements.
+    - Bad value for attribute 'for' on element label: An ID must not be the
+      empty string. Assigned appropriate IDs for labels in the form.
+    - Duplicate attribute 'class'. Corrected duplicate 'class' attribute on an
+      element.
+
+[View Commit](https://github.com/Danvm94/homequest/commit/4fb35c84bb67ef158a406612824206b436cbd678)
+
+#### Refactor: Address small HTML validation issues
+
+- Addressed various small HTML validation issues identified during a review.
+- Corrected improper use of attributes, removed duplicate attributes, and fixed
+  incorrect tag nesting.
+- Improved code readability and adhered to HTML standards.
+- No functional changes, only focused on enhancing HTML validity.
+
+[View Commit](https://github.com/Danvm94/homequest/commit/42b4d2bb9693dbb188c6fdc2e131ca0f39d4a1b8)
