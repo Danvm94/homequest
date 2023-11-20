@@ -36,8 +36,8 @@ diverse real estate market.
 - [Mailchimp Subscription Service](#mailchimp-subscription-service)
 - [Privacy Policy](#privacy-policy)
 - [Search Engine Optimization](#search-engine-optimization)
-  - [sitemap.xml](#sitemapxml)
-  - [robots.txt](#robotstxt)
+    - [sitemap.xml](#sitemapxml)
+    - [robots.txt](#robotstxt)
 - [**Agile Planning**](#agile-planning)
 - [**The Skeleton Plane**](#the-skeleton-plane)
     - [**Database Schema**](#database-schema)
@@ -138,6 +138,18 @@ conducted to determine the most effective channels for promoting the real
 estate brand. When it comes to social media marketing, Facebook emerged as the
 optimal platform for reaching potential customers. With a user base that spans
 various age groups, Facebook's wide reach aligns well with Homequest's goals.
+
+Homequest is a dynamic and innovative Django-based e-commerce platform
+developed as part of a 5th college project. The website is designed to
+revolutionize the real estate experience by strategically addressing the need
+for better solutions on real estate websites.
+
+Homequest aims to provide users with seamless and easy access to rental
+properties in the fictional city of Novaville. The primary goal is to simplify
+the process of exploring available properties and facilitate one-click access
+to detailed information. This approach aligns with the mission to enhance the
+user experience in the real estate market.
+
 
 ### Statista
 
